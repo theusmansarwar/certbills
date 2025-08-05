@@ -95,6 +95,7 @@ input[type="number"] {
 }
 @media (max-width: 900px) {
   .detail-page-contact {
+    width: calc(100% - 40px);
     display: flex;
     flex-direction: column-reverse;
     padding: 20px;

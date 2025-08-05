@@ -1,5 +1,6 @@
 .testimonial{
   padding: 60px 70px;
+  width: calc(100% - 140px);
 }
 .testimonial .testimonial-list {
   display: flex;
@@ -36,6 +37,7 @@
 @media (max-width: 900px) {
   .testimonial{
   padding: 20px 0px;
+  width: 100% ;
 }
   .testimonial .testimonial-list {
     flex-wrap: nowrap;
