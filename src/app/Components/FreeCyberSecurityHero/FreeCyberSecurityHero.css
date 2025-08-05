@@ -1,0 +1,201 @@
+.free-cyber-hero {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  color: var(--background);
+  height: fit-content;
+  padding: 40px 80px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  width: calc(100% - 160px);
+}
+.free-cyber-hero .circle {
+  background: radial-gradient(
+    circle,
+    rgba(195, 147, 98, 1) 0%,
+    rgba(195, 147, 98, 0.5) 50%,
+    rgba(195, 147, 98, 0) 100%
+  );
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  left: 45%;
+  display: flex;
+  align-self: center;
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.free-cyber-hero .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.free-cyber-hero .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.free-cyber-hero .left h1 {
+  font-size: var(--heading-two);
+  font-weight: var(--bold-font-weight);
+}
+
+.free-cyber-hero .left span {
+  font-size: var(--heading-four);
+}
+
+.free-cyber-hero .left strong {
+  font-size: var(--heading-three);
+  font-weight: var(--bold-font-weight);
+  font-style: italic;
+  background-color: var(--background);
+  color: var(--primary-color);
+  padding: 8px 12px;
+  width: fit-content;
+  border-radius: var(--radius-three);
+  transform: rotate(-3deg) translateY(-2px) translateX(2px);
+}
+
+.free-cyber-hero .left .hero-btn {
+  background: var(--primary-color);
+  border: 1px solid transparent;
+  border-radius: var(--radius-three);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  padding: 8px 14px;
+  font-size: var(--small-p-size);
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: fit-content;
+}
+
+.free-cyber-hero .left .hero-btn:hover {
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--default-box-shadow2);
+  background: transparent;
+}
+
+.free-cyber-hero .right {
+  width: 50%;
+  height: 300px;
+}
+
+.free-cyber-hero .bottom-card {
+  background-color: var(--background);
+  border-radius: var(--radius-one);
+  color: var(--dark);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 30px 20px;
+  z-index: 2;
+}
+
+.free-cyber-hero .bottom-card .bottom-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-left: 2px solid var(--primary-color);
+  padding-left: 20px;
+  width: 100%;
+}
+
+.free-cyber-hero .bottom-card .bottom-boxes:first-child {
+  border: none;
+}
+
+.free-cyber-hero .bottom-card .bottom-boxes strong {
+  color: var(--primary-color);
+  font-size: var(--heading-three);
+}
+
+.free-cyber-hero .bottom-card .bottom-boxes span {
+  color: var(--primary-color);
+  font-size: var(--small-p-size);
+}
+
+.free-cyber-hero .bottom-card .bottom-boxes .date {
+  font-size: var(--heading-four);
+  font-weight: var(--bold-font-weight);
+}
+.free-cyber-hero .bottom-card .horizontal-line {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .free-cyber-hero {
+    padding: 30px 10px;
+    gap: 10px;
+  }
+  .free-cyber-hero .circle {
+    width: 300px;
+    height: 300px;
+
+    left: 5%;
+  }
+  .free-cyber-hero .right {
+    display: none;
+  }
+  .free-cyber-hero .left {
+    width: 100%;
+  }
+
+  .free-cyber-hero .left h1 {
+    font-size: var(--heading-three);
+  }
+
+  .free-cyber-hero .left span {
+    font-size: var(--default-p-size);
+  }
+
+  .free-cyber-hero .left strong {
+    font-size: var(--heading-three);
+  }
+  .free-cyber-hero .right {
+    width: 50%;
+    height: 200px;
+  }
+
+  .free-cyber-hero .bottom-card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    padding: 10px;
+  }
+  .free-cyber-hero .bottom-card .bottom-boxes {
+    padding: 10px;
+    text-align: center;
+  }
+  .free-cyber-hero .bottom-card .horizontal-line {
+    display: block;
+    grid-column: span 2;
+    height: 2px;
+    background-color: var(--primary-color);
+  }
+  .free-cyber-hero .bottom-card .bottom-boxes:nth-child(4) {
+  border: none;
+}
+
+  .free-cyber-hero .bottom-card .bottom-boxes strong {
+    font-size: var(--heading-four);
+  }
+
+  .free-cyber-hero .bottom-card .bottom-boxes span {
+    font-size: 12px;
+  }
+  .free-cyber-hero .bottom-card .bottom-boxes p {
+    font-size: 12px;
+  }
+
+  .free-cyber-hero .bottom-card .bottom-boxes .date {
+    font-size: var(--default-p-size);
+  }
+}

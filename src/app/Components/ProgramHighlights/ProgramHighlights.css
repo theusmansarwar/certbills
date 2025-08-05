@@ -1,0 +1,60 @@
+.program-highlights {
+  width: calc(100% - 120px);
+  height: fit-content;
+  padding: 60px;
+}
+
+.program-highlights .section-heading span {
+  color: var(--primary-color);
+}
+
+.program-highlights .highlights-list {
+  display: flex;
+  gap: 2%;
+}
+
+.program-highlights .highlights-list > div {
+  width: 32%;
+  box-sizing: border-box;
+}
+
+.program-highlights .highlights-list img {
+  width: 40px;
+}
+
+.program-highlights .highlights-list .guidance,
+.program-highlights .highlights-list .training {
+  border-left: 2px solid var(--primary-color);
+}
+.program-highlights .highlights-list .upskill,
+.program-highlights .highlights-list .guidance,
+.program-highlights .highlights-list .training {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 20px;
+}
+@media (max-width: 900px) {
+  .program-highlights {
+    padding: 10px;
+  }
+  .program-highlights .highlights-list {
+    flex-direction: column;
+    gap: 1%;
+  }
+  .program-highlights .highlights-list > div {
+    width: 100%;
+  }
+  .program-highlights .highlights-list .guidance,
+  .program-highlights .highlights-list .training {
+    border-top: 2px solid var(--primary-color);
+    border-left: none;
+  }
+  .program-highlights .highlights-list .upskill,
+  .program-highlights .highlights-list .guidance,
+  .program-highlights .highlights-list .training {
+    padding: 10px;
+  }
+}

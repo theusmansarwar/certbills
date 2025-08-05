@@ -1,0 +1,48 @@
+.advisor-card {
+  min-width: calc(31% - 30px);
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid gainsboro;
+  border-radius: var(--radius-one);
+  box-shadow: var(--default-box-shadow);
+  padding: 15px;
+}
+.advisor-card:last-child{
+  margin-right: 5px;
+}
+
+.advisor-card .left {
+  width: auto;
+  padding-top: 20px;
+  height: 180px;
+}
+
+.advisor-card .right {
+  width: 60%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.advisor-card .right .name {
+  font-size: var(--heading-three);
+  font-weight: var(--bold-font-weight);
+  color: var(--primary-color);
+}
+.advisor-card .right .experience {
+  font-size: var(--default-p-size);
+  font-weight: var(--default-font-weight);
+}
+.advisor-card .right .qualification {
+  font-size: var(--default-p-size);
+}
+@media(max-width:900px){
+  .advisor-card {
+  min-width: 410px;}
+}
+@media(max-width:768px){
+  .advisor-card {
+  min-width:95%;}
+}

@@ -1,0 +1,82 @@
+.success-story {
+  background-color: var(--background);
+  padding: 60px 90px ;
+}
+.success-story-img {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  background-image: url("/success-story.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius-one);
+  height: 400px;
+}
+.success-story-img .overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.success-story-img .overlay strong {
+  font-size: var(--heading-two);
+  color: var(--background);
+}
+.success-story-img .overlay p {
+  color: var(--background);
+}
+.readnow-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+  background: var(--gradient-one);
+  padding: 8px 20px;
+  border-radius: 6px;
+  width: fit-content;
+  cursor: pointer;
+  box-shadow: var(--default-box-shadow);
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden; /* Ensures absolutely-positioned icon doesn't overflow */
+}
+
+.readnow-btn span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Make sure parent is relative */
+.readnow-btn .arrow-icon {
+  position: absolute;
+  right: 8px;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.readnow-btn:hover span {
+  transform: translateX(-8px);
+}
+
+.readnow-btn:hover .arrow-icon {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+@media (max-width: 900px) {
+  .success-story {
+  padding: 20px 10px ;
+}
+  .success-story-img .overlay strong {
+    font-size: var(--heading-three);
+  }
+  .success-story-img {
+    height: 250px;
+    padding-left: 10px;
+  }
+}

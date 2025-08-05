@@ -1,0 +1,159 @@
+.course-category-hero {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  background-color: #091525;
+  color: var(--background);
+}
+.course-category-hero .category-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 60px;
+  padding-right: 0;
+}
+.course-category-hero .category-content .category-title {
+  font-size: var(--heading-one);
+  font-weight: var(--bold-font-weight);
+}
+.course-category-hero
+  .category-content
+  .impact-parent-container
+  .impact-container
+  strong {
+  font-size: var(--heading-four);
+  font-weight: var(--default-font-weight);
+}
+.course-category-hero
+  .category-content
+  .impact-parent-container
+  .impact-container
+  span {
+  font-size: var(--default-p-size);
+}
+.course-category-hero .category-content .impact-parent-container {
+  display: flex;
+  gap: 20px;
+}
+.course-category-hero
+  .category-content
+  .impact-parent-container
+  .impact-container:last-child {
+  border-left: 3px solid white;
+  padding-left: 20px;
+}
+.course-category-hero .category-content .impact-container {
+  display: flex;
+  flex-direction: column;
+}
+.course-category-hero .category-content .btn-container {
+  display: flex;
+  gap: 20px;
+}
+.course-category-hero .category-content .filled-btn {
+  background: var(--gradient-one);
+  border: 1px solid transparent;
+  border-radius: var(--radius-one);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  padding: 8px 14px;
+  border-radius: var(--radius-three);
+  font-size: var(--default-p-size);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.course-category-hero .category-content .outlined-btn {
+  background-color: transparent;
+  border: 1px solid var(--background);
+  padding: 8px 14px;
+  border-radius: var(--radius-three);
+  font-size: var(--default-p-size);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+}
+.course-category-hero .category-content .filled-btn:hover {
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--default-box-shadow2);
+  background: transparent;
+}
+.course-category-hero .category-content .outlined-btn:hover {
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--default-box-shadow2);
+}
+.course-category-hero .category-content .outlined-btn svg {
+  font-size: var(--default-icon-size);
+}
+@media (max-width: 900px) {
+  .course-category-hero {
+    background-image: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .course-category-hero .category-content {
+    width: 100%;
+    padding: 20px;
+  }
+  .course-category-hero .category-content .category-title {
+    font-size: var(--heading-four);
+  }
+  .course-category-hero .category-content .category-description {
+    font-size: var(--default-p-size);
+  }
+  .course-category-hero .category-content .impact-parent-container {
+    display: flex;
+    gap: 10px;
+  }
+  .course-category-hero
+    .category-content
+    .impact-parent-container
+    .impact-container:last-child {
+    border-left: 3px solid white;
+    padding-left: 10px;
+  }
+  .course-category-hero
+    .category-content
+    .impact-parent-container
+    .impact-container {
+    display: flex;
+    flex: 1;
+  }
+  .course-category-hero
+    .category-content
+    .impact-parent-container
+    .impact-container
+    strong {
+    font-size: var(--heading-three);
+  }
+  .course-category-hero
+    .category-content
+    .impact-parent-container
+    .impact-container
+    span {
+    font-size: var(--default-p-size);
+  }
+  .course-category-hero .category-content .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .course-category-hero .category-content .filled-btn {
+    padding: 8px 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .course-category-hero .category-content .outlined-btn {
+    padding: 4px 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

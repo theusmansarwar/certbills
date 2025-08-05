@@ -1,0 +1,94 @@
+.category-course-card {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--default-box-shadow);
+  border-radius: var(--radius-three);
+  transition: transform 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.category-course-card .card-detail {
+  height: fit-content;
+  min-height: 80px;
+  width: 100%;
+  padding: 8px 15px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category-course-card .card-detail h3 {
+  font-size: var(--heading-three);
+  font-weight: 500;
+}
+
+.category-course-card .card-btn {
+  height: fit-content;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-one);
+  color: var(--background);
+  font-weight: var(--bold-font-weight);
+  padding: 10px 0;
+  border-radius: var(--radius-three);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: 1px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+.category-course-card .card-btn:hover p {
+  background: var(--gradient-one);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.category-course-card .card-btn:hover {
+  border: 1px solid transparent;
+  border-radius: var(--radius-one);
+  background: linear-gradient(to right, var(--background), var(--background)),
+    var(--gradient-one);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  box-shadow: var(--default-box-shadow2);
+}
+.category-course-card:hover {
+  border: 1px solid transparent;
+  border-radius: var(--radius-one);
+  background: linear-gradient(to right, var(--background), var(--background)),
+    var(--gradient-one);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  transform: scale(1.02);
+}
+@media (max-width: 900px) {
+  .category-course-card:hover {
+    transform: scale(1);
+  }
+  .category-course-card {
+    width: 48%;
+  }
+  .category-course-card .card-img {
+    height: 100px !important;
+  }
+  .category-course-card .card-detail {
+    min-height: 40px;
+  }
+
+  .category-course-card .card-detail h3 {
+    font-size: var(--default-p-size);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .category-course-card .card-btn p {
+    font-size: var(--default-p-size);
+  }
+}

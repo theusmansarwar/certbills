@@ -1,0 +1,198 @@
+.success-story-hero {
+  width: 100%;
+}
+.success-story-hero-img {
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  background-image: url("/success-story.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+.success-story-hero-img .overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.success-story-hero-img .overlay h1 {
+  font-weight: var(--bold-font-weight);
+  font-size: var(--heading-two);
+  color: var(--background);
+  line-height: 1.2;
+}
+
+.readnow-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+  background: var(--gradient-one);
+  padding: 8px 20px;
+  border-radius: 6px;
+  width: fit-content;
+  cursor: pointer;
+  box-shadow: var(--default-box-shadow);
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden; /* Ensures absolutely-positioned icon doesn't overflow */
+}
+
+.readnow-btn span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Make sure parent is relative */
+.readnow-btn .arrow-icon {
+  position: absolute;
+  right: 8px;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.readnow-btn:hover span {
+  transform: translateX(-8px);
+}
+
+.readnow-btn:hover .arrow-icon {
+  opacity: 1;
+  transform: translateX(0);
+}
+.success-stories-impact {
+  height: fit-content;
+  box-shadow: var(--default-box-shadow);
+  border-radius: var(--radius-two);
+  position: relative;
+  top: -60px;
+  z-index: 1;
+  width: 90%;
+  margin-left: 5%;
+  background-color: var(--forground);
+}
+
+.success-stories-impact .impact-content {
+  padding: 40px 10px;
+  display: flex;
+  align-items: center;
+}
+.success-stories-impact .impact-content .left {
+  width: 70%;
+  height: fit-content;
+}
+.success-stories-impact .impact-content .left h3 {
+  color: var(--primary-color);
+  font-size: var(--heading-four);
+  font-weight: var(--bold-font-weight);
+  margin-bottom: 10px;
+}
+.success-stories-impact .impact-content .left p {
+  color: #222;
+  font-size: var(--default-p-size);
+  font-weight: var(--default-font-weight);
+}
+.success-stories-impact .impact-content .right {
+  width: 30%;
+  height: 150px;
+}
+
+.success-story-hero
+  .success-stories-impact
+  .marquee-container
+  .marquee-heading {
+  font-size: var(--heading-four);
+  font-weight: var(--default-font-weight);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.success-story-hero .success-stories-impact .marquee-container {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: var(--radius-two);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative;
+}
+
+.success-story-hero .success-stories-impact .marquee-wrapper {
+  overflow: hidden;
+  width: 98%;
+  margin-left: 1%;
+}
+
+.success-story-hero .success-stories-impact .marquee-track {
+  display: flex;
+  width: max-content;
+  width: fit-content;
+  animation: scroll-marquee 20s linear infinite;
+}
+
+.success-story-hero .success-stories-impact .marquee-image {
+  height: 40px;
+  width: auto;
+  margin: 0 30px;
+  object-fit: contain;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 900px) {
+  .success-story-hero-img .overlay h1 {
+    font-size: var(--heading-four);
+  }
+  .success-story-hero-img {
+    height: 250px;
+    padding-left: 10px;
+  }
+  .success-stories-impact {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0px;
+    top: 0px;
+  }
+  .success-stories-impact .impact-content {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .success-stories-impact .impact-content .left {
+    width: 100%;
+  }
+  .success-stories-impact .impact-content .right {
+    width: 100%;
+    height: 150px;
+  }
+  .success-story-hero
+    .success-stories-impact
+    .marquee-container
+    .marquee-heading {
+    font-size: var(--heading-three);
+  }
+  .success-story-hero .success-stories-impact .marquee-container {
+    padding: 20px 0;
+    border-radius: 0px;
+  }
+  .success-story-hero .success-stories-impact .marquee-wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+  .success-story-hero .success-stories-impact .marquee-image {
+    height: 30px;
+    width: auto;
+    margin: 0 10px;
+    object-fit: contain;
+  }
+}

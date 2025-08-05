@@ -1,0 +1,20 @@
+.all-vendors .vendors-heading {
+  background-color: var(--forground);
+  padding: 15px;
+}
+.vendors-courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  justify-self: center;
+  padding: 40px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+@media (max-width: 900px) {
+  .vendors-courses-list {
+    padding: 10px;
+    gap: 10px;
+  }
+}

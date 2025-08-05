@@ -1,0 +1,27 @@
+.in-demand-courses-detail .components-container{
+    display: flex;
+    width: 100%;
+}
+.in-demand-courses-detail .components-container .video-testimonial {
+  width: 50%;
+}
+.in-demand-courses-detail .components-container .video-testimonial .thumbnail-container {
+  width: 50%;
+  height: 300px;
+}
+.in-demand-courses-detail .components-container .video-testimonial iframe  {
+  width: 50%;
+  height: 300px;
+}
+.in-demand-courses-detail .components-container .get-certification {
+  background-color:var(--dark);
+  padding: 60px;
+  width: 50%;
+}
+.get-certification .left {
+ 
+  display: none;
+}
+.get-certification .right {
+  width: 100%;
+}

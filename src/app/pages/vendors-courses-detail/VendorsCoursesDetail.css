@@ -1,0 +1,26 @@
+.vendors-courses-detail .section-heading {
+  margin-top: 40px;
+}
+.vendors-courses-detail .courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  justify-self: center;
+  width: 90%;
+  margin: 40px 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .vendors-courses-detail .section-heading {
+    margin-top: 20px;
+  }
+  .vendors-courses-detail .courses-list {
+    gap: 10px;
+    margin: 20px 0;
+    padding: 0%;
+    width: 98%;
+    margin-left: 1%;
+  }
+}

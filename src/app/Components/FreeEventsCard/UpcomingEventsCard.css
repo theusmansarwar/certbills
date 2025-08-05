@@ -1,0 +1,115 @@
+.upcoming-event-card {
+  width: 350px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--default-box-shadow);
+  border-radius: var(--radius-one);
+  transition: transform 0.2s ease;
+  border: 1px solid transparent;
+   background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.upcoming-event-card .card-detail {
+  height: fit-content;
+  width: calc(100% - 30px);
+  padding: 8px 15px;
+  background-color: var(--forground);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom-left-radius: var(--radius-one);
+  border-bottom-right-radius: var(--radius-one);
+}
+.upcoming-event-card .card-detail .free-training {
+  background-color: #00a5373f;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #00a537b2;
+  border-radius: 50px;
+  padding: 6px 16px;
+}
+.upcoming-event-card .card-detail .free-training h3 {
+  font-size: var(--heading-four);
+}
+
+.upcoming-event-card .card-detail .date-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.upcoming-event-card .card-detail .registered-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.upcoming-event-card .card-detail h3 {
+  font-size: var(--heading-four);
+  font-weight: 500;
+}
+.upcoming-event-card .card-detail .date-container .date {
+  font-size: 12px;
+}
+.upcoming-event-card .card-detail .date-container p {
+  font-size: var(--small-p-size);
+}
+.upcoming-event-card .card-detail .date-container svg,
+.upcoming-event-card .card-detail .registered-container svg {
+  color: var(--primary-color);
+  font-size: var(--default-icon-size);
+}
+.upcoming-event-card .card-btn {
+  height: fit-content;
+  width: fit-content;
+  border-radius: var(--radius-three);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-one);
+  color: var(--background);
+  font-weight: var(--bold-font-weight);
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+    border: 1px solid transparent;
+ 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+.upcoming-event-card .card-btn:hover {
+   box-shadow: var(--default-box-shadow);
+  border: 1px solid transparent;
+  border-radius: var(--radius-three);
+  background: linear-gradient(to right, var(--background), var(--background)),
+    var(--gradient-one);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  
+}
+.upcoming-event-card .card-btn:hover p {
+  background: var(--gradient-one);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+.upcoming-event-card:hover {
+  border: 1px solid transparent;
+  border-radius: var(--radius-one);
+  background: linear-gradient(to right, var(--background), var(--background)),
+    var(--gradient-one);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  transform: scale(1.02);
+}
+@media (max-width: 900px) {
+  .upcoming-event-card:hover {
+    transform: scale(1);
+  }
+  .upcoming-event-card .card-img{
+    height: 170px !important;
+  }
+}

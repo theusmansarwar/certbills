@@ -1,0 +1,145 @@
+.who-can-benefit {
+  width: calc(100% - 80px);
+  display: flex;
+  padding: 40px;
+  
+}
+.who-can-benefit .left {
+  width: 50%;
+}
+
+.who-can-benefit .left .section-heading span {
+  color: var(--background);
+}
+.who-can-benefit .left .box-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.who-can-benefit .left .box {
+  color: var(--dark);
+  background-color: var(--background);
+  padding: 20px 10px;
+  height: 180px;
+  text-align: left;
+  flex: 1;
+}
+.who-can-benefit .left img {
+  width: 40px;
+  align-self: self-start;
+  margin-bottom: 10px;
+}
+.who-can-benefit .left .box strong {
+  font-weight: var(--bold-font-weight);
+}
+.who-can-benefit .left .box p {
+  font-size: var(--small-p-size);
+  font-weight: 400;
+}
+.who-can-benefit .left .line-img {
+  width: 100%;
+  margin-top: 50px;
+}
+.who-can-benefit .right {
+  width: 50%;
+  height: fit-content;
+}
+.who-can-benefit .right form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 60%;
+  margin-left: 30%;
+  border: 1px solid var(--dark);
+  border-radius: var(--radius-three);
+  margin-top: 30px;
+}
+.who-can-benefit .right form strong {
+  background-color: var(--secondary-color);
+  color: var(--background);
+  width: fit-content;
+  padding: 20px;
+  border-radius: var(--radius-one);
+  margin-top: -30px;
+}
+.who-can-benefit .right form input {
+  outline: none;
+  padding: 10px;
+  width: 80%;
+  border-radius: var(--radius-three);
+  border: 1px solid gainsboro;
+}
+.who-can-benefit .right form input:focus-within {
+  border: 1px solid transparent;
+  border-radius: var(--radius-one);
+  background: linear-gradient(to right, var(--background), var(--background)),
+    var(--gradient-two);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.who-can-benefit .right form .free-session-btn {
+  background: var(--gradient-three);
+  border: 1px solid transparent;
+  border-radius: var(--radius-three);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  padding: 14px;
+  font-size: var(--small-p-size);
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 80%;
+  color: var(--background);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 10px 0;
+}
+.who-can-benefit .right form .free-session-btn:hover {
+  border: 1px solid var(--secondary-color);
+  background: transparent;
+}
+.who-can-benefit .right .note {
+  font-size: 12px;
+  width: 60%;
+  margin-left: 30%;
+  margin-top: 10px;
+  text-align: center;
+}
+.who-can-benefit .right .note span {
+  font-weight: var(--bold-font-weight);
+}
+@media (max-width: 900px) {
+  .who-can-benefit {
+    flex-direction: column;
+    padding: 40px 10px;
+  }
+  .who-can-benefit .left {
+    width: 100%;
+  }
+  .who-can-benefit .left .line-img {
+    margin-top: 10px;
+  }
+  .who-can-benefit .right {
+    width: 100%;
+  }
+  .who-can-benefit .right form {
+    width: 100%;
+    margin-left: 0;
+  }
+  .who-can-benefit .right .note {
+    width: 100%;
+    margin-left: 0%;
+  }
+}

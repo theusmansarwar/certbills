@@ -1,0 +1,53 @@
+.related-course-card {
+  min-width: 32.33%;
+  flex-shrink: 0;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid gainsboro;
+  border-radius: var(--radius-one);
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+.related-course-card .related-course-detail h3 {
+  font-size: var(--heading-four);
+  font-weight: 500;
+}
+.related-course-card .related-course-btn {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--forground);
+  color: var(--dark);
+  font-weight: var(--bold-font-weight);
+  padding: 10px 0;
+  border-radius: var(--radius-one);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.related-course-card .related-course-btn:hover {
+  background: var(--gradient-one);
+  color: var(--background);
+}
+.related-course-card:hover {
+  border: 1px solid transparent;
+  border-radius: var(--radius-one);
+  background: linear-gradient(to right, var(--background), var(--background)),
+    var(--gradient-one);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  transform: scale(1.02);
+}
+@media (max-width: 900px) {
+  .related-course-card {
+    min-width: 100%;
+  }
+  .related-course-card:hover {
+    transform: scale(1);
+  }
+  
+}

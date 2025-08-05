@@ -1,0 +1,45 @@
+.courses-category-card {
+  width: 200px;
+  height: fit-content;
+  padding: 20px;
+  background-color: var(--background);
+  border: 1px solid rgb(200, 194, 194);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-one);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.courses-category-card:hover {
+  box-shadow: var(--default-box-shadow);
+  border: 1px solid transparent;
+  border-radius: var(--radius-one);
+  background: linear-gradient(to right, var(--background), var(--background)),
+    var(--gradient-one);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+.courses-category-card h3 {
+  font-size: var(--heading-four);
+  transition: all 0.3s ease;
+  text-align: center;
+  font-weight: 500;
+}
+
+.courses-category-card:hover h3 {
+  background: var(--gradient-one);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 900px) {
+  .courses-category-card {
+    width: 160px;
+    padding: 8px;
+  }
+  .courses-category-card h3 {
+  font-size: var(--default-p-size);
+}
+
+}

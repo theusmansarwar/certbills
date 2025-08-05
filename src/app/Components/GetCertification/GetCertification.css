@@ -1,0 +1,81 @@
+.get-certification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  padding: 60px;
+}
+.get-certification .left {
+  width: 50%;
+}
+.get-certification .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.get-certification .left h2 {
+  color: var(--background);
+  line-height: 1.5;
+  font-size: var(--heading-two);
+  width: 60%;
+}
+.get-certification .right strong {
+  color: var(--background);
+  font-size: var(--heading-two);
+  font-weight: var(--bold-font-weight);
+  text-align: center;
+}
+.get-certification .right img {
+  width: 50%;
+}
+.get-certification .right .certification-btn {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-one);
+  color: var(--background);
+  font-weight: var(--default-font-weight);
+  padding: 10px;
+  border-radius: var(--radius-one);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: -2px 2px 5px var(--background);
+  border: 1px solid var(--forground);
+}
+.get-certification .right .certification-btn:hover {
+  background: transparent;
+  border: 1px solid var(--forground);
+  box-shadow: none;
+}
+.get-certification .right .certification-btn:hover p {
+  color: var(--background);
+}
+@media (max-width: 900px) {
+  .get-certification {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  .get-certification .left {
+    width: 100%;
+  }
+  .get-certification .right {
+    width: 100%;
+  }
+  .get-certification .left h2 {
+    width: 100%;
+    text-align: center;
+    font-size: var(--heading-three);
+    line-height: 1.2;
+  }
+  .get-certification .right strong {
+    color: var(--background);
+    font-size: var(--heading-three);
+    font-weight: var(--bold-font-weight);
+    text-align: center;
+  }
+}

@@ -1,0 +1,51 @@
+.testimonial-card {
+  min-width: 32%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid gainsboro;
+  border-radius: var(--radius-one);
+  box-shadow: var(--default-box-shadow);
+  padding: 15px;
+}
+.testimonial-card:last-child {
+  margin-right: 5px;
+}
+.testimonial-card .testimonial-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  border: 1px solid var(--forground);
+}
+.testimonial-card .name {
+  font-size: var(--heading-three);
+  font-weight: var(--bold-font-weight);
+}
+.testimonial-card .review {
+  font-size: var(--default-p-size);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .testimonial-card {
+    min-width: 400px;
+    height: fit-content;
+  }
+}
+@media (max-width: 768px) {
+  .testimonial-card {
+    min-width: 345px;
+    height: fit-content;
+  }
+}
+@media (max-width: 480px) {
+  .testimonial-card {
+    min-width: 310px;
+    height: fit-content;
+  }
+}

@@ -1,0 +1,30 @@
+.why-choose-card {
+  width: auto;
+  min-width: 250px;
+  height: 80px;
+  padding: 20px;
+  background-color: var(--background);
+  border: 1px solid rgb(200, 194, 194);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: var(--radius-one);
+}
+
+.why-choose-card h3 {
+  font-size: var(--heading-four );
+  transition: all 0.3s ease;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+
+@media (max-width: 900px) {
+  .why-choose-card {
+    width: 96%;
+    padding: 8px;
+  }
+  .why-choose-card h3 {
+    font-size: var(--default-p-size);
+  }
+}

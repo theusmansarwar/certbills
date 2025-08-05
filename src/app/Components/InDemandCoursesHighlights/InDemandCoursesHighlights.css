@@ -1,0 +1,32 @@
+.in-demand-highlights {
+  padding: 60px;
+}
+.in-demand-highlights .highlights-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+.in-demand-highlights .highlights-list .why-choose-card {
+  width: 32%;
+}
+
+@media (max-width: 900px) {
+  .in-demand-highlights {
+    padding: 10px;
+  }
+  .in-demand-highlights .section-heading{
+    text-align: left;
+    margin-left: 0;
+  }
+  .in-demand-highlights .highlights-list {
+    width: 100%;
+    margin-left: 0%;
+    gap: 10px;
+  }
+  .in-demand-highlights .highlights-list .why-choose-card {
+  width: 100%;
+}
+}

@@ -1,0 +1,47 @@
+.benefits-of-certification {
+  width: 90%;
+  margin-left: 5%;
+  height: fit-content;
+}
+.benefits-of-certification .benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  justify-self: center;
+  margin: 40px 0;
+  position: relative;
+}
+.benefits-of-certification .each-benefit {
+  width: 23.9%;
+  height: fit-content;
+  min-height: 150px;
+  border: 2px solid var(--primary-color);
+  padding: 20px 10px;
+  border-radius: var(--radius-one);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.benefits-of-certification .each-benefit h3 {
+  font-size: var(--heading-four);
+  color: var(--primary-color);
+}
+.benefits-of-certification .each-benefit p {
+  font-size: var(--default-p-size);
+}
+@media (max-width: 900px) {
+  .benefits-of-certification {
+    width: 96%;
+    margin-left: 2%;
+  }
+  .benefits-of-certification .benefits-list {
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .benefits-of-certification .each-benefit {
+    width: 100%;
+    height: fit-content;
+  }
+}

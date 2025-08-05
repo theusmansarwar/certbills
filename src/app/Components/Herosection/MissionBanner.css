@@ -1,0 +1,86 @@
+.mission-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: var(--gradient-one);
+  color: white;
+  font-family: sans-serif;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: var(--default-p-size);
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatars {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+  margin-left: -10px;
+  z-index: 1;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.learner-count {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.user-icon {
+  font-size: 16px;
+}
+
+.num-box {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  width: 18px;
+  height: 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  margin-left: 5px;
+  font-size: 13px;
+}
+@media (max-width:900px){
+   .mission-banner {
+    flex-direction: column;
+ justify-content: center;
+ 
+  align-items: center;
+
+} 
+.left-section {
+ text-align: center;
+ margin-bottom: 10px;
+}
+}

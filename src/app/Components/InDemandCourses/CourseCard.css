@@ -1,0 +1,72 @@
+.course-card {
+  width: 250px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--default-box-shadow);
+  border-radius: var(--radius-one);
+  border: 1px solid transparent;
+  transition: transform 0.2s ease;
+}
+
+.course-card .card-detail {
+  height: fit-content;
+  width: calc(100% - 30px);
+  padding: 8px 15px;
+  background-color: var(--forground);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.course-card .card-detail .main-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.course-card .card-detail h3 {
+  font-size: var(--heading-three);
+  font-weight: 500;
+}
+.course-card .card-detail .main-detail p {
+  font-size: var(--default-p-size);
+}
+.course-card .card-detail .main-detail svg {
+  color: var(--primary-color);
+  font-size: var(--default-icon-size);
+}
+.course-card .card-btn {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-two);
+  color: var(--background);
+  font-weight: var(--bold-font-weight);
+  padding: 10px 0;
+  border-bottom-left-radius: var(--radius-one);
+  border-bottom-right-radius: var(--radius-one);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.course-card .card-btn:hover {
+  background: var(--gradient-one);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.course-card:hover {
+  border: 1px solid transparent;
+  border-radius: var(--radius-one);
+  background: linear-gradient(to right, var(--background), var(--background)),
+    var(--gradient-one);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  transform: scale(1.02);
+}
+@media (max-width: 900px) {
+  .course-card:hover {
+    transform: scale(1);
+  }
+}
