@@ -6,7 +6,7 @@
   color: var(--background);
 }
 .course-category-hero .category-content {
-  width: 70%;
+  width: calc(70% - 60px);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -97,7 +97,7 @@
     width: calc(100% - 20px);
   }
   .course-category-hero .category-content {
-    width: 100%;
+   width: calc(100% - 40px);
     padding: 20px;
   }
   .course-category-hero .category-content .category-title {

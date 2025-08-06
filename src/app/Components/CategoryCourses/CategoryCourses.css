@@ -14,6 +14,7 @@
 @media (max-width: 900px) {
   .category-courses {
     padding: 20px 10px;
+    width: calc(100% - 20px);
   }
   .category-courses .category-courses-list {
     gap: 10px;

@@ -33,19 +33,7 @@
 
 @media (max-width: 900px) {
   .testimonial-card {
-    min-width: 400px;
-    height: fit-content;
-  }
-}
-@media (max-width: 768px) {
-  .testimonial-card {
-    min-width: 345px;
-    height: fit-content;
-  }
-}
-@media (max-width: 480px) {
-  .testimonial-card {
-    min-width: 310px;
+     min-width: 100%;
     height: fit-content;
   }
 }

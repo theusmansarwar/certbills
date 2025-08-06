@@ -157,15 +157,15 @@ const CategoryDetail = () => {
   ];
   return (
     <div>
-      <CourseCategoryHero />
-      <CategoryCourses />
-      <CategoryCareer data={careerContent} />
+      {/* <CourseCategoryHero /> */}
+      {/* <CategoryCourses /> */}
+      {/* <CategoryCareer data={careerContent} /> */}
 
-      <CourseAdvisors data={advisorsList} />
-      <WhyChoose />
+      {/* <CourseAdvisors data={advisorsList} /> */}
+      {/* <WhyChoose /> */}
       <Testimonial heading="Our Happy Gladiators" data={testimonialList} />
-      <Faqs data={faqs} />
-      <DetailPageContact />
+      {/* <Faqs data={faqs} />
+      <DetailPageContact /> */}
     </div>
   );
 };

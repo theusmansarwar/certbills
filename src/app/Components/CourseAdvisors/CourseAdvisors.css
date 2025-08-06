@@ -1,5 +1,6 @@
-.course-advisors{
+.course-advisors {
   padding: 60px 70px;
+  width: calc(100% - 140px);
 }
 .course-advisors .advisors-list {
   display: flex;
@@ -11,7 +12,6 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
-
 }
 
 .course-pagination {
@@ -27,7 +27,6 @@
   cursor: pointer;
   color: var(--primary-color);
   transition: 0.3s;
-  
 }
 
 .course-pagination .disabled-arrow {
@@ -35,12 +34,14 @@
   cursor: not-allowed;
 }
 
-
 @media (max-width: 900px) {
-  .course-advisors{
-  padding: 20px 0px;
-}
+  .course-advisors {
+    padding: 20px 0px;
+    width: 100%;
+  }
   .course-advisors .advisors-list {
+    width: 100%;
+     margin-left: 0%;
     flex-wrap: nowrap;
     overflow-x: auto;
     justify-content: flex-start;
@@ -52,32 +53,3 @@
     display: none;
   }
 }
-
-@media (max-width: 768px) {
-  .course-advisors .advisors-list {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: flex-start;
-    padding-left: 0px;
-    scroll-snap-type: x mandatory;
-  }
-
-  .advisor-card {
-    flex: 0 0 80%;
-    max-width: 49%;
-    scroll-snap-align: start;
-  }
-
-  .course-advisors .advisors-list::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .advisor-card {
-    flex: 0 0 100%;
-    max-width: 100%;
-    scroll-snap-align: start;
-  }
-}
-

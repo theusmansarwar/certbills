@@ -36,6 +36,7 @@
   .category-career {
     flex-direction: column;
     padding: 20px 10px;
+    width: calc(100% - 20px);
   }
   .category-career .left:first-child {
     display: none;
