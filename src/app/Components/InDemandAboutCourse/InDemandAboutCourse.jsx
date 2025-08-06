@@ -1,6 +1,6 @@
+'use client'
 import React, { useState, useEffect } from "react";
 import "./InDemandAboutCourse.css";
-import CISSPDomains from "../../assets/cissp-domains.png";
 import { BsShieldFillCheck } from "react-icons/bs";
 import { FaCheck } from "react-icons/fa6";
 import { IoChevronDown } from "react-icons/io5";
@@ -29,7 +29,7 @@ const InDemandAboutCourse = () => {
         "CISSP® is the most renowned certification in the information security domain...",
         "CISSP® is the most renowned certification in the information security domain...",
       ],
-      image: CISSPDomains,
+      image: '/cissp-domains.png',
     },
     {
       id: "course-curriculum",
@@ -123,7 +123,7 @@ const InDemandAboutCourse = () => {
   ];
 
   const [openSection, setOpenSection] = useState("");
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {

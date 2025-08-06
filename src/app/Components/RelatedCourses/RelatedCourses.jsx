@@ -1,7 +1,8 @@
+'use client'
 import React, { useEffect, useRef, useState } from "react";
 import "./RelatedCourses.css";
-import RelatedCoursesCard from "./RelatedCoursesCard";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import RelatedCoursesCard from "./RelatedCoursesCard";
 const RelatedCourses = ({ heading, data }) => {
   const scrollRef = useRef(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);

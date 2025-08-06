@@ -1,43 +1,42 @@
 import React from "react";
 import "./InDemandCoursesHighlights.css";
-import Icon1 from "../../assets/cyber-security.svg";
-import WhyChooseCard from "../WhyChooseCard";
+import WhyChooseCard from "../WhyChoose/WhyChooseCard";
 const InDemandCoursesHighlights = () => {
   const highlightsList = [
     {
-      CategoryIcon: Icon1,
+      CategoryIcon: '/cyber-security.svg',
       CategoryTitle: "48-Hour Instructor-Led Training",
     },
     {
-      CategoryIcon: Icon1,
+      CategoryIcon: '/cyber-security.svg',
       CategoryTitle: "Full 8 Domain Exam Practice",
     },
     {
-      CategoryIcon: Icon1,
+      CategoryIcon: '/cyber-security.svg',
       CategoryTitle: "Online Test Simulations",
     },
     {
-      CategoryIcon: Icon1,
+      CategoryIcon: '/cyber-security.svg',
       CategoryTitle: "Learn Better with Flash Cards & Mind Maps",
     },
     {
-      CategoryIcon: Icon1,
+      CategoryIcon: '/cyber-security.svg',
       CategoryTitle: "98% Exam Pass Rate",
     },
     {
-      CategoryIcon: Icon1,
+      CategoryIcon: '/cyber-security.svg',
       CategoryTitle: "Highly Experienced Instructors",
     },
     {
-      CategoryIcon: Icon1,
+      CategoryIcon: '/cyber-security.svg',
       CategoryTitle: "Telegram Group for Exam Support",
     },
     {
-      CategoryIcon: Icon1,
+      CategoryIcon: '/cyber-security.svg',
       CategoryTitle: "Post Training Support Till Exam",
     },
     {
-      CategoryIcon: Icon1,
+      CategoryIcon: '/cyber-security.svg',
       CategoryTitle: "Access to Recorded Sessions",
     },
   ];

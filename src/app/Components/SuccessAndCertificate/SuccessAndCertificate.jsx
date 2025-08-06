@@ -1,8 +1,8 @@
+'use client'
 import React, { useState } from "react";
 import "./SuccessAndCertificate.css";
 import { HiOutlinePlay } from "react-icons/hi2";
-import Image1 from "../../assets/video-thumbnail.png";
-import Image2 from "../../assets/certification.png";
+
 
 const SuccessAndCertificate = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -20,7 +20,7 @@ const SuccessAndCertificate = () => {
           <div
             className="thumbnail-container"
             style={{
-              backgroundImage: `url(${Image1})`,
+              backgroundImage: `url(/video-thumbnail.png)`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -41,7 +41,7 @@ const SuccessAndCertificate = () => {
       </div>
       <div className="get-certification2">
         <h2 className="section-heading">Get a Sample Certificate</h2>
-        <img src={Image2} alt="Sample Certificate Image" />
+        <img src='/certification.png' alt="Sample Certificate Image" />
         <div className="certification-btn">
           <p>GET IN TOUCH</p>
         </div>

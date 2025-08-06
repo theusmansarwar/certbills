@@ -1,19 +1,15 @@
 import React from "react";
 import "./InDemandCoursesDetail.css";
-import InDemandCoursesDetailHero from "../../components/InDemandCoursesDetailHero/InDemandCoursesDetailHero";
-import InDemandCoursesHighlights from "../../components/InDemandCoursesHighlights/InDemandCoursesHighlights";
-import InDemandAboutCourse from "../../components/InDemandAboutCourse/InDemandAboutCourse";
-import HowWeHelp from "../../components/HowWeHelp/HowWeHelp";
-import CareerTransformation from "../../components/CareerTransformation/CareerTransformation";
-import Image from "../../assets/krish.png";
-import CourseAdvisors from "../CourseAdvisors";
-import Testimonial from "../Testimonial";
-import VideoTestimonial from "../../components/VideoTestimonial";
-import GetCertification from "../../components/GetCertification/GetCertification";
-import SuccessAndCertificate from "../../components/SuccessAndCertificate/SuccessAndCertificate";
-import RelatedCourses from "../../components/RelatedCourses/RelatedCourses";
-import Faqs from "../../components/Faqs";
-import Footer from "../../components/Footer/Footer";
+import Faqs from "@/app/Components/Faqs/Faqs";
+import RelatedCourses from "@/app/Components/RelatedCourses/RelatedCourses";
+import SuccessAndCertificate from "@/app/Components/SuccessAndCertificate/SuccessAndCertificate";
+import Testimonial from "@/app/Components/Testimonials/Testimonial";
+import CourseAdvisors from "@/app/Components/CourseAdvisors/CourseAdvisors";
+import CareerTransformation from "@/app/Components/CareerTransformation/CareerTransformation";
+import HowWeHelp from "@/app/Components/HowWeHelp/HowWeHelp";
+import InDemandAboutCourse from "@/app/Components/InDemandAboutCourse/InDemandAboutCourse";
+import InDemandCoursesHighlights from "@/app/Components/InDemandCoursesHighlights/InDemandCoursesHighlights";
+import InDemandCoursesDetailHero from "@/app/Components/InDemandCoursesDetailHero/InDemandCoursesDetailHero";
 
 const InDemandCoursesDetail = () => {
   const careerContent = {
@@ -32,49 +28,49 @@ const InDemandCoursesDetail = () => {
   };
   const advisorsList = [
     {
-      AdvisorImage: Image,
+      AdvisorImage:'/krish.png',
       AdvisorName: "Krish",
       AdvisorExperience: "18",
       AdvisorQualification:
         "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
     },
     {
-      AdvisorImage: Image,
+      AdvisorImage:'/krish.png',
       AdvisorName: "Krish",
       AdvisorExperience: "18",
       AdvisorQualification:
         "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
     },
     {
-      AdvisorImage: Image,
+      AdvisorImage:'/krish.png',
       AdvisorName: "Krish",
       AdvisorExperience: "18",
       AdvisorQualification:
         "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
     },
     {
-      AdvisorImage: Image,
+      AdvisorImage:'/krish.png',
       AdvisorName: "Prabh Nair",
       AdvisorExperience: "10",
       AdvisorQualification:
         "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
     },
     {
-      AdvisorImage: Image,
+      AdvisorImage:'/krish.png',
       AdvisorName: "Sanyam Negi",
       AdvisorExperience: "8",
       AdvisorQualification:
         "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
     },
     {
-      AdvisorImage: Image,
+      AdvisorImage:'/krish.png',
       AdvisorName: "Sanyam Negi",
       AdvisorExperience: "8",
       AdvisorQualification:
         "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
     },
     {
-      AdvisorImage: Image,
+      AdvisorImage:'/krish.png',
       AdvisorName: "Sanyam Negi",
       AdvisorExperience: "8",
       AdvisorQualification:
@@ -83,56 +79,56 @@ const InDemandCoursesDetail = () => {
   ];
   const testimonialList = [
     {
-      image: Image,
+      image:'/krish.png',
       name: "Krish",
       country: "Canada",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
     },
     {
-      image: Image,
+      image:'/krish.png',
       name: "John Doe",
       country: "Canada",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
     },
     {
-      image: Image,
+      image:'/krish.png',
       name: "Krish",
       country: "Canada",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
     },
     {
-      image: Image,
+      image:'/krish.png',
       name: "Krish",
       country: "Canada",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
     },
     {
-      image: Image,
+      image:'/krish.png',
       name: "Krish",
       country: "Canada",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
     },
     {
-      image: Image,
+      image:'/krish.png',
       name: "Krish",
       country: "Canada",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
     },
     {
-      image: Image,
+      image:'/krish.png',
       name: "Krish",
       country: "Canada",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
     },
     {
-      image: Image,
+      image:'/krish.png',
       name: "Krish",
       country: "Canada",
       review:
@@ -212,7 +208,7 @@ const InDemandCoursesDetail = () => {
       <RelatedCourses heading="Other Related Courses" data={coursesData} />
       <RelatedCourses heading="Related Blogs" data={blogsData} />
       <Faqs data={faqs} /> 
-      <Footer/>
+    
     </div>
   );
 };

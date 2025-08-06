@@ -1,6 +1,5 @@
 import React from "react";
 import "./InDemandCoursesDetailHero.css";
-import Image from "../../assets/cissp.png";
 import { BsShieldFillCheck } from "react-icons/bs";
 const InDemandCoursesDetailHero = ({ data }) => {
   return (
@@ -42,7 +41,7 @@ const InDemandCoursesDetailHero = ({ data }) => {
       <div
         className="right"
         style={{
-          backgroundImage: `url(${Image})`,
+          backgroundImage: `url(/cissp.png)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
           backgroundPosition: "center",
