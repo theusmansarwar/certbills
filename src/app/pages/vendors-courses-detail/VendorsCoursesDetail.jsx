@@ -1,37 +1,37 @@
+'use client'
 import React from "react";
 import "./VendorsCoursesDetail.css";
-import VendorsDetailHero from "../../components/VendorsDetailHero/VendorsDetailHero";
-import Image1 from "../../assets/course-img.jpg";
-import CategoryCourseCard from "../../components/CategoryCourses/CategoryCourseCard";
-import Confused from "../../components/Confused/Confused";
-import ChooseByDomain from "../../components/ChooseByDomain/ChooseByDomain";
-import GetCertification from "../../components/GetCertification/GetCertification";
-import BenefitsOfCertification from "../../components/BenefitsOfCertification/BenefitsOfCertification";
+import VendorsDetailHero from "@/app/Components/VendorsDetailHero/VendorsDetailHero";
+import CategoryCourseCard from "@/app/Components/CategoryCourses/CategoryCourseCard";
+import Confused from "@/app/Components/Confused/Confused";
+import ChooseByDomain from "@/app/Components/ChooseByDomain/ChooseByDomain";
+import GetCertification from "@/app/Components/GetCertification/GetCertification";
+import BenefitsOfCertification from "@/app/Components/BenefitsOfCertification/BenefitsOfCertification";
 
 const VendorsCoursesDetail = () => {
   const coursesData = [
     {
-      CourseImage: Image1,
+      CourseImage: '/course-img.jpg',
       CourseTitle: "Cyber Security",
       CourseTime: "48",
     },
     {
-      CourseImage: Image1,
+      CourseImage: '/course-img.jpg',
       CourseTitle: "Ethical Hacking",
       CourseTime: "36",
     },
     {
-      CourseImage: Image1,
+      CourseImage: '/course-img.jpg',
       CourseTitle: "Ethical Hacking",
       CourseTime: "36",
     },
     {
-      CourseImage: Image1,
+      CourseImage: '/course-img.jpg',
       CourseTitle: "Ethical Hacking",
       CourseTime: "36",
     },
     {
-      CourseImage: Image1,
+      CourseImage: '/course-img.jpg',
       CourseTitle: "Ethical Hacking",
       CourseTime: "36",
     },

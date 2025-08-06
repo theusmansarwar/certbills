@@ -1,10 +1,9 @@
 import React from "react";
 import "./VendorsDetailHero.css";
-import Isaca from "../../assets/isaca.png";
 const VendorsDetailHero = () => {
   const CertData = {
   certName: "ISACA",
-  Image: Isaca,
+  Image: '/isaca.png',
 };
   return (
     <div className="vendors-detail-hero">
