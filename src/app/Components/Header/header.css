@@ -40,6 +40,10 @@
   font-size: var(--default-p-size);
  
 }
+.menu-icon{
+  font-size: 36px;
+  display: none;
+}
 .header{
   height: 60px;
   display: flex;
@@ -143,8 +147,13 @@ cursor: pointer;
 
 
 @media (max-width:900px){
+  .menu-icon{
+  font-size: 36px;
+  display: block;
+}
     .header-area{
-    height: fit-content;
+  height: fit-content;
+
 }
    .header-area .nav{
    

@@ -1,8 +1,14 @@
-"use client";
+'use client'
 import React, { useState } from "react";
-import "./Maindropdown.css";
-import { FaArrowRightLong } from "react-icons/fa6";
-const Maindropdown = () => {
+import './MobileMenu.css'
+import { CgCloseO } from "react-icons/cg";
+const MobileMenu = ({closeheader}) => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleMenu = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
   const cybersecurityCertifications = [
     { name: "AI-Powered Cybersecurity", slug: "ai-powered-cybersecurity" },
     {
@@ -366,176 +372,37 @@ const courses2 = [
     "CompTIA CloudNetX Certification Training"
 ]
 
+  const sections = [
+    { title: "Title1", items: cybersecurityCertifications.map((item) => item.name) },
+    { title: "Title2", items: courses.map((item) => item.name) },
+    { title: "Title3", items: courseVendors.map((item) => item.name) },
+    { title: "Title4", items: categories.map((item) => item.name) },
+    { title: "Title5", items: trainingCourses },
+    { title: "Title6", items: additionalTrainingCourses },
+    { title: "Title7", items: courses2 },
+  ];
 
-  const [selectedIndex, setSelectedIndex] = useState(0);
-    const [leftselectedIndex, setLeftSelectedIndex] = useState(0);
-  const [isFirstMenu, setIsFirstMenu] = useState(true);
-  const [isSecondMenu, setIsSecondMenu] = useState(false);
-   const [isThirdMenu, setIsThirdMenu] = useState(false);
-  const [isFourthMenu, setIsFourthMenu] = useState(false);
-  const [isFifthMenu, setIsFifthMenu] = useState(false);
-  const handleClick = (index) => {
-    setSelectedIndex(index);
-  };
-
-  const handleleftmenuClick = (index) =>{
-    setLeftSelectedIndex(index)
-    if(index==0){
-    setIsFirstMenu(true);
-    setIsSecondMenu(false);
-    setIsThirdMenu(false)
-    setIsFourthMenu(false)
-    setIsFifthMenu(false)
-
-  }
-  else  if(index==1){
-    setIsFirstMenu(false);
-    setIsSecondMenu(true);
-    setIsThirdMenu(false)
-    setIsFourthMenu(false)
-     setIsFifthMenu(false)
-
-  }
-   else  if(index==2){
-    setIsFirstMenu(false);
-    setIsSecondMenu(false);
-    setIsThirdMenu(true)
-    setIsFourthMenu(false)
-     setIsFifthMenu(false)
-  }
-   else  if(index==3){
-    setIsFirstMenu(false);
-    setIsSecondMenu(false);
-    setIsThirdMenu(false)
-    setIsFourthMenu(true)
-     setIsFifthMenu(false)
-  }
-   else  if(index==4){
-    setIsFirstMenu(false);
-    setIsSecondMenu(false);
-    setIsThirdMenu(false)
-    setIsFourthMenu(false)
-     setIsFifthMenu(true)
-  }
-  }
-  
   return (
-    <div className="maindropdown">
-      <div className="left">
-        <p className="dropdown-heading">Find your training</p>
-        <ul>
-          {courses.map((item, index) => (
-            <li key={index} onClick={()=>handleleftmenuClick(index)} 
-             className={leftselectedIndex === index ? "active" : ""}>
-              <span>
-                {item.offer && <span className="offer">{item.offername}</span>}
-                {item.name}
-              </span>
-              {item.icon && <FaArrowRightLong />}
-            </li>
-          ))}
-        </ul>
-      </div>
-      {isFirstMenu && (
-        <div className="first-menu">
-          <div className="center">
-            <p className="dropdown-heading">vendors</p>
-            <div className="Center-area">
-              <div className="center-left">
-                <ul>
-                  {courseVendors.map((item, index) => (
-                    <li key={index} onMouseEnter={() => handleClick(index)}    className={selectedIndex === index ? "active" : ""}>
-                      <span>
-                        {item.offer && (
-                          <span className="offer">{item.offername}</span>
-                        )}
-                        {item.name}
-                      </span>
-                      {item.icon && <FaArrowRightLong />}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="center-right">
-                <ul>
-                  {courseVendors[selectedIndex]?.items?.map((item, i) => (
-                    <li key={i}>
-                      <span>
-                        {item.offer && (
-                          <span className="offer">{item.offername}</span>
-                        )}
-                        {item.name}
-                      </span>
-                      {item.icon && <FaArrowRightLong />}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <p className="view-all-btn">View All</p>
-          </div>
-          <div className="right">
-            <p className="dropdown-heading">Trending Courses</p>
-            <ul>
-              {cybersecurityCertifications.map((item, index) => (
-                <li key={index}>{item.name}</li>
-              ))}
-            </ul>
-            <p className="view-all-btn">View All</p>
-          </div>
-        </div>
-      )}
-      {isSecondMenu && (
-        <div className="second-menu">
-          {categories.map((items, index) => {
-            return (
-              <div className="second-menu-vbox" key={index}>
-                <img src={items.image} alt="" />
-                <p>{items.name}</p>
-              </div>
-            );
-          })}
-        </div>
-      )}
-        {isThirdMenu && (
-        <div className="second-menu">
-          {trainingCourses.map((items, index) => {
-            return (
-              <div className="second-menu-vbox" key={index}>
-            
-                <p>{items}</p>
-              </div>
-            );
-          })}
-        </div>
-      )}
-        {isFourthMenu && (
-        <div className="second-menu">
-          {additionalTrainingCourses.map((items, index) => {
-            return (
-              <div className="second-menu-vbox" key={index}>
-                
-                <p>{items}</p>
-              </div>
-            );
-          })}
-        </div>
-      )}
-          {isFifthMenu && (
-        <div className="second-menu">
-          {courses2.map((items, index) => {
-            return (
-              <div className="second-menu-vbox" key={index}>
-                
-                <p>{items}</p>
-              </div>
-            );
-          })}
-        </div>
-      )}
+    <div className="mobile-menu">
+        <div className="close-icon-area"><CgCloseO onClick={closeheader}/></div>
+      <ul>
+        {sections.map((section, index) => (
+          <li key={index}>
+            <p onClick={() => toggleMenu(index)} className="title">
+              {section.title}
+            </p>
+            {activeIndex === index && (
+              <ul className="submenu">
+                {section.items.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
 
-export default Maindropdown;
+export default MobileMenu;

@@ -1,0 +1,35 @@
+.title{
+    background-color: var(--forground);
+     width: (100% - 20px);
+   padding: 20px 10px;
+   border-bottom: 1px solid var(--background); 
+}
+.submenu li{
+   width: (100% - 20px);
+   padding: 10px;
+   border-bottom: 1px solid var(--forground); 
+
+    
+}
+.mobile-menu{
+    position: fixed;
+    height: 110vh;
+  top: 0;
+    width: 100%;
+    background-color: var(--background);
+    z-index: 10;
+    
+    overflow-y: scroll;
+}
+.close-icon-area{
+    height: 60px;
+    width: 100%;
+    display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+.close-icon-area svg{
+    font-size: 36px;
+    margin-right: 20px;
+    
+}

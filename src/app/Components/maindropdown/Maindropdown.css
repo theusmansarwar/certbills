@@ -148,6 +148,10 @@ justify-content: center;
 .Center-area .center-left{
 width: 50%;
 }
+li.active {
+  background: var(--gradient-three);
+  color: var(--background);
+}
 .Center-area .center-right{
 width: 50%;
 }

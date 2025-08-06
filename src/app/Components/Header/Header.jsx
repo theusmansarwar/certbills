@@ -4,10 +4,12 @@ import './header.css'
 import Countdown from '../Hooks/Countdown'
 import { FaCaretDown,FaSearch  } from "react-icons/fa";
 import Maindropdown from '../maindropdown/Maindropdown';
+import { FiMenu } from "react-icons/fi";
+import MobileMenu from '../maindropdown/MobileMenu';
 const Header = () => {
  
   const [showDropdown, setShowDropdown]=useState(false);
- 
+  const [showMobileDropdown, setShowMobileDropdown]=useState(false);
   const visibleDropdown = () => {
      setShowDropdown(true);
     
@@ -16,12 +18,17 @@ const Header = () => {
     setShowDropdown(false);
     
   };
+   const toggleMenu = () => {
+  setShowMobileDropdown(prev => !prev);
+};
+
  
   return (
     <div
     className='header-area'
     >
-        <div className="nav"> <p>Future Skills Fiesta:Get up to 30% OFF on Career Booster Combos</p> <div className='avail-button'>AVAIL NOW</div><Countdown targetDate="2025-09-31T23:59:59" /></div>
+        <div className="nav"> <p>Future Skills Fiesta: Get up to 30% OFF on Career Booster Combos</p> 
+        <div className='avail-button'>AVAIL NOW</div><Countdown targetDate="2025-09-31T23:59:59" /></div>
         <div className="header" onMouseEnter={hidedropdown}>
           <img src='certbills-logo.png'/>
           <div className="search-area">
@@ -36,7 +43,7 @@ const Header = () => {
             <li>services <FaCaretDown /></li>
             <li>about us</li>
           </ul>
-          
+          <FiMenu className='menu-icon' onClick={toggleMenu}/>
         </div>
         {showDropdown && (
           <div className="maindropdown-area">
@@ -46,8 +53,12 @@ const Header = () => {
           <div className="right"onMouseEnter={hidedropdown} ></div>
           </div>
         </div>
-        
-      )}
+       )}
+      {showMobileDropdown && (
+           <MobileMenu closeheader={toggleMenu}/>
+      )
+
+      }
      
        
     </div>

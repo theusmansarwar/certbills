@@ -1,6 +1,7 @@
 
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
+import MobileMenu from "./Components/maindropdown/MobileMenu";
 import "./globals.css";
 
 import { Roboto } from "next/font/google";
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
      
       <body>
         <Header/>
+     
         {children}
         {/* <Footer/> */}
       </body>
