@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import "./Maindropdown.css";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -264,18 +264,164 @@ const Maindropdown = () => {
       ],
     },
   ];
- const [selectedIndex, setSelectedIndex] = useState(0);
+  const categories = [
+    {
+      name: "Cyber Security",
+      image: "/challenges.png",
+    },
+    {
+      name: "Cloud Security",
+      image: "/challenges.png",
+    },
+    {
+      name: "Governance, Risk & Compliance",
+      image: "/challenges.png",
+    },
+    {
+      name: "Security Testing",
+      image: "/challenges.png",
+    },
+    {
+      name: "Data Privacy",
+      image: "/challenges.png",
+    },
+    {
+      name: "Auditing",
+      image: "/challenges.png",
+    },
+    {
+      name: "Product Trainings",
+      image: "/challenges.png",
+    },
+    {
+      name: "Security Operations Center",
+      image: "/challenges.png",
+    },
+    {
+      name: "Network Security",
+      image: "/challenges.png",
+    },
+    {
+      name: "Offensive Security",
+      image: "/challenges.png",
+    },
+    {
+      name: "Defensive Security",
+      image: "/challenges.png",
+    },
+    {
+      name: "OT/ICS Security",
+      image: "/challenges.png",
+    },
+    {
+      name: "Artificial Intelligence (AI)",
+      image: "/challenges.png",
+    },
+    {
+      name: "Business Leadership Training Programs",
+      image: "/challenges.png",
+    },
+    {
+      name: "Identity & Access Management",
+      image: "/challenges.png",
+    },
+    {
+      name: "VIEW ALL",
+      image: "/challenges.png",
+    },
+  ];
+  const trainingCourses = [
+  "Security Architecture Hands-On Training",
+  "Advanced Cloud Security Governance Training",
+  "Cyber Security Expert Online Training",
+  "AWS Advanced Architect Combo Training Course",
+  "Cyber Security Analyst Training Course",
+  "Azure Administrator & Security (AZ-104 + AZ-500) Combo Training",
+  "AWS Combo (Architecture Foundation + Security Specialty) Training",
+  "Offensive Cyber Security Engineer Online Training & Certification Course",
+  "Cloud Architect Expert Combo Training Course",
+  "Information Security Manager Online Training Course"
+];
+const additionalTrainingCourses = [
+  "AWS Combo (Architecture Foundation + Security Speciality) Training",
+  "Azure Administrator & Security (AZ-104 + AZ-500) Combo Training",
+  "Information Security Auditor Online Training Course",
+  "Cyber Security Analyst Training Course",
+  "AWS Advanced Architect Combo Training Course",
+  "Pentester Combo Training & Certification Course",
+  "Offensive Cyber Security Engineer Online Training & Certification Course",
+  "Enterprise Security Governance – Combo Of CISSP & CCSP Online Training Course",
+  "CompTIA A+ And Network+ Online Combo Training"
+];
+const courses2 = [
+    "CompTIA Server+ Certification Training",
+    "CompTIA Project+ (Plus) Certification Training",
+    "CompTIA Linux+ (Plus) Certification Training",
+    "CompTIA A+ And Network+ Online Combo Training",
+    "CCZT Training",
+    "CompTIA DataX (Plus) Certification Training",
+    "Advanced In AI Security Management (AAISM) Certification Training",
+    "Implement Real-Time Intelligence With Microsoft Fabric (DP-603T00) Training",
+    "Implement A Data Science And Machine Learning Solution For AI With Microsoft Fabric (DP-604T00) Training",
+    "CompTIA CloudNetX Certification Training"
+]
 
+
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [isFirstMenu, setIsFirstMenu] = useState(true);
+  const [isSecondMenu, setIsSecondMenu] = useState(false);
+   const [isThirdMenu, setIsThirdMenu] = useState(false);
+  const [isFourthMenu, setIsFourthMenu] = useState(false);
+  const [isFifthMenu, setIsFifthMenu] = useState(false);
   const handleClick = (index) => {
     setSelectedIndex(index);
   };
+
+  const handleleftmenuClick = (index) =>{
+    if(index==0){
+    setIsFirstMenu(true);
+    setIsSecondMenu(false);
+    setIsThirdMenu(false)
+    setIsFourthMenu(false)
+    setIsFifthMenu(false)
+  }
+  else  if(index==1){
+    setIsFirstMenu(false);
+    setIsSecondMenu(true);
+    setIsThirdMenu(false)
+    setIsFourthMenu(false)
+     setIsFifthMenu(false)
+  }
+   else  if(index==2){
+    setIsFirstMenu(false);
+    setIsSecondMenu(false);
+    setIsThirdMenu(true)
+    setIsFourthMenu(false)
+     setIsFifthMenu(false)
+  }
+   else  if(index==3){
+    setIsFirstMenu(false);
+    setIsSecondMenu(false);
+    setIsThirdMenu(false)
+    setIsFourthMenu(true)
+     setIsFifthMenu(false)
+  }
+   else  if(index==4){
+    setIsFirstMenu(false);
+    setIsSecondMenu(false);
+    setIsThirdMenu(false)
+    setIsFourthMenu(false)
+     setIsFifthMenu(true)
+  }
+  }
+  
   return (
     <div className="maindropdown">
       <div className="left">
         <p className="dropdown-heading">Find your training</p>
         <ul>
           {courses.map((item, index) => (
-            <li key={index}>
+            <li key={index} onClick={()=>handleleftmenuClick(index)}>
               <span>
                 {item.offer && <span className="offer">{item.offername}</span>}
                 {item.name}
@@ -285,54 +431,104 @@ const Maindropdown = () => {
           ))}
         </ul>
       </div>
-      <div className="center">
-        <p className="dropdown-heading">vendors</p>
-<div className="Center-area">
+      {isFirstMenu && (
+        <div className="first-menu">
+          <div className="center">
+            <p className="dropdown-heading">vendors</p>
+            <div className="Center-area">
+              <div className="center-left">
+                <ul>
+                  {courseVendors.map((item, index) => (
+                    <li key={index} onMouseEnter={() => handleClick(index)}>
+                      <span>
+                        {item.offer && (
+                          <span className="offer">{item.offername}</span>
+                        )}
+                        {item.name}
+                      </span>
+                      {item.icon && <FaArrowRightLong />}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-
-        <div className="center-left">
-        <ul>
-          {courseVendors.map((item, index) => (
-            <li key={index} onMouseEnter={() => handleClick(index)}>
-              <span>
-                {item.offer && (
-                  <span className="offer">{item.offername}</span>
-                )}
-                {item.name}
-              </span>
-              {item.icon && <FaArrowRightLong />}
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="center-right">
-        <ul>
-          {
-            courseVendors[selectedIndex]?.items?.map((item, i) => (
-              <li key={i}>
-                <span>
-                  {item.offer && (
-                    <span className="offer">{item.offername}</span>
-                  )}
-                  {item.name}
-                </span>
-                {item.icon && <FaArrowRightLong />}
-              </li>
-            ))}
-        </ul>
-      </div>
-      </div>
-      </div>
-      <div className="right">
-        <p className="dropdown-heading">Trending Courses</p>
-        <ul>
-          {cybersecurityCertifications.map((item, index) => (
-            <li key={index}>{item.name}</li>
-          ))}
-        </ul>
-        <p className="view-all-btn">View All</p>
-      </div>
+              <div className="center-right">
+                <ul>
+                  {courseVendors[selectedIndex]?.items?.map((item, i) => (
+                    <li key={i}>
+                      <span>
+                        {item.offer && (
+                          <span className="offer">{item.offername}</span>
+                        )}
+                        {item.name}
+                      </span>
+                      {item.icon && <FaArrowRightLong />}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <p className="view-all-btn">View All</p>
+          </div>
+          <div className="right">
+            <p className="dropdown-heading">Trending Courses</p>
+            <ul>
+              {cybersecurityCertifications.map((item, index) => (
+                <li key={index}>{item.name}</li>
+              ))}
+            </ul>
+            <p className="view-all-btn">View All</p>
+          </div>
+        </div>
+      )}
+      {isSecondMenu && (
+        <div className="second-menu">
+          {categories.map((items, index) => {
+            return (
+              <div className="second-menu-vbox" key={index}>
+                <img src={items.image} alt="" />
+                <p>{items.name}</p>
+              </div>
+            );
+          })}
+        </div>
+      )}
+        {isThirdMenu && (
+        <div className="second-menu">
+          {trainingCourses.map((items, index) => {
+            return (
+              <div className="second-menu-vbox" key={index}>
+            
+                <p>{items}</p>
+              </div>
+            );
+          })}
+        </div>
+      )}
+        {isFourthMenu && (
+        <div className="second-menu">
+          {additionalTrainingCourses.map((items, index) => {
+            return (
+              <div className="second-menu-vbox" key={index}>
+                
+                <p>{items}</p>
+              </div>
+            );
+          })}
+        </div>
+      )}
+          {isFifthMenu && (
+        <div className="second-menu">
+          {courses2.map((items, index) => {
+            return (
+              <div className="second-menu-vbox" key={index}>
+                
+                <p>{items}</p>
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 };
