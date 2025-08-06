@@ -13,7 +13,7 @@ const Confused = () => {
         }}
       ></div>
       <div className="right">
-        <h2>Confused about which Course to choose?</h2>
+        <h2>Confused about which <br /><span>Course to choose?</span></h2>
         <div className="confused-btn">
           <p>SCHEDULE A CONSULTATION</p>
         </div>

@@ -31,7 +31,6 @@ const FreeCourseDescription = () => {
           a repudiandae molestiae eos fugit molestias perspiciatis consequuntur!
         </p>
       </div>
-      <div className="vertical-line"></div>
       <div
         className="right"
         style={{

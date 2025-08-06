@@ -16,12 +16,18 @@
 }
 .category-career .right strong {
   font-weight: var(--default-font-weight);
+  font-style: italic;
+}
+.category-career .right ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .category-career .right ul li {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 .category-career .right ul li svg {
   color: var(--primary-color);

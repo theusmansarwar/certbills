@@ -3,7 +3,7 @@
   border-radius: var(--radius-one);
   padding: 30px 20px;
   box-shadow: var(--default-box-shadow);
-  width: 90%;
+  width: calc(90% - 40px);
   margin-left: 5%;
   text-align: center;
   border: 1px solid var(--forground);
@@ -46,7 +46,7 @@
 @media (max-width: 900px) {
   .how-we-help {
     padding: 20px 10px;
-    width: 94%;
+      width: calc(94% - 20px);
     margin-left: 3%;
   }
 

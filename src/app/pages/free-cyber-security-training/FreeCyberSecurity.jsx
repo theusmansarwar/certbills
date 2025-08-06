@@ -39,7 +39,7 @@ const FreeCyberSecurity = () => {
       <ProgramHighlights />
       <FreeCourseDescription />
       <Faqs data={faqs} />
-      <Initiative/>
+      <Initiative />
     </div>
   );
 };

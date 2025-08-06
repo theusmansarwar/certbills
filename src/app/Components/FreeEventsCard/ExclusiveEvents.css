@@ -1,5 +1,5 @@
 .exclusive-events {
-  padding-top: 80px;
+  padding: 80px 0;
 }
 .exclusive-events .event-tabs-container {
   display: flex;
@@ -59,7 +59,7 @@
 }
 @media(max-width:900px){
   .exclusive-events {
-  padding-top: 20px;
+  padding: 20px 0;
 }
   .exclusive-events .event-tabs-container ul li {
   padding: 12px;

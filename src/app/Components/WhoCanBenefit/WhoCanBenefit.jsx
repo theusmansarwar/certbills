@@ -1,20 +1,19 @@
 import React from "react";
 import "./WhoCanBenefit.css";
 
-
 const data = [
   {
-    image: '/fresher.png',
+    image: "/fresher.png",
     title: "A Fresher",
     description: "looking to explore cybersecurity as a career option",
   },
   {
-    image: '/instructor.png',
+    image: "/instructor.png",
     title: "An Instructor",
     description: "looking to add value & meaning to your work",
   },
   {
-    image: '/Institution.png',
+    image: "/Institution.png",
     title: "An Institution",
     description:
       "looking to diversify and train or hire cybersecurity educators",
@@ -23,7 +22,16 @@ const data = [
 
 const WhoCanBenefit = () => {
   return (
-    <div className="who-can-benefit">
+    <div
+      className="who-can-benefit"
+      // style={{
+      //   backgroundImage: `url(/line-img.png)`,
+      //   backgroundPosition: "bottom",
+      //   backgroundSize: "cover",
+      //   width: "100%",
+      //   height: "100px",
+      // }}
+    >
       <div className="left">
         <h2 className="section-heading">
           Who Can <span>Benefit</span>
@@ -39,12 +47,15 @@ const WhoCanBenefit = () => {
             </div>
           ))}
         </div>
-        <img className="line-img" src='/line-img.png' alt="" />
+        <img className="line-img" src="/line-img.png" alt="" />
       </div>
 
       <div className="right">
         <form>
-          <strong>Register for Free Session</strong>
+          <strong>
+            Register <br />
+            <span> for Free Session</span>
+          </strong>
           <input type="text" placeholder="Full Name" />
           <input type="text" placeholder="Email" />
           <input type="text" placeholder="Mobile" />

@@ -1,12 +1,12 @@
 .free-events-hero {
   width: 100%;
-  height: fit-content;
+  height: 400px;
   display: flex;
   align-items: center;
   background-color: var(--forground);
 }
 .free-events-hero .left {
-  width: 60%;
+  width: calc(100% - 80px);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -18,7 +18,7 @@
   font-weight: var(--bold-font-weight);
 }
 .free-events-hero .left h1 strong {
-    font-size: var(--heading-two);
+  font-size: var(--heading-two);
   color: var(--primary-color);
   font-weight: var(--bold-font-weight);
 }
@@ -39,7 +39,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 300px;
+  width: 20%;
   height: 80px;
   border-radius: var(--radius-three);
   background-color: var(--background);
@@ -73,6 +73,9 @@
   .free-events-hero {
     flex-direction: column;
     padding: 20px;
+    width: calc(100% - 40px);
+    background-image: none !important;
+    height: fit-content;
   }
   .free-events-hero .left {
     width: 100%;
@@ -80,27 +83,36 @@
     gap: 10px;
   }
   .free-events-hero .left h1 {
-  font-size: var(--heading-three);
-}
-.free-events-hero .left h1 strong {
-     font-size: var(--heading-three);
-  color: var(--primary-color);
-  font-weight: var(--bold-font-weight);
-}
-.free-events-hero .left p {
-  
-  font-size: var(--default-p-size);
-  margin-bottom: 10px;
-}
+    font-size: var(--heading-three);
+  }
+  .free-events-hero .left h1 strong {
+    font-size: var(--heading-three);
+    color: var(--primary-color);
+    font-weight: var(--bold-font-weight);
+  }
+  .free-events-hero .left p {
+    font-size: var(--default-p-size);
+    margin-bottom: 10px;
+  }
   .free-events-hero .left .bottom {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     margin: 0;
   }
   .free-events-hero .left .bottom .box {
-    width: 100%;
+    width: calc(100% - 40px);
+    padding: 5px 20px;
+   
+    justify-content: flex-start;
+  }
+  .free-events-hero .left .bottom .box .content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
   }
   .free-events-hero .right {
     display: none;

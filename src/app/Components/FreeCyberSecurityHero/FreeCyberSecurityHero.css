@@ -98,6 +98,7 @@
   gap: 20px;
   padding: 30px 20px;
   z-index: 2;
+  width:calc(100% - 40px);
 }
 
 .free-cyber-hero .bottom-card .bottom-boxes {
@@ -135,11 +136,11 @@
   .free-cyber-hero {
     padding: 30px 10px;
     gap: 10px;
+    width: calc(100% - 20px);
   }
   .free-cyber-hero .circle {
     width: 300px;
     height: 300px;
-
     left: 5%;
   }
   .free-cyber-hero .right {
@@ -169,20 +170,24 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
     padding: 10px;
+     width:calc(100% - 20px);
   }
   .free-cyber-hero .bottom-card .bottom-boxes {
-    padding: 10px;
-    text-align: center;
+    width: calc(100% - 10px);
+    padding: 5px;
+    text-align: left;
+    border-left: 1px solid var(--primary-color);
   }
   .free-cyber-hero .bottom-card .horizontal-line {
     display: block;
     grid-column: span 2;
     height: 2px;
     background-color: var(--primary-color);
+    margin: 5px 0;
   }
   .free-cyber-hero .bottom-card .bottom-boxes:nth-child(4) {
-  border: none;
-}
+    border: none;
+  }
 
   .free-cyber-hero .bottom-card .bottom-boxes strong {
     font-size: var(--heading-four);

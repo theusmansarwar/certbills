@@ -19,7 +19,10 @@
   color: var(--background);
   line-height: 1.5;
   font-size: var(--heading-two);
-  width: 60%;
+
+}
+.get-certification .left h2 span{
+  color: var(--secondary-color);
 }
 .get-certification .right strong {
   color: var(--background);
@@ -65,9 +68,13 @@
   }
   .get-certification .right {
     width: 100%;
+    flex-direction: column-reverse;
+  }
+  .get-certification .right img {
+    width: 100%;
   }
   .get-certification .left h2 {
-    width: 100%;
+ 
     text-align: center;
     font-size: var(--heading-three);
     line-height: 1.2;

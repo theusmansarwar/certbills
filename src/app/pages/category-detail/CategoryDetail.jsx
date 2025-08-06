@@ -9,7 +9,6 @@ import DetailPageContact from "@/app/Components/DetailPageContact/DetailPageCont
 import CourseCategoryHero from "@/app/Components/CourseCategoryHero/CourseCategoryHero";
 import CategoryCareer from "@/app/Components/CategoryCareer/CategoryCareer";
 
-
 const CategoryDetail = () => {
   const careerContent = {
     heading: "A Career in Cybersecurity",
@@ -27,49 +26,49 @@ const CategoryDetail = () => {
   };
   const advisorsList = [
     {
-      AdvisorImage: '/Sanyam.png',
+      AdvisorImage: "/Sanyam.png",
       AdvisorName: "Sanyam",
       AdvisorExperience: "18",
       AdvisorQualification:
         "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
     },
     {
-      AdvisorImage: '/Sanyam.png',
+      AdvisorImage: "/Sanyam.png",
       AdvisorName: "Krish",
       AdvisorExperience: "18",
       AdvisorQualification:
         "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
     },
     {
-      AdvisorImage: '/Sanyam.png',
+      AdvisorImage: "/Sanyam.png",
       AdvisorName: "Krish",
       AdvisorExperience: "18",
       AdvisorQualification:
         "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
     },
     {
-      AdvisorImage: '/Sanyam.png',
+      AdvisorImage: "/Sanyam.png",
       AdvisorName: "Prabh Nair",
       AdvisorExperience: "10",
       AdvisorQualification:
         "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
     },
     {
-      AdvisorImage: '/Sanyam.png',
+      AdvisorImage: "/Sanyam.png",
       AdvisorName: "Sanyam Negi",
       AdvisorExperience: "8",
       AdvisorQualification:
         "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
     },
     {
-      AdvisorImage: '/Sanyam.png',
+      AdvisorImage: "/Sanyam.png",
       AdvisorName: "Sanyam Negi",
       AdvisorExperience: "8",
       AdvisorQualification:
         "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
     },
     {
-      AdvisorImage: '/Sanyam.png',
+      AdvisorImage: "/Sanyam.png",
       AdvisorName: "Sanyam Negi",
       AdvisorExperience: "8",
       AdvisorQualification:
@@ -99,56 +98,56 @@ const CategoryDetail = () => {
   ];
   const testimonialList = [
     {
-      image: '/Sanyam.png',
+      image: "/Sanyam.png",
       name: "Krish",
       country: "Canada",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
     },
     {
-      image: '/Sanyam.png',
+      image: "/Sanyam.png",
       name: "John Doe",
       country: "Canada",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
     },
     {
-      image: '/Sanyam.png',
+      image: "/Sanyam.png",
       name: "Krish",
       country: "Canada",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
     },
     {
-      image: '/Sanyam.png',
+      image: "/Sanyam.png",
       name: "Krish",
       country: "Canada",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
     },
     {
-      image: '/Sanyam.png',
+      image: "/Sanyam.png",
       name: "Krish",
       country: "Canada",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
     },
     {
-      image: '/Sanyam.png',
+      image: "/Sanyam.png",
       name: "Krish",
       country: "Canada",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
     },
     {
-      image: '/Sanyam.png',
+      image: "/Sanyam.png",
       name: "Krish",
       country: "Canada",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
     },
     {
-      image: '/Sanyam.png',
+      image: "/Sanyam.png",
       name: "Krish",
       country: "Canada",
       review:
@@ -157,15 +156,15 @@ const CategoryDetail = () => {
   ];
   return (
     <div>
-      {/* <CourseCategoryHero /> */}
-      {/* <CategoryCourses /> */}
-      {/* <CategoryCareer data={careerContent} /> */}
+      <CourseCategoryHero />
+      <CategoryCourses />
+      <CategoryCareer data={careerContent} />
 
-      {/* <CourseAdvisors data={advisorsList} /> */}
-      {/* <WhyChoose /> */}
+      <CourseAdvisors data={advisorsList} />
+      <WhyChoose />
       <Testimonial heading="Our Happy Gladiators" data={testimonialList} />
-      {/* <Faqs data={faqs} />
-      <DetailPageContact /> */}
+      <Faqs data={faqs} />
+      <DetailPageContact />
     </div>
   );
 };

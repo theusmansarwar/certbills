@@ -13,16 +13,17 @@ const CareerTransformation = () => {
   ];
   return (
     <div className="career-transformation">
-      {/* <img src="/right-arrow.png" alt="Left Person" className="person left" />
-      <img src="/left-arrow.png" alt="Right Person" className="person right" /> */}
       <h2 className="section-heading">Career Transformation</h2>
       <div className="content">
         <div className="left">
           <p>
-            <strong>3.4 million</strong> Information Security experts needed
+            <strong>3.4 million</strong> Lorem ipsum dolor amet sit consectetur
+            adipisicing elit. Similique expedita fuga quidem nostrum vitae
           </p>
           <p>
-            <strong>$4.55 Million</strong> The average cost of a data breach
+            <strong>$4.55 Million</strong> Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Tempora hic perspiciatis sunt laborum
+            assumenda
           </p>
         </div>
         <div className="right">
@@ -33,7 +34,7 @@ const CareerTransformation = () => {
                 <strong>67%</strong>Organizations plan to recruit trained staff
               </p>
               <p className="top-right">
-                <strong>72%</strong>Organizations plan to invest in training
+              <strong>72%</strong>Organizations plan to invest in training
               </p>
             </div>
           </div>

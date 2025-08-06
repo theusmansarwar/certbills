@@ -78,7 +78,7 @@
     height: 100px !important;
   }
   .category-course-card .card-detail {
-    min-height: 40px;
+    min-height: 20px;
   }
 
   .category-course-card .card-detail h3 {
@@ -87,7 +87,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  .category-course-card .card-btn {
+    padding: 8px 0;
+    
+  }
   .category-course-card .card-btn p {
-    font-size: var(--default-p-size);
+    font-size: var(--small-p-size);
   }
 }

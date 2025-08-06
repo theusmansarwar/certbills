@@ -1,11 +1,16 @@
 .who-can-benefit {
-  width: calc(100% - 80px);
+  width: calc(100% - 160px);
   display: flex;
-  padding: 40px;
-  
+  justify-content: space-between;
+  padding: 80px;
+  height: fit-content;
+  position: relative;
 }
 .who-can-benefit .left {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .who-can-benefit .left .section-heading span {
@@ -20,9 +25,10 @@
   color: var(--dark);
   background-color: var(--background);
   padding: 20px 10px;
-  height: 180px;
+  height: fit-content;
+  min-height: 160px;
+  width: 120px;
   text-align: left;
-  flex: 1;
 }
 .who-can-benefit .left img {
   width: 40px;
@@ -37,20 +43,25 @@
   font-weight: 400;
 }
 .who-can-benefit .left .line-img {
-  width: 100%;
-  margin-top: 50px;
+  width: 60%;
+  position: absolute;
+  bottom: 0;
 }
 .who-can-benefit .right {
   width: 50%;
-  height: fit-content;
-}
-.who-can-benefit .right form {
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  width: 60%;
-  margin-left: 30%;
+}
+.who-can-benefit .right form {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: 25%;
   border: 1px solid var(--dark);
   border-radius: var(--radius-three);
   margin-top: 30px;
@@ -58,10 +69,15 @@
 .who-can-benefit .right form strong {
   background-color: var(--secondary-color);
   color: var(--background);
-  width: fit-content;
-  padding: 20px;
+  width: 80%;
+  padding: 10px;
   border-radius: var(--radius-one);
   margin-top: -30px;
+  text-align: center;
+  font-size: var(--heading-four);
+}
+.who-can-benefit .right form strong span {
+  color: var(--primary-color);
 }
 .who-can-benefit .right form input {
   outline: none;
@@ -109,10 +125,11 @@ input[type="number"] {
 .who-can-benefit .right form .free-session-btn:hover {
   border: 1px solid var(--secondary-color);
   background: transparent;
+  color: var(--dark);
 }
 .who-can-benefit .right .note {
   font-size: 12px;
-  width: 60%;
+  width: 40%;
   margin-left: 30%;
   margin-top: 10px;
   text-align: center;
@@ -123,13 +140,34 @@ input[type="number"] {
 @media (max-width: 900px) {
   .who-can-benefit {
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
     padding: 40px 10px;
+    width: calc(100% - 20px);
   }
   .who-can-benefit .left {
     width: 100%;
   }
+  .who-can-benefit .left .box-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .who-can-benefit .left .box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: fit-content;
+    min-height: fit-content;
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+  .who-can-benefit .left .box img {
+    width: 30px;
+  }
   .who-can-benefit .left .line-img {
-    margin-top: 10px;
+    display: none;
   }
   .who-can-benefit .right {
     width: 100%;

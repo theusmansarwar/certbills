@@ -30,7 +30,7 @@ const ProgramHighlights = () => {
           </p>
         </div>
         <div className="training">
-          <img src='/training.png' alt="ttraining" />
+          <img src='/training.png' alt="training" />
           <h3>
             Train the <span>Trainer</span>
           </h3>

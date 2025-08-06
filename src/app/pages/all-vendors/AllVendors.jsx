@@ -110,7 +110,7 @@ const AllVendors = () => {
   return (
     <div className="all-vendors">
       <div className="vendors-heading">
-        <h2 className="section-heading">Explore Our Courses by Vendor´s</h2>
+        <h2 className="section-heading">Explore Our Courses by <span>Vendor´s</span></h2>
       </div>
       <div className="vendors-courses-list">
         {coursesData.map((course, index) => {

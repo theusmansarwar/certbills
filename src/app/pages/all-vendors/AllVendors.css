@@ -2,6 +2,9 @@
   background-color: var(--forground);
   padding: 15px;
 }
+.all-vendors .vendors-heading span{
+  color: var(--primary-color);
+}
 .vendors-courses-list {
   display: flex;
   flex-wrap: wrap;

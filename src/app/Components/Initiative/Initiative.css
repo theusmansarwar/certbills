@@ -22,13 +22,15 @@
   justify-content: center;
   gap: 10px;
 }
-.initiative .section-heading {
+.initiative
+ .right .section-heading {
   color: var(--background);
   font-weight: 400;
   margin-bottom: 0;
 }
-.initiative .section-heading strong {
+.initiative .right .section-heading strong {
   font-weight: var(--bold-font-weight);
+  font-size: var(--heading-two);
 }
 .initiative .right span {
   font-weight: 400;

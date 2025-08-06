@@ -1,6 +1,7 @@
 .faq-container {
   width: 90%;
   margin-left: 5%;
+  padding: 40px 0;
 }
 
 .faq-list {
@@ -23,7 +24,6 @@
   align-items: center;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
 .faq-question:hover {
@@ -40,7 +40,6 @@
 .faq-answer-wrapper {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
 }
 
 .faq-answer {
@@ -49,7 +48,6 @@
   font-size: 0.9rem;
   color: var(--dark);
   opacity: 0;
-  transition: opacity 0.3s ease, padding 0.3s ease;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -61,4 +59,9 @@
   opacity: 1;
   padding-top: 10px;
   padding-bottom: 18px;
+}
+@media(max-width:900px){
+  .faq-container{
+     padding: 20px 0;
+  }
 }

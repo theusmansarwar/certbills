@@ -2,7 +2,16 @@ import React from "react";
 import "./FreeEventsHero.css";
 const FreeEventsHero = () => {
   return (
-    <div className="free-events-hero">
+    <div
+      className="free-events-hero"
+      style={{
+        backgroundImage: `url(/events-hero.png)`,
+        backgroundPosition: "right",
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+       
+      }}
+    >
       <div className="left">
         <h1>
           FREE On-demand <br />
@@ -11,21 +20,21 @@ const FreeEventsHero = () => {
         <p>Exclusive access to game-changing career wisdom</p>
         <div className="bottom">
           <div className="box">
-            <img src='/learners.png' alt="Learners" />
+            <img src="/learners.png" alt="Learners" />
             <div className="content">
               <strong>200k+</strong>
               <span>Satisfied Learners</span>
             </div>
           </div>
           <div className="box">
-            <img src='/events.png' alt="Learners" />
+            <img src="/events.png" alt="Learners" />
             <div className="content">
               <strong>1k+</strong>
               <span>Events so far</span>
             </div>
           </div>
           <div className="box">
-            <img src='/industry-speakers.png' alt="Learners" />
+            <img src="/industry-speakers.png" alt="Learners" />
             <div className="content">
               {" "}
               <strong>100+</strong>
@@ -34,15 +43,7 @@ const FreeEventsHero = () => {
           </div>
         </div>
       </div>
-      <div
-        className="right"
-        style={{
-          backgroundImage: `url(/events-hero.png)`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></div>
+     
     </div>
   );
 };

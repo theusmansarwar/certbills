@@ -34,14 +34,14 @@ const ChooseByDomain = () => {
     const container = scrollRef.current;
     if (!container) return;
 
-   const card = container.querySelector("li");
+    const card = container.querySelector("li");
 
     if (!card) return;
 
     const cardWidth = card.offsetWidth;
-    const gap = 10;
+    const gap = 20;
 
-    const scrollAmount = cardWidth + gap;
+    const scrollAmount = cardWidth + gap + cardWidth;
 
     container.scrollBy({
       left: direction === "right" ? scrollAmount : -scrollAmount,

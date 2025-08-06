@@ -29,7 +29,7 @@
 }
 .detail-page-contact .right .input-container input {
   outline: none;
-  padding: 10px;
+  padding: 12px 24px;
   border-radius: var(--radius-one);
   border: 1px solid gainsboro;
 }
@@ -86,7 +86,7 @@ input[type="number"] {
 .detail-page-contact .right .info-line a {
   cursor: pointer;
   font-weight: var(--bold-font-weight);
-  font-size: var(--heading-three);
+  font-size: var(--default-p-size);
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -109,9 +109,12 @@ input[type="number"] {
     gap: 20px;
   }
   .detail-page-contact .right strong {
-    font-size: var(--heading-four);
+    font-size: var( --heading-three);
   }
   .detail-page-contact .right .input-container {
-    width: 95%;
+    width: 100%;
   }
+  .detail-page-contact .right .info-line {
+  text-align: left;
+}
 }

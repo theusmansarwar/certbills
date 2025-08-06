@@ -4,13 +4,12 @@ const GetCertification = () => {
   return (
     <div className="get-certification">
       <div className="left">
-        <h2>Why Get Certification Training at Certbills?</h2>
+        <h2>Why Get Certification <br />Training at <span>Certbills?</span></h2>
       </div>
       <div className="right">
-        <strong>Get a Sample Certificate</strong>
-        <img src='/certification.png' alt="Sample Certificate Image" />
+        <img src="/certification.png" alt="Sample Certificate Image" />
         <div className="certification-btn">
-          <p>GET IN TOUCH</p>
+          <p>Ask for FREE DEMO</p>
         </div>
       </div>
     </div>

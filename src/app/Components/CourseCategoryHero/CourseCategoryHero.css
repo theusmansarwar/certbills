@@ -23,7 +23,7 @@
   .impact-container
   strong {
   font-size: var(--heading-four);
-  font-weight: var(--default-font-weight);
+  font-weight: var(--bold-font-weight);
 }
 .course-category-hero
   .category-content
@@ -101,10 +101,10 @@
     padding: 20px;
   }
   .course-category-hero .category-content .category-title {
-    font-size: var(--heading-four);
+    font-size: var(--heading-three);
   }
   .course-category-hero .category-content .category-description {
-    font-size: var(--default-p-size);
+    font-size: var(--small-p-size);
   }
   .course-category-hero .category-content .impact-parent-container {
     display: flex;
@@ -114,7 +114,7 @@
     .category-content
     .impact-parent-container
     .impact-container:last-child {
-    border-left: 3px solid white;
+    border-left: 1.5px solid white;
     padding-left: 10px;
   }
   .course-category-hero
@@ -129,14 +129,14 @@
     .impact-parent-container
     .impact-container
     strong {
-    font-size: var(--heading-three);
+    font-size: var(--default-p-size);
   }
   .course-category-hero
     .category-content
     .impact-parent-container
     .impact-container
     span {
-    font-size: var(--default-p-size);
+    font-size: var(--small-p-size);
   }
   .course-category-hero .category-content .btn-container {
     display: flex;
@@ -145,16 +145,18 @@
   }
   .course-category-hero .category-content .filled-btn {
     padding: 8px 10px;
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: var(--bold-font-weight);
   }
   .course-category-hero .category-content .outlined-btn {
-    padding: 4px 10px;
-    font-size: 12px;
+    padding: 8px 10px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: var(--bold-font-weight);
   }
 }

@@ -36,6 +36,9 @@
   font-weight: var(--bold-font-weight);
   line-height: 1.2;
 }
+.confused .right h2 span{
+  color: var(--primary-color);
+}
 .confused .right .confused-btn {
   background-color: var(--background);
   border: 1px solid transparent;
@@ -62,18 +65,22 @@
 @media (max-width: 900px) {
   .confused {
     flex-direction: column;
-    width: 98%;
-    margin-left: 1%;
+    width: 94%;
+    margin-left: 3%;
+    height: fit-content;
+    
   }
   .confused .left {
-    width: 100%;
-    height: 200px;
+  
+    display: none;
   }
   .confused .right {
     width: 100%;
-    height: inherit;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: var(--radius-one);
+    padding: 40px 0;
+    height: fit-content;
+    /* border-top-right-radius: 0;
+    border-bottom-left-radius: var(--radius-one); */
+    border-radius: var(--radius-one);
   }
   .confused .right h2 {
     width: 100%;
