@@ -77,7 +77,7 @@ const CourseAdvisors = () => {
    if (!card) return;
  
    const cardWidth = card.offsetWidth;
-   const gap = "1%"; // use the exact gap from .advisor-list CSS
+   const gap = 20; // use the exact gap from .advisor-list CSS
  
    const scrollAmount = cardWidth + gap;
  

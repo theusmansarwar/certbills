@@ -1,0 +1,24 @@
+.mock-test-hero{
+    width: 90%;
+    margin-left: 5%;
+    height: 400px;
+    background-color: beige;
+    box-shadow: var(--default-box-shadow);
+    display: flex;
+}
+.mock-test-hero .left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mock-test-hero .left h1{
+    font-size: var(--heading-three);
+}
+.mock-test-hero .left strong{
+    font-size: var(--defaultp-p-size);
+    font-weight: 400;
+}
+.mock-test-hero .left ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}

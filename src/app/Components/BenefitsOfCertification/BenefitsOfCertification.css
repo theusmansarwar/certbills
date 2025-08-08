@@ -13,9 +13,8 @@
   position: relative;
 }
 .benefits-of-certification .each-benefit {
-  width: 23.9%;
+  width: calc(23.9% - 20px);
   height: fit-content;
-  min-height: 150px;
   border: 2px solid var(--primary-color);
   padding: 20px 10px;
   border-radius: var(--radius-one);
@@ -42,6 +41,5 @@
   }
   .benefits-of-certification .each-benefit {
     width: 100%;
-    height: fit-content;
   }
 }

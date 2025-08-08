@@ -2,6 +2,7 @@
   display: flex;
   background-color: var(--dark);
   padding: 50px 80px;
+  width: calc(100% - 160px);
 }
 
 .success-and-certificate .video-testimonial2 {
@@ -97,6 +98,7 @@
     flex-direction: column;
     background-color: var(--dark);
     padding: 20px;
+    width: calc(100% - 40px);
   }
   .success-and-certificate .video-testimonial2 {
     padding: 20px 0;
@@ -124,6 +126,9 @@
   .success-and-certificate .get-certification2 .left {
     width: 100%;
   }
+  .success-and-certificate .get-certification2 img {
+  width: 100%;
+}
   .success-and-certificate .get-certification2 .right {
     width: 100%;
   }

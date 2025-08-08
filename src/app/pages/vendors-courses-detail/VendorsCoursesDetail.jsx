@@ -2,11 +2,11 @@
 import React from "react";
 import "./VendorsCoursesDetail.css";
 import VendorsDetailHero from "@/app/Components/VendorsDetailHero/VendorsDetailHero";
-import CategoryCourseCard from "@/app/Components/CategoryCourses/CategoryCourseCard";
 import Confused from "@/app/Components/Confused/Confused";
 import ChooseByDomain from "@/app/Components/ChooseByDomain/ChooseByDomain";
 import GetCertification from "@/app/Components/GetCertification/GetCertification";
 import BenefitsOfCertification from "@/app/Components/BenefitsOfCertification/BenefitsOfCertification";
+import VendorsCourseCard from "@/app/Components/VendorsCourseCard/VendorsCourseCard";
 
 const VendorsCoursesDetail = () => {
   const coursesData = [
@@ -42,7 +42,7 @@ const VendorsCoursesDetail = () => {
 
       <div className="courses-list">
         {coursesData.map((course, index) => (
-          <CategoryCourseCard key={index} data={course} />
+          <VendorsCourseCard key={index} data={course} />
         ))}
       </div>
       <Confused />

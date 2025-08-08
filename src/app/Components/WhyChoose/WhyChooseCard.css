@@ -1,5 +1,5 @@
 .why-choose-card {
-  width: 30%;
+  width: calc(23% - 32px);
   padding: 16px;
   background-color: var(--background);
   border: 1px solid rgb(200, 194, 194);

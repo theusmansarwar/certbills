@@ -1,13 +1,14 @@
 .related-courses {
   padding: 60px;
+  width: calc(100% - 120px);
 }
 .related-courses .related-courses-list {
   display: flex;
   gap: 20px;
   justify-self: center;
-  width: 90%;
+  width: 100%;
   margin: 40px 0;
-  padding: 10px;
+
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -33,12 +34,12 @@
 @media (max-width: 900px) {
   .related-courses {
     padding: 20px;
+    width: calc(100% - 40px);
   }
+
   .related-courses .related-courses-list {
     gap: 10px;
     margin: 20px 0;
     padding: 0%;
-    width: 98%;
-    margin-left: 1%;
   }
 }

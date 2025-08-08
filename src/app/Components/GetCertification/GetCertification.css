@@ -60,7 +60,7 @@
 @media (max-width: 900px) {
   .get-certification {
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
   }
   .get-certification .left {

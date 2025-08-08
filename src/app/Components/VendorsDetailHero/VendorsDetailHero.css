@@ -31,7 +31,8 @@
   .vendors-detail-hero {
     flex-direction: column;
     gap: 20px;
-    padding: 20px 10px 0px;
+    padding: 10px;
+    width: calc(100% - 20px);
   }
   .vendors-detail-hero .left {
     width: 100%;

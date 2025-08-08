@@ -4,9 +4,9 @@
 }
 .course-advisors .advisors-list {
   display: flex;
-  gap: 1%;
-  width: 87%;
-  margin-left: 5%;
+  gap: 20px;
+  width: 94%;
+  margin-left: 3%;
   padding-top: 10px;
   padding-bottom: 20px;
   overflow-x: auto;
@@ -41,7 +41,7 @@
   }
   .course-advisors .advisors-list {
     width: 100%;
-     margin-left: 0%;
+    margin-left: 0%;
     flex-wrap: nowrap;
     overflow-x: auto;
     justify-content: flex-start;

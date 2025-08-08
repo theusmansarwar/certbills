@@ -1,0 +1,185 @@
+.contact-modal-parent {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+.contact-modal {
+  width: 40%;
+  height: fit-content;
+  background-color: var(--background);
+  border-radius: var(--radius-three);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-modal .modal-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #444;
+  padding: 10px;
+  border-top-left-radius: var(--radius-three);
+  border-top-right-radius: var(--radius-three);
+}
+.contact-modal .modal-top span {
+  color: var(--background);
+  font-size: var(--heading-four);
+}
+.contact-modal .modal-top svg {
+  color: var(--primary-color);
+  font-size: 28px;
+  cursor: pointer;
+}
+/* Mid */
+.contact-modal .modal-mid {
+  background-color: var(--forground);
+  padding: 20px;
+}
+.contact-modal .modal-mid .form-container .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-modal .modal-mid .form-container input,
+.contact-modal .modal-mid .form-container textarea {
+  outline: none;
+  padding: 15px;
+  border: 1px solid gainsboro;
+}
+.contact-modal .modal-mid .form-container input:focus-within,
+.contact-modal .modal-mid .form-container textarea:focus-within {
+  border: 1px solid transparent;
+  background: linear-gradient(to right, var(--background), var(--background)),
+    var(--gradient-two);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+.react-international-phone-input-container {
+  border-radius: 0px !important;
+  border: 1px solid gainsboro !important;
+  background-color: var(--background) !important;
+}
+
+.react-international-phone-country-selector-button {
+  margin-top: 0px !important;
+  height: 50px !important;
+  background-color: transparent !important;
+  border: 0 solid var(--background-color) !important;
+}
+.react-international-phone-input {
+  border-radius: 0px !important;
+  height: 50px !important;
+  font-size: var(--default-p-size) !important;
+  margin: 0% !important;
+  background-color: var(--background) !important;
+  border: 0 solid var(--background-color) !important;
+  color: black !important;
+}
+.react-international-phone-country-selector-dropdown {
+  background-color: white !important;
+  color: black !important;
+}
+.react-international-phone-country-selector-dropdown li:hover {
+  background-color: var(--background-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.react-international-phone-country-selector-dropdown__list-item--focused {
+  background-color: var(--background) !important;
+  color: black !important;
+}
+.contact-modal .modal-mid .form-container .checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.contact-modal .modal-mid .form-container .checkbox-container p {
+  font-size: var(--small-p-size);
+}
+.contact-modal .modal-mid .form-container .checkbox-container p span {
+  text-decoration: none;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.contact-modal .modal-mid .form-container .checkbox-container p span:hover {
+  text-decoration: underline;
+}
+.contact-modal
+  .modal-mid
+  .form-container
+  .checkbox-container
+  input[type="checkbox"]:checked {
+  accent-color: rgb(182, 95, 33);
+}
+
+.contact-modal .modal-mid .form-container .contact-btn {
+  width: fit-content;
+  background: var(--gradient-two);
+  border: 1px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  padding: 12px 24px;
+  font-size: var(--default-p-size);
+  cursor: pointer;
+  transition: 0.3s ease;
+  transform: skew(-10deg);
+}
+.contact-modal .modal-mid .form-container .contact-btn p {
+  font-weight: var(--bold-font-weight);
+  color: var(--background);
+  text-align: center;
+}
+.contact-modal .modal-mid .form-container .contact-btn:hover p {
+  background: var(--gradient-two);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact-modal .modal-mid .form-container .contact-btn:hover {
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--default-box-shadow2);
+  background: transparent;
+}
+/* Bottom */
+.contact-modal .modal-bottom {
+  width: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-bottom-left-radius: var(--radius-three);
+  border-bottom-right-radius: var(--radius-three);
+}
+.contact-modal .modal-bottom span {
+  color: var(--background);
+  font-size: var(--heading-four);
+}
+.contact-modal .modal-bottom a {
+  text-decoration: none;
+  color: var(--background);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--heading-four);
+}
+.contact-modal .modal-bottom a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 900px) {
+  .contact-modal {
+    width: 96%;
+    height: fit-content;
+  }
+  .contact-modal .modal-bottom span {
+    display: none;
+  }
+  .contact-modal .modal-bottom a {
+    font-size: var(--default-p-size);
+  }
+}

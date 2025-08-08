@@ -1,0 +1,73 @@
+.how-it-works {
+  background: var(--background);
+  border-radius: var(--radius-one);
+  padding: 30px 60px;
+  box-shadow: var(--default-box-shadow);
+  width: calc(90% - 120px);
+  margin-left: 5%;
+  text-align: center;
+  border: 1px solid var(--forground);
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.how-it-works .section-heading {
+  margin-bottom: 30px;
+}
+
+.how-it-works .help-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.how-it-works .help-list .each-help {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+
+.how-it-works .help-list .each-help img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.how-it-works .help-list .each-help p {
+  font-size: var(--default-p-size);
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .how-it-works {
+    padding: 20px 40px;
+    width: calc(94% - 80px);
+    margin-left: 3%;
+    margin-top: 40px;
+    margin-bottom:20px;
+  }
+
+  .how-it-works .help-list {
+    gap: 20px;
+  }
+  .how-it-works .help-list .line-img {
+    display: none;
+  }
+
+  .how-it-works .help-list .each-help {
+    width: 80px;
+  }
+
+  .how-it-works .help-list .each-help img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .how-it-works .section-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}

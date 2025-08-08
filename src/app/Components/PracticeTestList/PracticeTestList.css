@@ -1,0 +1,19 @@
+.test-list-parent {
+  width: 100%;
+  padding: 60px 0;
+}
+.practice-test-list {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+@media(max-width:900px){
+    .test-list-parent {
+  width: 100%;
+  padding: 20px 0;
+}
+}

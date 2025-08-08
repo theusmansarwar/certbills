@@ -1,5 +1,5 @@
 .related-course-card {
-  min-width: 32.33%;
+  min-width: calc(32.2% - 40px);
   flex-shrink: 0;
   height: 150px;
   display: flex;
@@ -44,10 +44,9 @@
 }
 @media (max-width: 900px) {
   .related-course-card {
-    min-width: 100%;
+    min-width: calc(99% - 40px);
   }
   .related-course-card:hover {
     transform: scale(1);
   }
-  
 }

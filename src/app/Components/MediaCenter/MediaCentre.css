@@ -9,12 +9,11 @@
 }
 .media-centre .left {
   width: calc(30% - 100px);
- 
+
   display: flex;
   align-items: center;
-
 }
-.media-centre .left img{
+.media-centre .left img {
   width: 100%;
   height: auto;
 }
@@ -46,8 +45,8 @@
 
 @media (max-width: 900px) {
   .media-centre {
-    width: 100%;
-     padding: 20px 10px;
+    width: calc(100% - 20px);
+    padding: 20px 10px;
     height: fit-content;
     flex-direction: column;
   }

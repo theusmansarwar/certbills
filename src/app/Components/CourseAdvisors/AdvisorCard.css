@@ -1,5 +1,5 @@
 .advisor-card {
-  min-width: calc(32.5% - 30px);
+  min-width: calc(32% - 30px);
   height: fit-content;
   display: flex;
   align-items: center;
@@ -9,14 +9,16 @@
   border-radius: var(--radius-one);
   box-shadow: var(--default-box-shadow);
   padding: 15px;
+  padding-bottom: 0;
 }
-.advisor-card:last-child{
+.advisor-card:last-child {
   margin-right: 5px;
 }
 
 .advisor-card .left {
   width: auto;
   padding-top: 20px;
+  padding-bottom: 0;
   height: 180px;
 }
 
@@ -38,9 +40,12 @@
 .advisor-card .right .qualification {
   font-size: var(--default-p-size);
 }
-@media(max-width:900px){
+@media (max-width: 900px) {
   .advisor-card {
-    min-width: calc(96% - 30px);
+    min-width: calc(96% - 20px);
+    max-width: calc(96% - 20px);
     margin-left: 2%;
-}
+    padding: 10px;
+     padding-bottom: 0;
+  }
 }

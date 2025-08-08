@@ -1,5 +1,5 @@
 .testimonial-card {
-  min-width: 32%;
+  min-width: calc(32% - 30px);
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,8 @@
 
 @media (max-width: 900px) {
   .testimonial-card {
-     min-width: 100%;
-    height: fit-content;
+    min-width: calc(99% - 20px);
+    max-width: calc(99% - 20px);
+    padding: 10px;
   }
 }

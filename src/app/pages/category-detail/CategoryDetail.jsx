@@ -159,7 +159,6 @@ const CategoryDetail = () => {
       <CourseCategoryHero />
       <CategoryCourses />
       <CategoryCareer data={careerContent} />
-
       <CourseAdvisors data={advisorsList} />
       <WhyChoose />
       <Testimonial heading="Our Happy Gladiators" data={testimonialList} />

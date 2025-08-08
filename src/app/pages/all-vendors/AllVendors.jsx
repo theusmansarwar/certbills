@@ -4,13 +4,13 @@ import "./AllVendors.css";
 import Confused from "@/app/Components/Confused/Confused";
 import ChooseByDomain from "@/app/Components/ChooseByDomain/ChooseByDomain";
 import GetCertification from "@/app/Components/GetCertification/GetCertification";
-import CourseCard from "@/app/Components/InDemandCourses/CourseCard";
 import Testimonial from "@/app/Components/Testimonials/Testimonial";
+import VendorsCourseCard from "@/app/Components/VendorsCourseCard/VendorsCourseCard";
 const AllVendors = () => {
   const coursesData = [
     {
       CourseImage: '/course-img.jpg',
-      CourseTitle: "Cyber Security",
+      CourseTitle: "Cyber Security Cyber Security Cyber Security",
       CourseTime: "48",
     },
     {
@@ -114,7 +114,7 @@ const AllVendors = () => {
       </div>
       <div className="vendors-courses-list">
         {coursesData.map((course, index) => {
-          return <CourseCard key={index} data={course} />;
+          return <VendorsCourseCard key={index} data={course} />;
         })}
       </div>
       <Confused />

@@ -9,7 +9,7 @@ const AdvisorCard = ({data}) => {
 
     
   return (
-    <div className="advisor-card">
+    <div className="advisor-card" >
       <img className="left" src={data.AdvisorImage} alt={data.AdvisorName} />
 
       <div className="right">

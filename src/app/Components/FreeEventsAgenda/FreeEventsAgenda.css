@@ -1,0 +1,306 @@
+.events-agenda {
+  width: calc(100% - 160px);
+  padding: 80px;
+  display: flex;
+  gap: 20px;
+}
+/* Left */
+.events-agenda .left {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.events-agenda .left .agenda-content h2,
+.events-agenda .left .why-attend h2 {
+  font-size: var(--heading-three);
+  margin-bottom: 10px;
+}
+.events-agenda .left .agenda-content .agenda-day {
+  
+  margin-bottom: 20px;
+}
+.events-agenda .left .agenda-content .day {
+  display: block;
+  margin-bottom: 20px;
+}
+.events-agenda .left .agenda-content ul li {
+  display: flex;
+ gap: 10px;
+
+}
+.events-agenda .left .agenda-content ul li svg {
+  color: var(--primary-color);
+  margin-bottom: 5px;
+
+}
+/* Why Attend */
+.events-agenda .left .why-attend .boxes-parent {
+  display: flex;
+  gap: 20px;
+}
+.events-agenda .left .why-attend .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: calc(33% - 20px);
+  height: 80px;
+  padding: 10px;
+  border-radius: var(--radius-three);
+  background-color: var(--forground);
+}
+.events-agenda .left .why-attend .box img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.events-agenda .left .why-attend .box h3 {
+  font-weight: var(--bold-font-weight);
+  font-size: var(--default-p-size);
+  text-align: center;
+}
+/* Speaker Card */
+.events-agenda .left .speaker-card {
+  width: calc(100% - 40px);
+  position: relative;
+  background-color: var(--dark);
+  color: var(--background);
+  padding: 30px 20px;
+  border-radius: var(--radius-one);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.events-agenda .left .speaker-background-text {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 60px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: 0;
+}
+
+.events-agenda .left .speaker-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.events-agenda .left .speaker-info {
+  z-index: 1;
+}
+
+.events-agenda .left .speaker-name {
+  margin: 0;
+  font-size: var(--heading-four);
+  font-weight: 600;
+  color: var(--background);
+}
+
+.events-agenda .left .speaker-experience {
+  background-color: var(--forground);
+  color: var(--primary-color);
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: var(--small-p-size);
+  margin: 8px 0;
+}
+
+.events-agenda .left .speaker-skills {
+  font-size: var(--small-p-size);
+  color: var(--background);
+}
+.events-agenda .left  .upcoming-events-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/* Right */
+.events-agenda .right {
+  width: 30%;
+  height: fit-content;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--radius-one);
+  box-shadow: var(--default-box-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.events-agenda .right img {
+  width: 100%;
+  border-top-left-radius: var(--radius-one);
+  border-top-right-radius: var(--radius-one);
+}
+.events-agenda .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: var(--background);
+   border-bottom-left-radius: var(--radius-one);
+  border-bottom-right-radius: var(--radius-one);
+}
+
+.events-agenda .right .form-container .section-heading {
+  font-size: var(--heading-three);
+  font-weight: var(--default-font-weight);
+  text-align: left;
+}
+.events-agenda .right .form-container .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.events-agenda .right .form-container input {
+  outline: none;
+  padding: 15px;
+  border-radius: var(--radius-one);
+  border: 1px solid gainsboro;
+}
+.events-agenda .right .form-container input:focus-within {
+  border: 1px solid transparent;
+  border-radius: var(--radius-one);
+  background: linear-gradient(to right, var(--background), var(--background)),
+    var(--gradient-two);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+.react-international-phone-input-container {
+  border-radius: 0px !important;
+  border: 1px solid gainsboro !important;
+  background-color: var(--background) !important;
+}
+
+.react-international-phone-country-selector-button {
+  margin-top: 0px !important;
+  height: 50px !important;
+  background-color: transparent !important;
+  border: 0 solid var(--background-color) !important;
+}
+.react-international-phone-input {
+  border-radius: 0px !important;
+  height: 50px !important;
+  font-size: var(--default-p-size) !important;
+  margin: 0% !important;
+  background-color: var(--background) !important;
+  border: 0 solid var(--background-color) !important;
+  color: black !important;
+}
+.react-international-phone-country-selector-dropdown {
+  background-color: white !important;
+  color: black !important;
+}
+.react-international-phone-country-selector-dropdown li:hover {
+  background-color: var(--background-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.react-international-phone-country-selector-dropdown__list-item--focused {
+  background-color: var(--background) !important;
+  color: black !important;
+}
+
+.events-agenda .right .form-container .checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.events-agenda .right .form-container .checkbox-container p {
+  font-size: var(--small-p-size);
+}
+.events-agenda .right .form-container .checkbox-container p span {
+  text-decoration: none;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.events-agenda .right .form-container .checkbox-container p span:hover {
+  text-decoration: underline;
+}
+.events-agenda
+  .right
+  .form-container
+  .checkbox-container
+  input[type="checkbox"]:checked {
+  accent-color: rgb(182, 95, 33);
+}
+
+.events-agenda .right .form-container .contact-btn {
+  background: var(--gradient-two);
+  border: 1px solid transparent;
+  border-radius: var(--radius-one);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  padding: 12px 24px;
+  border-radius: var(--radius-three);
+  font-size: var(--default-p-size);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.events-agenda .right .form-container .contact-btn p {
+  font-weight: var(--bold-font-weight);
+  color: var(--background);
+  text-align: center;
+}
+.events-agenda .right .form-container .contact-btn:hover p {
+  background: var(--gradient-two);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.events-agenda .right .form-container .contact-btn:hover {
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--default-box-shadow2);
+  background: transparent;
+}
+.events-agenda .right .form-container .registered-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.events-agenda .right .form-container .registered-container svg {
+ color: var(--primary-color);
+}
+
+@media (max-width: 900px) {
+  .events-agenda {
+  width: calc(100% - 40px);
+  padding: 20px;
+  flex-direction: column;
+}
+/* Left */
+.events-agenda .left {
+  width: 100%;
+}
+/* Why Attend */
+.events-agenda .left .why-attend .boxes-parent {
+  flex-direction: column;
+}
+.events-agenda .left .why-attend .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: calc(100% - 20px);
+  height: 50px;
+  padding: 10px;
+}
+.events-agenda .left  .upcoming-events-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+/* right */
+  .events-agenda .right {
+    width: 100%;
+  }
+}

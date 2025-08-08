@@ -197,17 +197,17 @@ const InDemandCoursesDetail = () => {
   ];
   return (
     <div className="in-demand-courses-detail">
-      {/* <InDemandCoursesDetailHero data={careerContent} />
+      <InDemandCoursesDetailHero data={careerContent} />
       <InDemandCoursesHighlights />
       <InDemandAboutCourse />
-      <HowWeHelp /> */}
+      <HowWeHelp />
       <CareerTransformation />
-      {/* <CourseAdvisors heading="Your Trusted Instructors" data={advisorsList} />
+      <CourseAdvisors heading="Your Trusted Instructors" data={advisorsList} />
       <Testimonial heading="Words Have Power" data={testimonialList} />
       <SuccessAndCertificate />
       <RelatedCourses heading="Other Related Courses" data={coursesData} />
       <RelatedCourses heading="Related Blogs" data={blogsData} />
-      <Faqs data={faqs} />  */}
+      <Faqs data={faqs} /> 
     
     </div>
   );
