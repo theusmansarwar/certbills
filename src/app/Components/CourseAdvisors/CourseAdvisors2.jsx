@@ -1,5 +1,7 @@
+"use client";
 import "./CourseAdvisors2.css";
 import AdvisorCard2 from "./AdvisorCard2";
+import { useRouter } from "next/navigation";
 const CourseAdvisors2 = () => {
   const mentorList = [
     {
@@ -24,7 +26,7 @@ const CourseAdvisors2 = () => {
         "SME | Cloud Security | Cloud Audit AWS CS-S | AWS CAN-S | AWS CSA-P | MCT | CCSP | CCSK | CCAK | Azure Security | Azure Adv. Architect | CEH | RHCE",
     },
   ];
-
+  const router = useRouter();
   return (
     <div className="mentors">
       <h2 className="section-heading">Meet Your Mentor</h2>
@@ -38,7 +40,12 @@ const CourseAdvisors2 = () => {
           <AdvisorCard2 key={index} data={item} />
         ))}
       </div>
-       <div className="mentor-btn">
+      <div
+        className="mentor-btn"
+        onClick={() => {
+          router.push("/instructor");
+        }}
+      >
         <p>MEET OUR INSTRUCTORS</p>
       </div>
     </div>

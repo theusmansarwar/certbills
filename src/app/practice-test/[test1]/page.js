@@ -1,4 +1,4 @@
-import Test1 from "../pages/test1/Test1";
+import Test1 from "../../pages/test1/Test1";
 
 const Page = () => {
   return (

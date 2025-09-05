@@ -1,47 +1,57 @@
+
 import React from "react";
 import "./PracticeTestList.css";
 import PracticeTestCard from "./PracticeTestCard";
 const PracticeTestList = () => {
+ 
   const testData = [
     {
       Title: "Cyber Security",
       Time: "30",
       Questions: "20",
+      Slug:"cyber-security",
     },
     {
       Title: "Cyber Security",
       Time: "30",
       Questions: "20",
+      Slug:"cyber-security",
     },
     {
       Title: "Cyber Security",
       Time: "30",
       Questions: "20",
+      Slug:"cyber-security",
     },
     {
       Title: "Cyber Security",
       Time: "30",
       Questions: "20",
+      Slug:"cyber-security",
     },
     {
       Title: "Cyber Security",
       Time: "30",
       Questions: "20",
+      Slug:"cyber-security",
     },
     {
       Title: "Cyber Security",
       Time: "30",
       Questions: "20",
+      Slug:"cyber-security",
     },
     {
       Title: "Cyber Security",
       Time: "30",
       Questions: "20",
+      Slug:"cyber-security",
     },
     {
       Title: "Cyber Security",
       Time: "30",
       Questions: "20",
+      Slug:"cyber-security",
     },
   ];
   return (

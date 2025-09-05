@@ -52,7 +52,8 @@
   gap: 30px;
   justify-content: center;
   justify-self: center;
-  width:calc(100%n - 20px);
+  width:calc(96% - 20px);
+  margin-left: 2%;
   padding:20px 10px;
   overflow-x: hidden;
   scroll-behavior: smooth;

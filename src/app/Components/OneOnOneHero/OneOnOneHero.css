@@ -17,6 +17,7 @@
 }
 .one-on-hero .left .left-inside {
   position: relative;
+  z-index: 5;
 }
 .one-on-hero .left .left-inside .description {
   font-size: var(--heading-four);
@@ -31,14 +32,16 @@
 
 .one-on-hero .right {
   width: 60%;
+  position: relative;
+  z-index: 5;
 }
 .one-on-hero .one-on-arrow {
   width: 300px;
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(20%, 50%);
-  z-index: 0;
+  transform: translate(30%,60%);
+  z-index: 1;
 }
 
 .one-on-hero .left .left-inside .one-on-btn {

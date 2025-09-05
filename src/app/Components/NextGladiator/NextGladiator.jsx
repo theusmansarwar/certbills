@@ -3,7 +3,7 @@ import "./NextGladiator.css";
 const NextGladiator = () => {
   return (
     <div className="next-gladiator">
-      <div className="top">
+      <div className="gladiator-top">
         <h2 className="section-heading">
           Want to be the next Gladiator? Here's your cue:
         </h2>
@@ -12,7 +12,7 @@ const NextGladiator = () => {
           Career Path
         </p>
       </div>
-      <div className="bottom">
+      <div className="gladiator-bottom">
         <img src="/pencil-top.png" alt="pencil" />
         <div className="list-item">
           <img src="/pencil-1.png" alt="pencil" />

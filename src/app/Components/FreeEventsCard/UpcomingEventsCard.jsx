@@ -14,7 +14,7 @@ const UpcomingEventsCard = ({ data }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           width: "100%",
-          height: "200px",
+          height: "180px",
           borderTopLeftRadius: "var(--radius-one)",
           borderTopRightRadius: "var(--radius-one)",
         }}
