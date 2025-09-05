@@ -1,5 +1,5 @@
 .mentor-card {
-  background-color: #fff6fa;
+  background-color: var(--background);
   min-width: calc(32% - 60px);
   padding: 10px 30px;
   height: fit-content;
@@ -24,7 +24,7 @@
   overflow: hidden;
   top: 0;
   right: 0;
-  background-color: #ff014e;
+  background-color: var(--primary-color);
   border-radius: 0 6px 0 40px;
   transition: 0.2s;
 }
@@ -62,7 +62,7 @@
 }
 .mentor-card .experience {
   font-size: var(--heading-four);
-  color: #ff014e;
+  color: var(--primary-color);
 }
 .mentor-card .qualification {
   font-size: var(--default-p-size);

@@ -69,7 +69,7 @@ const Header = () => {
           >
             Courses <FaCaretDown />
           </div>
-          <input placeholder="search here ...." />
+          <input placeholder="Search here ..." />
           <div className="right">
             <FaSearch />
           </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./blogskeleton.css";
+import "./BlogSkeleton.css";
 
 const BCard = () => {
   return (

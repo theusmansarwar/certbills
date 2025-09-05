@@ -44,6 +44,7 @@
 
 .social-icon:hover {
   background-color: var(--primary-color);
+  color: var(--background);
 }
 
 /* Join Button */

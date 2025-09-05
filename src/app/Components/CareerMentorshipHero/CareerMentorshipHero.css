@@ -5,7 +5,7 @@
   gap: 150px;
 }
 .mentorship-hero .left {
-  background-color: #FF014E ;
+  background-color: var(--primary-color) ;
   width: 40%;
   position: relative;
 }

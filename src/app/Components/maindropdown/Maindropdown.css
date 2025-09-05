@@ -106,7 +106,7 @@
 .maindropdown .right .view-all-btn {
   width: 50%;
   margin: 0 auto;
-  padding: 10px 0px;
+  padding: 6px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,11 +116,12 @@
   color: var(--primary-color);
   margin: 2px;
   cursor: pointer;
+  border-radius: var(--radius-three);
 }
 .maindropdown .center .view-all-btn {
   width: 50%;
   margin: 0 auto;
-  padding: 10px 0px;
+  padding: 6px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,6 +131,7 @@
   color: var(--primary-color);
   margin: 2px;
   cursor: pointer;
+  border-radius: var(--radius-three);
 }
 
 .Center-area {

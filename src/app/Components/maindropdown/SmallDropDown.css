@@ -4,7 +4,7 @@
   right: -20px;
   background: var(--background);
   border: 1px solid var(--border-color);
-  box-shadow: var(--default-box-shadow);
+  border-top: none;
   border-bottom-left-radius: var(--radius-one);
   border-bottom-right-radius: var(--radius-one);
   z-index: 10;
@@ -18,7 +18,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-    width: 100%;
+  width: 100%;
 }
 .small-drop-down ul li {
   padding: 0px 10px;

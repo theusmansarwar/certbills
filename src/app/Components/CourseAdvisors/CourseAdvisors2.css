@@ -17,7 +17,7 @@
   padding-bottom: 20px;
 }
 .mentors .mentor-btn {
-  background-color: #ff1046;
+  background-color: var(--primary-color);
   padding: 12px 24px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -33,7 +33,10 @@
 }
 
 .mentors .mentor-btn:hover {
-  background-color: #444;
+  background-color: var(--background);
+}
+.mentors .mentor-btn:hover p {
+  color: var(--primary-color);
 }
 @media (max-width: 900px) {
   .mentors {

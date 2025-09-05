@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ff014e;
+  background-color: var(--primary-color);
 }
 .more-clarity .left-desc {
   font-size: 30px;
@@ -24,6 +24,7 @@
   width: fit-content;
   margin-top: 10px;
   box-shadow: var(--default-box-shadow);
+  transition: transform 0.2s ease;
 }
 .more-clarity .demo-btn p {
   font-size: var(--heading-four);
@@ -31,7 +32,7 @@
 
 .more-clarity .demo-btn:hover {
   
-  background-color: var(--forground);
+transform: scale(1.02);
 }
 @media (max-width: 900px) {
   .more-clarity {
