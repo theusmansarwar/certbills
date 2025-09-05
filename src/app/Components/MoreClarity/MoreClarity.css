@@ -1,0 +1,54 @@
+.more-clarity {
+  width: calc(80% - 240px);
+  padding: 60px 120px;
+  margin-left: 10%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff014e;
+}
+.more-clarity .left-desc {
+  font-size: 30px;
+  font-weight: var(--bold-font-weight);
+  width: 50%;
+  color: var(--background);
+}
+.more-clarity .demo-btn {
+  background-color: var(--background);
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: fit-content;
+  margin-top: 10px;
+  box-shadow: var(--default-box-shadow);
+}
+.more-clarity .demo-btn p {
+  font-size: var(--heading-four);
+}
+
+.more-clarity .demo-btn:hover {
+  
+  background-color: var(--forground);
+}
+@media (max-width: 900px) {
+  .more-clarity {
+    width: calc(100% - 40px);
+    padding: 20px;
+    margin-left: 0%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0;
+    flex-direction: column;
+  }
+  .more-clarity .left-desc {
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+  }
+  .more-clarity .demo-btn p {
+    font-size: var(--small-p-size);
+  }
+}

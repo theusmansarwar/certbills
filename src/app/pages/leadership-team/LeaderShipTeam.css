@@ -1,0 +1,269 @@
+/* Leadership Hero Section*/
+.hero-section {
+  width: 100%;
+  background-color: black;
+  color: var(--background);
+  padding: 80px 0px;
+}
+
+.leadership-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.leadership-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.leadership-text {
+  flex: 1;
+  max-width: 512px;
+}
+
+.leadership-intro {
+  color: var(--primary-color);
+  font-size: var(--heading-one);
+  font-weight: var(--bold-font-weight);
+}
+
+.leadership-title {
+  color: var(--background);
+  font-size: var(--heading-one);
+  font-weight: var(--bold-font-weight);
+  margin-bottom: 10px;
+}
+
+.leadership-subtitle {
+  color: var(--background);
+  font-size: var(--heading-three);
+}
+
+.team-cards-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-card {
+  position: relative;
+  width: 130px;
+  height: 200px;
+  border-radius: var(--radius-one);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+  opacity: 0.8;
+  background-color: var(--background);
+}
+
+.team-card.expanded {
+  width: 200px;
+  height: 200px;
+  transform: scale(1.05);
+  z-index: 10;
+  opacity: 1;
+}
+
+.team-card.collapsed {
+  opacity: 0.6;
+  transform: scale(0.95);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease;
+  filter: grayscale(100%);
+}
+
+.team-card.expanded .card-img {
+  object-fit: contain;
+  filter: grayscale(0);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: var(--gradient-two);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  border: 1px solid gainsboro;
+  border-radius: var(--radius-one);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-card.expanded .card-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-name {
+  font-size: var(--default-p-size);
+  margin-bottom: 4px;
+  color: var(--background);
+}
+
+.card-role {
+  font-size: var(--small-p-size);
+  color: var(--background);
+  background-color: var(--dark);
+  padding: 2px 16px;
+  border-radius: 25px;
+  display: inline-block;
+}
+/* ////////////////////////////// Team Section ////////////////////////////////////// */
+
+.team-section {
+  width: calc(100% - 160px);
+  padding: 60px 80px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.profile-card {
+  position: relative;
+  border-radius: var(--radius-one);
+  background-color: var(--forground);
+  width: 23%;
+  height: 300px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: var(--default-box-shadow);
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid gainsboro;
+  border-radius: var(--radius-one);
+  transition: transform 0.3s ease;
+}
+
+.profile-name {
+  color: var(--primary-color);
+  font-size: var(--heading-three);
+  margin: 10px 0;
+}
+
+.profile-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: calc(100% - 40px);
+  height: 100%;
+  background: var(--forground);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+  text-align: center;
+  transition: bottom 0.4s ease-in-out;
+}
+
+.profile-title-badge {
+  background-color: var(--background);
+  padding: 6px 18px;
+  border-radius: 25px;
+  font-size: var(--small-p-size);
+  margin-bottom: 15px;
+}
+.profile-description {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) transparent;
+}
+
+.profile-card:hover .profile-overlay {
+  bottom: 0;
+}
+
+@media (max-width: 900px) {
+  /* Leadership Hero Section*/
+  .hero-section {
+    width: calc(100% - 20px);
+    background-color: black;
+    color: var(--background);
+    padding: 20px 10px;
+  }
+
+  .leadership-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .leadership-intro,
+  .leadership-title {
+    font-size: 28px;
+  }
+
+  .leadership-subtitle {
+    font-size: var(--default-p-size);
+  }
+
+  .team-cards-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .team-card {
+    position: relative;
+    width: 31%;
+    height: 200px;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: none;
+  }
+
+  .team-card.expanded {
+    width: 31% !important;
+    height: 200px !important;
+    transform: none !important;
+    z-index: auto !important;
+  }
+
+  .team-card.expanded .card-content {
+    opacity: 0;
+    transform: none;
+  }
+  /* ////////////////////////////// Team Section ////////////////////////////////////// */
+
+.team-section {
+  width: calc(100% - 40px);
+  padding: 20px;
+}
+
+.profile-card {
+  width: 100%;
+  height: 300px;
+}
+}

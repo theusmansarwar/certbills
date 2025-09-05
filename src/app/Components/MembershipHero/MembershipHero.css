@@ -1,0 +1,28 @@
+.membership-hero .membership-hero-content {
+  padding: 70px;
+}
+.membership-hero .membership-hero-content h1 {
+  font-size: var(--heading-two);
+  color: #024784;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.membership-hero .membership-hero-content p {
+  font-size: var(--heading-four);
+  line-height: 1.5;
+}
+@media (max-width: 900px) {
+  .membership-hero {
+    height: 220px !important;
+  }
+  .membership-hero .membership-hero-content {
+    padding: 20px;
+  }
+  .membership-hero .membership-hero-content h1 {
+    font-size: var(--heading-three);
+  }
+  .membership-hero .membership-hero-content p {
+    font-size: var(--default-p-size);
+  }
+}

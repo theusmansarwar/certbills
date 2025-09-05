@@ -28,10 +28,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  
 }
 .category-career .right ul li svg {
   color: var(--primary-color);
   font-size: var(--default-p-size);
+  flex-shrink: 0;
 }
 .category-career .right h2 {
   font-size: var(--heading-two);

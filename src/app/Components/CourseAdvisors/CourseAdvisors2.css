@@ -1,0 +1,53 @@
+.mentors {
+  padding: 60px 70px;
+  width: calc(100% - 140px);
+}
+.mentors .desc {
+  font-size: var(--heading-three);
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+}
+.mentors .mentors-list {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.mentors .mentor-btn {
+  background-color: #ff1046;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: fit-content;
+  margin-top: 10px;
+  box-shadow: var(--default-box-shadow);
+  display: flex;
+  justify-self: center;
+}
+.mentors .mentor-btn p {
+  font-size: var(--heading-four);
+  color: var(--background);
+}
+
+.mentors .mentor-btn:hover {
+  background-color: #444;
+}
+@media (max-width: 900px) {
+  .mentors {
+    padding: 20px;
+    width: calc(100% - 40px);
+  }
+  .mentors .desc {
+    font-size: var(--default-p-size);
+    width: 100%;
+    margin-left: 0%;
+  }
+  .mentors .mentors-list {
+    width: 100%;
+    margin-left: 0%;
+    flex-direction: column;
+  }
+}

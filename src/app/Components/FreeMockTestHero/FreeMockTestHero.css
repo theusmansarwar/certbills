@@ -1,24 +1,104 @@
-.mock-test-hero{
-    width: 90%;
-    margin-left: 5%;
-    height: 400px;
-    background-color: beige;
-    box-shadow: var(--default-box-shadow);
-    display: flex;
+.mock-test-hero {
+  width: calc(90% - 80px);
+  margin-left: 5%;
+  padding: 40px;
+  height: fit-content;
+  border-radius: var(--radius-one);
+  background-color: var(--background);
+  box-shadow: var(--default-box-shadow);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
-.mock-test-hero .left{
+.mock-test-hero .left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  border-right: 2px solid gainsboro;
+}
+.mock-test-hero .left h1 {
+  font-size: var(--heading-two);
+}
+.mock-test-hero .left strong {
+  font-size: var(--default-p-size);
+  font-weight: 400;
+}
+.mock-test-hero .left ul li {
+  list-style: none;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.mock-test-hero .left ul li svg {
+  color: var(--primary-color);
+   width: 24px;
+  height: 24px;
+  font-size: 24px; /* fixed size, won't change on mobile */
+  flex-shrink: 0;  /* prevents shrinking in flexbox */
+}
+.mock-test-hero .left .start-test-btn {
+  background: var(--gradient-two);
+  border: 1px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  padding: 12px 24px;
+  font-size: var(--default-p-size);
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: fit-content;
+}
+.mock-test-hero .left .start-test-btn p {
+  font-weight: var(--bold-font-weight);
+  color: var(--background);
+  text-align: center;
+}
+.mock-test-hero .left .start-test-btn:hover p {
+  background: var(--gradient-two);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mock-test-hero .left .start-test-btn:hover {
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--default-box-shadow2);
+  background: transparent;
+}
+.mock-test-hero .right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mock-test-hero .right .upskill-heading {
+  font-size: var(--heading-two);
+  margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .mock-test-hero {
+    flex-direction: column;
+    width: calc(90% - 40px);
+    margin-left: 5%;
+    padding: 20px;
+  }
+  .mock-test-hero .left {
+    width: 100%;
+    border-right: none;
+  }
+  .mock-test-hero .left h1 {
+  font-size: var(--heading-three);
+}
+  .mock-test-hero .right {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .mock-test-hero .right .upskill-heading {
+  font-size: var(--heading-three);
+  margin-bottom: 20px;
 }
-.mock-test-hero .left h1{
-    font-size: var(--heading-three);
-}
-.mock-test-hero .left strong{
-    font-size: var(--defaultp-p-size);
-    font-weight: 400;
-}
-.mock-test-hero .left ul li{
-    list-style: none;
-    margin-bottom: 5px;
 }

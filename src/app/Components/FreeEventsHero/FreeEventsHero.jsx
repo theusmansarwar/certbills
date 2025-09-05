@@ -17,7 +17,7 @@ const FreeEventsHero = () => {
           FREE On-demand <br />
           <strong>Webinars & Bootcamps</strong>
         </h1>
-        <p>Exclusive access to game-changing career wisdom</p>
+        <p>Exclusive access to career-changing expert advice</p>
         <div className="bottom">
           <div className="box">
             <img src="/learners.png" alt="Learners" />

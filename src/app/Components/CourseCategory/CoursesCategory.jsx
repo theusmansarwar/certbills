@@ -2,57 +2,71 @@ import React from "react";
 import "./CoursesCategory.css";
 import CoursesCategoryCard from "./CoursesCategoryCard";
 
+
+const coursesCategories = [
+  {
+    CategoryIcon: "/cyber-security.svg",
+    CategoryTitle: "Cyber Security",
+    slug: "cyber-security",
+  },
+  {
+    CategoryIcon: "/cyber-security.svg",
+    CategoryTitle: "Cloud Security",
+    slug: "cloud-security",
+  },
+  {
+    CategoryIcon: "/cyber-security.svg",
+    CategoryTitle: "Security Testing",
+    slug: "security-testing",
+  },
+  {
+    CategoryIcon: "/cyber-security.svg",
+    CategoryTitle: "Governance, Risk & Compliance",
+    slug: "governance-risk-and-compliance",
+  },
+  {
+    CategoryIcon: "/cyber-security.svg",
+    CategoryTitle: "Data Privacy",
+    slug: "data-privacy",
+  },
+  {
+    CategoryIcon: "/cyber-security.svg",
+    CategoryTitle: "Security Operation Center",
+    slug: "security-operation-center",
+  },
+  {
+    CategoryIcon: "/cyber-security.svg",
+    CategoryTitle: "Auditing",
+    slug: "auditing",
+  },
+  {
+    CategoryIcon: "/cyber-security.svg",
+    CategoryTitle: "Business Leadership Training Programs",
+    slug: "business-leadership-programs",
+  },
+  {
+    CategoryIcon: "/cyber-security.svg",
+    CategoryTitle: "Artificial Intelligence (AI)",
+    slug: "artificial-intelligence",
+  },
+  {
+    CategoryIcon: "/cyber-security.svg",
+    CategoryTitle: "Offensive Security",
+    slug: "offensive-security",
+  },
+  {
+    CategoryIcon: "/cyber-security.svg",
+    CategoryTitle: "Defensive Security",
+    slug: "defensive-security",
+  },
+  {
+    CategoryIcon: "/cyber-security.svg",
+    CategoryTitle: "Identity & Access Management",
+    slug: "identity-access-management",
+  },
+];
 const CoursesCategory = () => {
-  const coursesCategories = [
-    {
-      CategoryIcon: '/cyber-security.svg',
-      CategoryTitle: "Cyber Security",
-    },
-    {
-      CategoryIcon: '/cyber-security.svg',
-      CategoryTitle: "Cloud Security",
-    },
-    {
-      CategoryIcon: '/cyber-security.svg',
-      CategoryTitle: "Security Testing",
-    },
-    {
-      CategoryIcon: '/cyber-security.svg',
-      CategoryTitle: "Governance, Risk & Compliance",
-    },
-    {
-      CategoryIcon: '/cyber-security.svg',
-      CategoryTitle: "Data Privacy",
-    },
-    {
-      CategoryIcon: '/cyber-security.svg',
-      CategoryTitle: "Security Operation Center",
-    },
-    {
-      CategoryIcon: '/cyber-security.svg',
-      CategoryTitle: "Auditing",
-    },
-    {
-      CategoryIcon: '/cyber-security.svg',
-      CategoryTitle: "Business Leadership Training Programs",
-    },
-    {
-      CategoryIcon: '/cyber-security.svg',
-      CategoryTitle: "Artificial Intelligence (AI)",
-    },
-    {
-      CategoryIcon: '/cyber-security.svg',
-      CategoryTitle: "Offensive Security",
-    },
-    {
-      CategoryIcon: '/cyber-security.svg',
-      CategoryTitle: "Defensive Security",
-    },
-    {
-      CategoryIcon: '/cyber-security.svg',
-      CategoryTitle: "Identity & Access Management",
-    },
-  ];
+ 
 
   return (
     <div className="courses-category-section">

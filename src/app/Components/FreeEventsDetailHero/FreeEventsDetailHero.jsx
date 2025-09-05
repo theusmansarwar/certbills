@@ -8,7 +8,7 @@ const FreeEventsDetailHero = () => {
     <div className="events-detail-hero">
       <div className="free-training">
         <LuVideo />
-        <span>FREE Training</span>
+        <span>FREE & LIVE</span>
       </div>
       <h1>Red Team Unleashed: Crafting Real-World Cyber Attacks</h1>
       <div className="date-container">

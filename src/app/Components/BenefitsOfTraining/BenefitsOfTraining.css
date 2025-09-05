@@ -1,3 +1,65 @@
-.training-content{
+.benefits-of-training {
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--forground);
+}
+.training-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.training-content .left {
+  width: 30%;
+}
+.training-content .right {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.training-content .right .benefit {
+  background-color: var(--background);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--radius-one);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: calc(21% - 40px);
+  height: 100px;
+}
+@media (max-width: 900px) {
+  .benefits-of-training {
+    padding: 20px 0;
+  }
+
+  .training-content {
+    flex-direction: column;
+    width: calc(100% - 40px);
+    margin: 0;
+  }
+
+  .training-content .left {
+    width: 100%;
+  }
+
+  .training-content .right {
+    width: 100%;
+    gap: 10px;
     display: flex;
+    flex-wrap: wrap; /* allow wrapping */
+  }
+
+  .training-content .right .benefit {
+    width: calc(47% - 20px); /* ✅ two per row with spacing */
+    padding:10px ;
+    height: 100px;
+  }
 }

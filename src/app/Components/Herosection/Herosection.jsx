@@ -1,80 +1,91 @@
-'use client'
-import React, { useState, useEffect } from "react";
+"use client";
+import { useState, useEffect } from "react";
 import "./Herosection.css";
 import MissionBanner from "./MissionBanner";
+import FirstSlide from "./FirstSlide";
+import SecondSlide from "./SecondSlide";
 
-// Import background images
-
+// slides.js (your array is here)
+const slides = [
+  {
+    type: "first",
+    bg: "/video-thumbnail.png",
+    subtitle: "Be the Frontline Defender",
+    title: "SOC Analyst Hands-on",
+    highlight: "Training",
+    extra: "70+ Tools | 100% Hands-on Lab | Interview Preparation",
+    link:"/"
+  },
+  {
+    type: "first",
+    bg: "/success-story.png",
+    subtitle: "Your Cybersecurity Journey",
+    title: "Real-World",
+    highlight: "Success Stories",
+    extra: "Inspiring learners who achieved big!",
+    link:"/success-stories"
+  },
+  {
+    type: "second",
+    subtitle: "Your Gateway To Limitless Learning",
+    title: "Free Events & Masterclasses",
+    buttonText: "Explore Now",
+    image: "/career-field.png",
+    link:"/free-events"
+  },
+  {
+    type: "second",
+    subtitle: "Secure Every Step of Your Development Lifecycle",
+    title: "DevSecOps Practical Approach",
+    buttonText: "Know More",
+    image: "/career-field.png",
+    link:"/"
+  },
+];
 
 const Herosection = () => {
-  const [currentBgIndex, setCurrentBgIndex] = useState(0);
-  // const navigate = useNavigate();
-  const backgrounds = ['/video-thumbnail.png', 'success-story.png'];
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
-  // Function to change active menu item
-
-  // Function to change background manually
-  const changeBackground = (index) => {
-    setCurrentBgIndex(index);
-  };
-
-  // Auto change background every 2 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentBgIndex((prevIndex) => (prevIndex + 1) % backgrounds.length);
-    }, 2000);
-
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+      setCurrentSlideIndex((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
     <>
-    <div className="Hero-section">
-  <div className="feature-section-slider">
-    <div
-      className="feature-slider-inner"
-      style={{ transform: `translateX(-${currentBgIndex * 100}%)` }}
-    >
-      {backgrounds.map((bg, index) => (
-        <div
-          key={index}
-          className="feature-slide"
-          style={{ backgroundImage: `url(${bg})` }}
-        >
-          <div className="blackscreen">
-            <div className="text-section">
-              <h3>Be the Frontline Defender</h3>
-              <h1>
-                SOC Analyst Hands-on  <span>Training</span>
-              </h1>
-              <h3>
-               70+ Tools | 100% Hands-on Lab | Interview Preparation
-              </h3>
-              <button className="secondary-button">Get Started</button>
-            </div>
-              
+      <div className="Hero-section">
+        <div className="feature-section-slider">
+          <div
+            className="feature-slider-inner"
+            style={{ transform: `translateX(-${currentSlideIndex * 100}%)` }}
+          >
+            {slides.map((slide, index) => (
+              <div key={index} className="slide-wrapper">
+                {slide.type === "first" ? (
+                  <FirstSlide {...slide} />
+                ) : (
+                  <SecondSlide {...slide} />
+                )}
+              </div>
+            ))}
           </div>
         </div>
-      ))}
 
-    </div>
-     </div>
-     <div className="rounded-tab">
-      {backgrounds.map((_, index) => (
-        <div
-          key={index}
-          className={`dot ${index === currentBgIndex ? "Active" : ""}`}
-          onClick={() => changeBackground(index)}
-        ></div>
-      ))}
-   
-  </div>
+        <div className="rounded-tab">
+          {slides.map((_, index) => (
+            <div
+              key={index}
+              className={`dot ${index === currentSlideIndex ? "Active" : ""}`}
+              onClick={() => setCurrentSlideIndex(index)}
+            ></div>
+          ))}
+        </div>
+      </div>
 
- 
-</div>
-<MissionBanner/>
-</>
-
+      <MissionBanner />
+    </>
   );
 };
 

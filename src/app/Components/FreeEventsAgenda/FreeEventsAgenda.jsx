@@ -42,21 +42,21 @@ const FreeEventsAgenda = () => {
   const upcomingEvents = [
     {
       EventImage: "/events-card-img.png",
-      EventIitle:
+      EventTitle:
         "Crack Your Cybersecurity Interview: Threat Hunting & DFIR Edition",
       EventTime: "16 July (Wed) , 08:00 – 09:00 PM (IST)",
       RegisteredPeople: "352",
     },
     {
       EventImage: "/events-card-img.png",
-      EventIitle:
+      EventTitle:
         "Crack Your Cybersecurity Interview: Threat Hunting & DFIR Edition",
       EventTime: "16 July (Wed) , 08:00 – 09:00 PM (IST)",
       RegisteredPeople: "352",
     },
     {
       EventImage: "/events-card-img.png",
-      EventIitle:
+      EventTitle:
         "Crack Your Cybersecurity Interview: Threat Hunting & DFIR Edition",
       EventTime: "16 July (Wed) , 08:00 – 09:00 PM (IST)",
       RegisteredPeople: "352",
@@ -109,6 +109,7 @@ const FreeEventsAgenda = () => {
             </div>
           </div>
         </div>
+        <h2>Upcoming Events for You</h2>
         <div className="upcoming-events-list">
           {upcomingEvents.map((event, index) => (
             <UpcomingEventsCard key={index} data={event} />
@@ -118,7 +119,7 @@ const FreeEventsAgenda = () => {
       <div className="right">
         <img src="/event-contact-img.jpg" alt="event-thmbnail" />
         <form className="form-container">
-          <strong className="section-heading">
+          <strong className="form-heading">
             Save a seat before the spots fill out!
           </strong>
           <div className="input-container">
@@ -128,8 +129,9 @@ const FreeEventsAgenda = () => {
             <div className="checkbox-container">
               <input type="checkbox" />
               <p>
-                By sharing your details, you agree to our Terms and{" "}
-                <span>Privacy Policy</span>.
+                By submitting your contact details, you acknowledge and agree to
+                our <span>Terms of Use</span> and
+                <span> Privacy Policy</span>.
               </p>
             </div>
             <div className="contact-btn">

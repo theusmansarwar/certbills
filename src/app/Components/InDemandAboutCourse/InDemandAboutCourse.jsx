@@ -1,11 +1,11 @@
-'use client'
+"use client";
 import React, { useState, useEffect } from "react";
 import "./InDemandAboutCourse.css";
 import { BsShieldFillCheck } from "react-icons/bs";
 import { FaCheck } from "react-icons/fa6";
 import { IoChevronDown } from "react-icons/io5";
 
-const InDemandAboutCourse = () => {
+const InDemandAboutCourse = ({data}) => {
   const navLinks = [
     { title: "ABOUT COURSE", id: "about-course" },
     { title: "COURSE CURRICULUM", id: "course-curriculum" },
@@ -13,114 +13,9 @@ const InDemandAboutCourse = () => {
     { title: "PRE-REQUISITS", id: "pre-requisits" },
     { title: "EXAM DETAILS", id: "exam-details" },
     { title: "COURSE OBJECTIVES", id: "course-objectives" },
-    { title: "OUR INSTRUCTORS", id: "our-instructors" },
-    { title: "FAQS", id: "faqs" },
   ];
 
-  const courseSections = [
-    {
-      id: "about-course",
-      title: "About Course",
-      content: [
-        "CISSP® is the most renowned certification in the information security domain...",
-        "CISSP® is the most renowned certification in the information security domain...",
-        "CISSP® is the most renowned certification in the information security domain...",
-        "CISSP® is the most renowned certification in the information security domain...",
-        "CISSP® is the most renowned certification in the information security domain...",
-        "CISSP® is the most renowned certification in the information security domain...",
-      ],
-      image: '/cissp-domains.png',
-    },
-    {
-      id: "course-curriculum",
-      title: "Course Curriculum",
-      domains: [
-        {
-          domain: "Domain 1: Security and Risk Management",
-          points: [
-            {
-              heading:
-                "1.1 - Understand, adhere to, and promote professional ethics",
-              subpoints: [
-                "ISC2 Code of Professional Ethics",
-                "ISC2 Code of Professional Ethics",
-                "ISC2 Code of Professional Ethics",
-                "ISC2 Code of Professional Ethics",
-                "ISC2 Code of Professional Ethics",
-                "ISC2 Code of Professional Ethics",
-                "ISC2 Code of Professional Ethics",
-                "ISC2 Code of Professional Ethics",
-                "ISC2 Code of Professional Ethics",
-                "More examples...",
-              ],
-            },
-          ],
-        },
-      ],
-    },
-    {
-      id: "target-audience",
-      title: "Target Audience",
-      audience: [
-        "Chief Information Security Officer",
-        "Director of Security",
-        "Security Analyst",
-        "Security Analyst",
-        "Security Analyst",
-        "Security Analyst",
-        "Security Analyst",
-        "Security Analyst",
-        "Security Analyst",
-        "Security Analyst",
-      ],
-    },
-    {
-      id: "pre-requisits",
-      title: "Pre-requisites",
-      intro: "To apply for the CISSP® course certification, you need to:",
-      points: [
-        "Have a minimum 5 years of cumulative paid full-time work experience...",
-        "One-year experience waiver with a 4-year college degree...",
-        "One-year experience waiver with a 4-year college degree...",
-        "One-year experience waiver with a 4-year college degree...",
-        "One-year experience waiver with a 4-year college degree...",
-        "One-year experience waiver with a 4-year college degree...",
-        "One-year experience waiver with a 4-year college degree...",
-      ],
-    },
-    {
-      id: "exam-details",
-      title: "Exam Details",
-      table: [
-        { label: "Exam Name", value: "CISSP CAT 2024" },
-        { label: "Launch Date", value: "Effective April 15, 2024" },
-        { label: "Exam Duration", value: "3 hours" },
-        { label: "Number of Items", value: "100-150" },
-        { label: "Number of Items", value: "100-150" },
-        { label: "Number of Items", value: "100-150" },
-        { label: "Number of Items", value: "100-150" },
-        { label: "Number of Items", value: "100-150" },
-      ],
-    },
-    {
-      id: "course-objectives",
-      title: "Course Objectives",
-      objectives: [
-        "Master core concepts of risk management.",
-        "Understand ethical and legal requirements.",
-        "Understand ethical and legal requirements.",
-        "Understand ethical and legal requirements.",
-        "Understand ethical and legal requirements.",
-        "Understand ethical and legal requirements.",
-        "Understand ethical and legal requirements.",
-        "Understand ethical and legal requirements.",
-        "Understand ethical and legal requirements.",
-        "Understand ethical and legal requirements.",
-        "Understand ethical and legal requirements.",
-        "Understand ethical and legal requirements.",
-      ],
-    },
-  ];
+  
 
   const [openSection, setOpenSection] = useState("");
   const [isMobile, setIsMobile] = useState(false);
@@ -129,7 +24,7 @@ const InDemandAboutCourse = () => {
     const handleResize = () => {
       const isMobileView = window.innerWidth <= 768;
       setIsMobile(isMobileView);
-      setOpenSection(isMobileView ? courseSections[0].id : "ALL");
+      setOpenSection(isMobileView ? data[0].id : "ALL");
     };
 
     handleResize();
@@ -170,7 +65,7 @@ const InDemandAboutCourse = () => {
 
       <div className="about-course-content">
         <div className="left">
-          {courseSections.map((section) => (
+          {data.map((section) => (
             <div
               id={section.id}
               className={`section ${section.id}`}

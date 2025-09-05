@@ -1,0 +1,114 @@
+.mentorship-hero {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  gap: 150px;
+}
+.mentorship-hero .left {
+  background-color: #FF014E ;
+  width: 40%;
+  position: relative;
+}
+.mentorship-hero .left img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(15%, 5%);
+  height: 500px;
+}
+.mentorship-hero .right {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.mentorship-hero .right .right-inside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mentorship-hero .right .right-inside h1 span {
+  display: block;
+  font-size: var(--heading-two);
+}
+.mentorship-hero .right .right-inside .desc1 {
+  width: 65%;
+}
+.mentorship-hero .right .right-inside .desc2 {
+  width: 75%;
+}
+.mentorship-hero .right .right-inside .guidance-btn {
+  background: var(--gradient-two);
+  border: 1px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: fit-content;
+  margin-top: 10px;
+}
+.mentorship-hero .right .right-inside .guidance-btn p {
+  color: var(--background);
+  font-size: var(--default-p-size);
+}
+.mentorship-hero .right .right-inside .guidance-btn:hover p {
+  background: var(--gradient-two);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mentorship-hero .right .right-inside .guidance-btn:hover {
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--default-box-shadow2);
+  background: transparent;
+}
+@media (max-width: 900px) {
+  .mentorship-hero {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .mentorship-hero .left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+  }
+  .mentorship-hero .left img {
+    position: static;
+    height: 300px;
+  }
+  .mentorship-hero .right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mentorship-hero .right .right-inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding:20px 10px;
+    
+  }
+  .mentorship-hero .right .right-inside h1 span {
+  display: inline;
+  font-size: var(--heading-three);
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mentorship-hero .right .right-inside .desc1 {
+  width: 100%;
+  text-align: center;
+}
+.mentorship-hero .right .right-inside .desc2 {
+  width: 100%;
+  text-align: center;
+}
+}

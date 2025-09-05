@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "./Maindropdown.css";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useRouter } from "next/navigation";
 const Maindropdown = () => {
   const cybersecurityCertifications = [
     { name: "AI-Powered Cybersecurity", slug: "ai-powered-cybersecurity" },
@@ -331,29 +332,29 @@ const Maindropdown = () => {
     },
   ];
   const trainingCourses = [
-  "Security Architecture Hands-On Training",
-  "Advanced Cloud Security Governance Training",
-  "Cyber Security Expert Online Training",
-  "AWS Advanced Architect Combo Training Course",
-  "Cyber Security Analyst Training Course",
-  "Azure Administrator & Security (AZ-104 + AZ-500) Combo Training",
-  "AWS Combo (Architecture Foundation + Security Specialty) Training",
-  "Offensive Cyber Security Engineer Online Training & Certification Course",
-  "Cloud Architect Expert Combo Training Course",
-  "Information Security Manager Online Training Course"
-];
-const additionalTrainingCourses = [
-  "AWS Combo (Architecture Foundation + Security Speciality) Training",
-  "Azure Administrator & Security (AZ-104 + AZ-500) Combo Training",
-  "Information Security Auditor Online Training Course",
-  "Cyber Security Analyst Training Course",
-  "AWS Advanced Architect Combo Training Course",
-  "Pentester Combo Training & Certification Course",
-  "Offensive Cyber Security Engineer Online Training & Certification Course",
-  "Enterprise Security Governance – Combo Of CISSP & CCSP Online Training Course",
-  "CompTIA A+ And Network+ Online Combo Training"
-];
-const courses2 = [
+    "Security Architecture Hands-On Training",
+    "Advanced Cloud Security Governance Training",
+    "Cyber Security Expert Online Training",
+    "AWS Advanced Architect Combo Training Course",
+    "Cyber Security Analyst Training Course",
+    "Azure Administrator & Security (AZ-104 + AZ-500) Combo Training",
+    "AWS Combo (Architecture Foundation + Security Specialty) Training",
+    "Offensive Cyber Security Engineer Online Training & Certification Course",
+    "Cloud Architect Expert Combo Training Course",
+    "Information Security Manager Online Training Course",
+  ];
+  const additionalTrainingCourses = [
+    "AWS Combo (Architecture Foundation + Security Speciality) Training",
+    "Azure Administrator & Security (AZ-104 + AZ-500) Combo Training",
+    "Information Security Auditor Online Training Course",
+    "Cyber Security Analyst Training Course",
+    "AWS Advanced Architect Combo Training Course",
+    "Pentester Combo Training & Certification Course",
+    "Offensive Cyber Security Engineer Online Training & Certification Course",
+    "Enterprise Security Governance – Combo Of CISSP & CCSP Online Training Course",
+    "CompTIA A+ And Network+ Online Combo Training",
+  ];
+  const courses2 = [
     "CompTIA Server+ Certification Training",
     "CompTIA Project+ (Plus) Certification Training",
     "CompTIA Linux+ (Plus) Certification Training",
@@ -363,70 +364,67 @@ const courses2 = [
     "Advanced In AI Security Management (AAISM) Certification Training",
     "Implement Real-Time Intelligence With Microsoft Fabric (DP-603T00) Training",
     "Implement A Data Science And Machine Learning Solution For AI With Microsoft Fabric (DP-604T00) Training",
-    "CompTIA CloudNetX Certification Training"
-]
-
+    "CompTIA CloudNetX Certification Training",
+  ];
+  const router = useRouter();
 
   const [selectedIndex, setSelectedIndex] = useState(0);
-    const [leftselectedIndex, setLeftSelectedIndex] = useState(0);
+  const [leftselectedIndex, setLeftSelectedIndex] = useState(0);
   const [isFirstMenu, setIsFirstMenu] = useState(true);
   const [isSecondMenu, setIsSecondMenu] = useState(false);
-   const [isThirdMenu, setIsThirdMenu] = useState(false);
+  const [isThirdMenu, setIsThirdMenu] = useState(false);
   const [isFourthMenu, setIsFourthMenu] = useState(false);
   const [isFifthMenu, setIsFifthMenu] = useState(false);
   const handleClick = (index) => {
     setSelectedIndex(index);
   };
 
-  const handleleftmenuClick = (index) =>{
-    setLeftSelectedIndex(index)
-    if(index==0){
-    setIsFirstMenu(true);
-    setIsSecondMenu(false);
-    setIsThirdMenu(false)
-    setIsFourthMenu(false)
-    setIsFifthMenu(false)
+  const handleleftmenuClick = (index) => {
+    setLeftSelectedIndex(index);
+    if (index == 0) {
+      setIsFirstMenu(true);
+      setIsSecondMenu(false);
+      setIsThirdMenu(false);
+      setIsFourthMenu(false);
+      setIsFifthMenu(false);
+    } else if (index == 1) {
+      setIsFirstMenu(false);
+      setIsSecondMenu(true);
+      setIsThirdMenu(false);
+      setIsFourthMenu(false);
+      setIsFifthMenu(false);
+    } else if (index == 2) {
+      setIsFirstMenu(false);
+      setIsSecondMenu(false);
+      setIsThirdMenu(true);
+      setIsFourthMenu(false);
+      setIsFifthMenu(false);
+    } else if (index == 3) {
+      setIsFirstMenu(false);
+      setIsSecondMenu(false);
+      setIsThirdMenu(false);
+      setIsFourthMenu(true);
+      setIsFifthMenu(false);
+    } else if (index == 4) {
+      setIsFirstMenu(false);
+      setIsSecondMenu(false);
+      setIsThirdMenu(false);
+      setIsFourthMenu(false);
+      setIsFifthMenu(true);
+    }
+  };
 
-  }
-  else  if(index==1){
-    setIsFirstMenu(false);
-    setIsSecondMenu(true);
-    setIsThirdMenu(false)
-    setIsFourthMenu(false)
-     setIsFifthMenu(false)
-
-  }
-   else  if(index==2){
-    setIsFirstMenu(false);
-    setIsSecondMenu(false);
-    setIsThirdMenu(true)
-    setIsFourthMenu(false)
-     setIsFifthMenu(false)
-  }
-   else  if(index==3){
-    setIsFirstMenu(false);
-    setIsSecondMenu(false);
-    setIsThirdMenu(false)
-    setIsFourthMenu(true)
-     setIsFifthMenu(false)
-  }
-   else  if(index==4){
-    setIsFirstMenu(false);
-    setIsSecondMenu(false);
-    setIsThirdMenu(false)
-    setIsFourthMenu(false)
-     setIsFifthMenu(true)
-  }
-  }
-  
   return (
     <div className="maindropdown">
       <div className="left">
         <p className="dropdown-heading">Find your training</p>
         <ul>
           {courses.map((item, index) => (
-            <li key={index} onClick={()=>handleleftmenuClick(index)} 
-             className={leftselectedIndex === index ? "active" : ""}>
+            <li
+              key={index}
+              onClick={() => handleleftmenuClick(index)}
+              className={leftselectedIndex === index ? "active" : ""}
+            >
               <span>
                 {item.offer && <span className="offer">{item.offername}</span>}
                 {item.name}
@@ -439,12 +437,16 @@ const courses2 = [
       {isFirstMenu && (
         <div className="first-menu">
           <div className="center">
-            <p className="dropdown-heading">vendors</p>
+            <p className="dropdown-heading">Vendors</p>
             <div className="Center-area">
               <div className="center-left">
                 <ul>
                   {courseVendors.map((item, index) => (
-                    <li key={index} onMouseEnter={() => handleClick(index)}    className={selectedIndex === index ? "active" : ""}>
+                    <li
+                      key={index}
+                      onMouseEnter={() => handleClick(index)}
+                      className={selectedIndex === index ? "active" : ""}
+                    >
                       <span>
                         {item.offer && (
                           <span className="offer">{item.offername}</span>
@@ -473,7 +475,7 @@ const courses2 = [
                 </ul>
               </div>
             </div>
-            <p className="view-all-btn">View All</p>
+            <p className="view-all-btn" onClick={() => router.push("/all-vendors")}>View All</p>
           </div>
           <div className="right">
             <p className="dropdown-heading">Trending Courses</p>
@@ -482,7 +484,7 @@ const courses2 = [
                 <li key={index}>{item.name}</li>
               ))}
             </ul>
-            <p className="view-all-btn">View All</p>
+            <p className="view-all-btn" onClick={() => router.push("/all-courses")}>View All</p>
           </div>
         </div>
       )}
@@ -498,36 +500,33 @@ const courses2 = [
           })}
         </div>
       )}
-        {isThirdMenu && (
+      {isThirdMenu && (
         <div className="second-menu">
           {trainingCourses.map((items, index) => {
             return (
               <div className="second-menu-vbox" key={index}>
-            
                 <p>{items}</p>
               </div>
             );
           })}
         </div>
       )}
-        {isFourthMenu && (
+      {isFourthMenu && (
         <div className="second-menu">
           {additionalTrainingCourses.map((items, index) => {
             return (
               <div className="second-menu-vbox" key={index}>
-                
                 <p>{items}</p>
               </div>
             );
           })}
         </div>
       )}
-          {isFifthMenu && (
+      {isFifthMenu && (
         <div className="second-menu">
           {courses2.map((items, index) => {
             return (
               <div className="second-menu-vbox" key={index}>
-                
                 <p>{items}</p>
               </div>
             );

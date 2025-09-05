@@ -49,7 +49,7 @@
 }
 .upcoming-event-card .card-detail h3 {
   font-size: var(--heading-four);
-  font-weight: 500;
+  font-weight: var(--bold-font-weight);
 }
 .upcoming-event-card .card-detail .date-container .date {
   font-size: 12px;

@@ -1,0 +1,91 @@
+.domains-we-cover {
+  height: fit-content;
+  width: calc(100% - 120px);
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.domains-we-cover .desc {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.domain-card {
+  width: calc(23% - 32px);
+  padding: 16px;
+  background-color: var(--background);
+  border: 1px solid var(--primary-color);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-one);
+}
+
+.domain-card h3 {
+  font-size: var(--heading-four);
+  transition: all 0.3s ease;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+.domains-we-cover .domain-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 90%;
+  margin-left: 5%;
+  padding: 10px 0;
+}
+.domains-we-cover .demo-btn {
+  background: var(--gradient-two);
+  border: 1px solid transparent;
+  border-radius: var(--radius-one);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  padding: 12px 24px;
+  border-radius: var(--radius-three);
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: fit-content;
+  margin-top: 10px;
+}
+.domains-we-cover .demo-btn p {
+  font-weight: var(--bold-font-weight);
+  color: var(--background);
+  font-size: var(--default-p-size);
+}
+.domains-we-cover .demo-btn:hover p {
+  background: var(--gradient-two);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.domains-we-cover .demo-btn:hover {
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--default-box-shadow2);
+  background: transparent;
+}
+
+@media (max-width: 900px) {
+  .domains-we-cover {
+    height: fit-content;
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+  .domain-card {
+    width: calc(47% - 20px);
+    padding: 10px;
+  }
+  .domains-we-cover .domain-list {
+    width: 100%;
+    margin-left: 0%;
+    gap: 10px;
+  }
+  .domain-card img {
+    width: 20px;
+  }
+  .domain-card h3 {
+    font-size: var(--small-p-size);
+  }
+}

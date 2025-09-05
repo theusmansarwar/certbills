@@ -101,6 +101,7 @@
 
 .contact-modal .modal-mid .form-container .checkbox-container p {
   font-size: var(--small-p-size);
+  color: black;
 }
 .contact-modal .modal-mid .form-container .checkbox-container p span {
   text-decoration: none;

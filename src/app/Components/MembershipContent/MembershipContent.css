@@ -1,0 +1,116 @@
+.membership-content {
+  width: 100%;
+  padding: 60px 0;
+}
+.membership-content .content-top {
+  margin-bottom: 40px;
+}
+.table1 {
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: var(--radius-one);
+  font-weight: var(--bold-font-weight);
+  border: 1px solid gainsboro;
+}
+.table1 th {
+  background-color: #656363;
+  color: var(--background);
+}
+.table1 .price {
+  color: green;
+}
+
+.table1 .free {
+  color: red;
+}
+.table1 td,
+.table1 th {
+  text-align: left;
+  padding: 15px;
+}
+
+.table1 tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/* Bottom */
+.membership-content .content-bottom {
+  background-color: var(--background);
+  box-shadow: var(--default-box-shadow);
+  width: calc(90% - 80px);
+  margin-left: 5%;
+  padding: 40px;
+}
+.membership-content .content-bottom h3 {
+  font-size: var(--heading-three);
+  font-weight: var(--default-font-weight);
+  margin: 10px 0;
+}
+.membership-content .content-bottom p {
+  margin-bottom: 20px;
+}
+.membership-content .content-bottom ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.membership-content .content-bottom ul li svg {
+  width: 12px;
+  height: 12px;
+  font-size: 12px; /* fixed size, won't change on mobile */
+  flex-shrink: 0;  /* prevents shrinking in flexbox */
+}
+
+.table2 {
+  border-collapse: collapse;
+
+  border-radius: var(--radius-one);
+}
+.table2 th {
+  background-color: var(--primary-color);
+  color: var(--background);
+  font-weight: var(--bold-font-weight);
+}
+.table2 span {
+  font-weight: var(--bold-font-weight);
+}
+
+.table2 td,
+.table2 th {
+  text-align: left;
+  padding: 15px;
+  border: 1px solid gray;
+}
+
+.table2 tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 900px) {
+  .membership-content {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .membership-content .content-top {
+    margin-bottom: 20px;
+  }
+  .table1 {
+    width: 96%;
+    margin-left: 2%;
+    font-size: var(--small-p-size);
+  }
+  .table2 {
+    font-size: var(--small-p-size);
+  }
+  .table1 td,
+  .table1 th,
+  .table2 td,
+  .table2 th {
+    padding: 8px;
+  }
+  .membership-content .content-bottom {
+    width: calc(96% - 20px);
+    margin-left: 2%;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,59 @@
+.upskill-course-card {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--default-box-shadow);
+  border-radius: var(--radius-three);
+  transition: transform 0.2s ease;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.upskill-course-card .card-detail h3 {
+  font-size: var(--heading-four);
+  font-weight: 500;
+  padding: 16px 12px;
+  text-align: center;
+  min-height: 50px;
+}
+
+.upskill-course-card:hover {
+  border: 1px solid transparent;
+  border-radius: var(--radius-one);
+  background: linear-gradient(to right, var(--background), var(--background)),
+    var(--gradient-one);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  transform: scale(1.02);
+}
+@media (max-width: 900px) {
+  .upskill-course-card:hover {
+    transform: scale(1);
+  }
+  .upskill-course-card {
+    width: 100%;
+  }
+  .upskill-course-card .card-img {
+    height: 100px !important;
+  }
+  .upskill-course-card .card-detail {
+    min-height: 20px;
+  }
+
+  .upskill-course-card .card-detail h3 {
+    font-size: var(--small-p-size);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 20px;
+    padding: 16px 12px;
+  }
+  .upskill-course-card .card-btn {
+    padding: 8px 0;
+  }
+  .upskill-course-card .card-btn p {
+    font-size: var(--small-p-size);
+  }
+}

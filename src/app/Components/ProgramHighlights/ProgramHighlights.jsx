@@ -10,34 +10,35 @@ const ProgramHighlights = () => {
         <div className="upskill">
           <img src="/upskill.png" alt="upskill" />
           <h3>
-            Upskill for <span>FREE</span>
+            <span>FREE</span> Upskilling
           </h3>
           <p>
-            At CertBills, we are committed to making the internet a safer place
-            for all. That's why we're thrilled to introduce our groundbreaking
-            FREE training initiative with a bold mission.
+            CertBills offers free training to help you learn cybersecurity
+            basics. You gain future-ready skills that match today's digital
+            threat landscape. The goal is to make you more confident and
+            job-ready.
           </p>
         </div>
         <div className="guidance">
-          <img src='/guidance.png' alt="guidance" />
+          <img src="/guidance.png" alt="guidance" />
           <h3>
-            <span>Expert</span> Guidance
+            <span>Expert</span> Mentorship
           </h3>
           <p>
-            Industry experts not only train you on the essentials of
-            cybersecurity, but also give career guidance and provide valuable
-            insights into the job opportunities in this field.
+            Cybersecurity experts will guide you through key topics. You get
+            clear insights, real-world tips, and career direction. They help you
+            grow in a field that continues to expand.
           </p>
         </div>
         <div className="training">
-          <img src='/training.png' alt="training" />
+          <img src="/training.png" alt="training" />
           <h3>
-            Train the <span>Trainer</span>
+            Empower <span>Educators</span>
           </h3>
           <p>
-            By training educators, we create a ripple effect that ensures
-            students across the educational spectrum receive essential
-            cybersecurity knowledge.
+            We support educators through expert-led sessions. You learn how to
+            teach core cybersecurity skills. This helps you prepare students and
+            professionals for real-world challenges.
           </p>
         </div>
       </div>

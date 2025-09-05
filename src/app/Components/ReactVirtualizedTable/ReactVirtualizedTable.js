@@ -14,21 +14,29 @@ import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 // 🔹 Blinking effect for dynamic seats
 const blink = keyframes`
   50% { opacity: 0; }
 `;
 
-// Course array
-const courses = [
-  { title: "CISA - Certified Information Systems Auditor", date: "09 Aug - 14 Sep", time: "09:00 - 13:00 IST", mode: "ONLINE", schedule: "Weekend", status: "1 SEATS LEFT" },
-  { title: "Data Protection Officer (DPO)", date: "11 Aug - 26 Aug", time: "20:00 - 22:00 IST", mode: "ONLINE", schedule: "Weekday", status: "3 SEATS LEFT" },
-  { title: "CompTIA Security+ SYO-701", date: "16 Aug - 28 Sep", time: "09:00 - 13:00 IST", mode: "ONLINE", schedule: "Weekend", status: "BATCH FULL" },
-  { title: "RSA Archer", date: "16 Aug - 14 Sep", time: "19:00 - 22:00 IST", mode: "ONLINE", schedule: "Weekend", status: "ENROLL NOW" },
-  { title: "AWS Combo", date: "30 Aug - 01 Nov", time: "19:00 - 23:00 IST", mode: "OFFLINE", schedule: "Weekend", status: "ENROLL NOW" },
-  { title: "Certified In Cybersecurity (CC)", date: "18 Aug - 28 Aug", time: "20:00 - 22:00 IST", mode: "ONLINE", schedule: "Weekday", status: "2 SEATS LEFT" }
-];
+// Course data categorized by month
+const allCourses = {
+  August: [
+    { title: "CISA - Certified Information Systems Auditor", date: "09 Aug - 14 Sep", time: "09:00 - 13:00 IST", mode: "ONLINE", schedule: "Weekend", status: "ENROLL NOW" },
+    { title: "Data Protection Officer (DPO)", date: "11 Aug - 26 Aug", time: "20:00 - 22:00 IST", mode: "ONLINE", schedule: "Weekday", status: "3 SEATS LEFT" },
+    { title: "Certified In Cybersecurity (CC)", date: "18 Aug - 28 Aug", time: "20:00 - 22:00 IST", mode: "ONLINE", schedule: "Weekday", status: "BATCH FULL" },
+  ],
+  September: [
+    { title: "CompTIA Security+ SYO-701", date: "16 Sep - 28 Sep", time: "09:00 - 13:00 IST", mode: "ONLINE", schedule: "Weekend", status: "BATCH FULL" },
+    { title: "RSA Archer", date: "16 Sep - 14 Oct", time: "19:00 - 22:00 IST", mode: "ONLINE", schedule: "Weekend", status: "ENROLL NOW" },
+  ],
+  October: [
+    { title: "AWS Combo", date: "01 Oct - 01 Nov", time: "19:00 - 23:00 IST", mode: "OFFLINE", schedule: "Weekend", status: "ENROLL NOW" },
+    { title: "CISM - Certified Information Security Manager", date: "05 Oct - 20 Oct", time: "18:00 - 21:00 IST", mode: "ONLINE", schedule: "Weekday", status: "5 SEATS LEFT" },
+  ]
+};
 
 // Define columns
 const columns = [
@@ -68,81 +76,70 @@ function fixedHeaderContent() {
   );
 }
 
-function rowContent(_index, row) {
+function StatusButton({ status }) {
+  if (status === "BATCH FULL") {
+    return (
+      <Button variant="contained" disabled sx={{ backgroundColor: "#9e9e9e", boxShadow: "none" }}>
+        {status}
+      </Button>
+    );
+  }
+  if (status === "ENROLL NOW") {
+    return (
+      <Button variant="contained" sx={{ backgroundColor: "green", color: "white", boxShadow: "none" }}>
+        {status}
+      </Button>
+    );
+  }
   return (
-    <React.Fragment>
-      {columns.map((column) => {
-        if (column.dataKey === "status") {
-          let statusButton = null;
+    <Button
+      variant="contained"
+      sx={{
+        color: "white",
+        backgroundColor: "black",
+        fontWeight: "bold",
+        borderColor: "black",
+        animation: `${blink} 1.2s infinite`,
+        boxShadow: "none"
+      }}
+    >
+      {status}
+    </Button>
+  );
+}
 
-          if (row.status === "BATCH FULL") {
-            statusButton = (
-              <Button variant="contained" disabled sx={{ backgroundColor: "#9e9e9e", boxShadow: "none" }}>
-                {row.status}
-              </Button>
-            );
-          } else if (row.status === "ENROLL NOW") {
-            statusButton = (
-              <Button variant="contained" sx={{ backgroundColor: "green", color: "white", boxShadow: "none" }}>
-                {row.status}
-              </Button>
-            );
-          } else {
-            statusButton = (
-              <Button
-                variant="contained"
-                sx={{
-                  color: "white",
-                  backgroundColor:"black",
-                  fontWeight: "bold",
-                  borderColor: "black",
-                  animation: `${blink} 1s infinite`,
-                  boxShadow:"none"
-                }}
-              >
-                {row.status}
-              </Button>
-            );
-          }
-
-          return <TableCell key={column.dataKey}>{statusButton}</TableCell>;
-        }
-
-        if (column.dataKey === "mode") {
-          return (
-            <TableCell key={column.dataKey}>
-              <Button
-                variant="contained"
-                sx={{
-                  backgroundColor: row.mode === "ONLINE" ? "#04f3243e" : "#ff370050",
-                  color: row.mode === "ONLINE" ? "#00740fff" : "#ff0000ff",
-                  padding: "5px 10px",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                  boxShadow:"none"
-                }}
-              >
-                {row.mode}
-              </Button>
-            </TableCell>
-          );
-        }
-
-        return <TableCell key={column.dataKey}>{row[column.dataKey]}</TableCell>;
-      })}
-    </React.Fragment>
+function ModeButton({ mode }) {
+  return (
+    <Button
+      variant="contained"
+      sx={{
+        backgroundColor: mode === "ONLINE" ? "#04f3243e" : "#ff370050",
+        color: mode === "ONLINE" ? "#00740fff" : "#ff0000ff",
+        padding: "5px 10px",
+        fontSize: "10px",
+        fontWeight: "bold",
+        boxShadow: "none"
+      }}
+    >
+      {mode}
+    </Button>
   );
 }
 
 export default function ReactVirtualizedTable() {
+  const [selectedMonth, setSelectedMonth] = React.useState("August");
+  const isMobile = useMediaQuery("(max-width:900px)");
+
   return (
-    <Paper style={{ height: 550, width: '90%', margin: "30px 5%" }}>
+    <Paper style={{ minHeight: "400px", width: '90%', margin: "30px 5%", overflow: "hidden" }}>
       {/* 🔹 Custom Header */}
       <Box
         sx={{
           display: "flex",
-          alignItems: "center",
+          flexDirection: isMobile ? "column" : "row",
+          alignItems: isMobile ? "flex-start" : "center",
           justifyContent: "space-between",
+          gap: isMobile ? 2 : 0,
           backgroundColor: "black",
           color: "white",
           padding: "10px 20px",
@@ -155,28 +152,66 @@ export default function ReactVirtualizedTable() {
           variant="outlined"
           size="small"
           placeholder="Upcoming Batches For Diverse Learning Goals"
-          sx={{ backgroundColor: "white", borderRadius: "4px", width: "40%" }}
+          sx={{ backgroundColor: "white", borderRadius: "4px", width: isMobile ? "100%" : "40%" }}
         />
         <TextField
           select
           variant="outlined"
           size="small"
-          defaultValue="July"
-          sx={{ backgroundColor: "white", borderRadius: "4px", width: "150px" }}
+          value={selectedMonth}
+          onChange={(e) => setSelectedMonth(e.target.value)}
+          sx={{ backgroundColor: "white", borderRadius: "4px", width: isMobile ? "100%" : "150px" }}
         >
-          <MenuItem value="July">July</MenuItem>
           <MenuItem value="August">August</MenuItem>
           <MenuItem value="September">September</MenuItem>
+          <MenuItem value="October">October</MenuItem>
         </TextField>
       </Box>
 
-      {/* 🔹 Table */}
-      <TableVirtuoso
-        data={courses}
-        components={VirtuosoTableComponents}
-        fixedHeaderContent={fixedHeaderContent}
-        itemContent={rowContent}
-      />
+      {/* 🔹 Table or Mobile Cards */}
+     {!isMobile ? (
+  <TableVirtuoso
+    data={allCourses[selectedMonth] || []}
+    components={VirtuosoTableComponents}
+    fixedHeaderContent={fixedHeaderContent}
+    itemContent={(_index, row) => (
+      <>
+        <TableCell>{row.title}</TableCell>
+        <TableCell>{row.date}</TableCell>
+        <TableCell>{row.time}</TableCell>
+        <TableCell><ModeButton mode={row.mode} /></TableCell>
+        <TableCell>{row.schedule}</TableCell>
+        <TableCell><StatusButton status={row.status} /></TableCell>
+      </>
+    )}
+    style={{ height: 400, width: "100%" }}  
+  />
+) : (
+  <Box sx={{ padding: 2 }}>
+    {allCourses[selectedMonth].map((row, i) => (
+      <Box
+        key={i}
+        sx={{
+          border: "1px solid #ddd",
+          borderRadius: "8px",
+          padding: 2,
+          marginBottom: 2,
+          backgroundColor: "#fafafa"
+        }}
+      >
+        <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>{row.title}</Typography>
+        <Typography variant="body2">{row.date} • {row.time}</Typography>
+        <Typography variant="body2" sx={{ margin: "10px 0" }}>
+          <ModeButton mode={row.mode} /> &nbsp; | &nbsp; {row.schedule}
+        </Typography>
+        <Box sx={{ marginTop: 1 }}>
+          <StatusButton status={row.status} />
+        </Box>
+      </Box>
+    ))}
+  </Box>
+)}
+
     </Paper>
   );
 }

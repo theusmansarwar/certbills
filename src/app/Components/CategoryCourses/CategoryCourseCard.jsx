@@ -1,7 +1,11 @@
+"use client"
 import React from "react";
 import "./CategoryCourseCard.css";
+import { useParams, useRouter } from "next/navigation";
 const CategoryCourseCard = ({ data }) => {
- 
+ const router = useRouter();
+   const params = useParams(); // Get current route params
+  const categorySlug = params.categoryslug; 
   return (
     <div className="category-course-card">
       <div
@@ -20,7 +24,9 @@ const CategoryCourseCard = ({ data }) => {
       <div className="card-detail">
         <h3>{data.CourseTitle}</h3>
       </div>
-      <div className="card-btn">
+      <div className="card-btn"  onClick={() => {
+        router.push(`/category/${categorySlug}/course/${data.slug}`);
+      }}>
         <p>EXPLORE MORE</p>
       </div>
     </div>

@@ -1,5 +1,5 @@
 .course-category-hero {
-  height: fit-content;
+  height: 400px;
   width: 100%;
   display: flex;
   background-color: #091525;
@@ -9,7 +9,7 @@
   width: calc(70% - 60px);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   padding: 60px;
   padding-right: 0;
 }

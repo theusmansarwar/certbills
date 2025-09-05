@@ -1,12 +1,12 @@
-import React from "react";
-import SuccessStoriesHero from "../components/SuccessStoriesHero/SuccessStoriesHero";
-import CaseStudyCard from '../Components/CaseStudy/CaseStudyCard'
 
-import WhyChoose from "../Components/WhyChoose/WhyChoose";
 import AllCourses from "../pages/all-courses/AllCourses";
 
 
-
+export const metadata = {
+  title: "All Courses | CertBills",
+  description:
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ducimus totam temporibus non aliquam quisquam quae hic sed dolorem nisi?",
+};
 const Page = () => {
 
 

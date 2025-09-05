@@ -54,7 +54,6 @@
   font-weight: var(--bold-font-weight);
 }
 @media (max-width: 900px) {
-  
   .section-heading {
     font-size: var(--heading-three);
     text-align: center;

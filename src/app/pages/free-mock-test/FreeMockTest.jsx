@@ -1,5 +1,6 @@
-import FreeMockTestHero from "@/app/Components/FreeMockTestHero/FreeMockTestHero";
 import React from "react";
+import FreeMockTestHero from "@/app/Components/FreeMockTestHero/FreeMockTestHero";
+import PracticeTestList2 from "@/app/Components/PracticeTestList/PracticeTestList2";
 
 const FreeMockTest = () => {
   return (
@@ -7,11 +8,13 @@ const FreeMockTest = () => {
       style={{
         backgroundImage: "url(/bg_assesment.jpg)",
         backgroundSize: "contain",
+        backgroundRepeat: "repeat",
         width: "100%",
-        height: "100vh",
+        padding: "60px 0",
       }}
     >
       <FreeMockTestHero />
+      <PracticeTestList2 />
     </div>
   );
 };

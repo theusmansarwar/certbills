@@ -1,0 +1,277 @@
+.learning-schedule {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.learning-schedule .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.learning-schedule .header .learning-tabs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.learning-schedule .header .learning-tabs-container ul {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+  gap: 10px;
+  list-style: none;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.212);
+}
+.learning-schedule .header .learning-tabs-container ul li {
+  width: fit-content;
+  padding: 4px 16px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.learning-schedule .header .learning-tabs-container ul li.active:first-child {
+  padding: 4px 16px;
+  background-color: var(--primary-color);
+  width: fit-content;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  color: var(--background);
+}
+.learning-schedule .header .learning-tabs-container ul li.active:nth-child(2) {
+  padding: 4px 16px;
+  background-color: var(--primary-color);
+  width: fit-content;
+  border-radius: 0;
+  color: var(--background);
+}
+.learning-schedule .header .learning-tabs-container ul li.active:nth-child(3) {
+  padding: 4px 16px;
+  background-color: var(--primary-color);
+  width: fit-content;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  color: var(--background);
+}
+/* Contact 1 */
+.contact1 {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact1 .contact1-left {
+  flex: 1;
+  padding: 30px;
+  background-color: var(--forground);
+}
+
+.contact1 .contact1-left .contact-heading {
+  font-size: var(--heading-three);
+}
+
+.contact1 .contact1-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact1 .contact1-left li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.contact1 .contact1-left .icon {
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+
+.contact1-right {
+  flex: 1;
+  padding: 30px;
+}
+
+.contact1-right h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.contact1-right p {
+  margin-bottom: 20px;
+  color: #444;
+  font-size: 14px;
+}
+
+.contact1-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.react-international-phone-input-container {
+  flex: 1;
+  padding: 0 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  font-size: 14px;
+}
+
+.submit-btn {
+  background: var(--gradient-two);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+.react-international-phone-input-container {
+  border-radius: 6px !important;
+  border: 1px solid gainsboro !important;
+  background-color: var(--background) !important;
+}
+
+.react-international-phone-country-selector-button {
+  margin-top: 0px !important;
+  height: 50px !important;
+  background-color: transparent !important;
+  border: 0 solid var(--background-color) !important;
+}
+.react-international-phone-input {
+  border-radius: 6px !important;
+  height: 50px !important;
+  font-size: var(--default-p-size) !important;
+  margin: 0% !important;
+  background-color: var(--background) !important;
+  border: 0 solid var(--background-color) !important;
+  color: black !important;
+}
+.react-international-phone-country-selector-dropdown {
+  background-color: white !important;
+  color: black !important;
+}
+.react-international-phone-country-selector-dropdown li:hover {
+  background-color: var(--background-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.react-international-phone-country-selector-dropdown__list-item--focused {
+  background-color: var(--background) !important;
+  color: black !important;
+}
+@media (max-width: 900px) {
+  .learning-schedule {
+    width: calc(100% - 20px);
+    margin: 0;
+    padding: 20px 10px;
+  }
+  .learning-schedule .header {
+    gap: 20px;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 30px 0;
+  }
+  .learning-schedule .header .learning-tabs-container ul {
+    width: 100%;
+  }
+  .learning-schedule .header .learning-tabs-container ul li {
+    width: 33%;
+    text-align: center;
+    padding: 2px 8px;
+    font-size: 14px;
+  }
+  .learning-schedule .header .learning-tabs-container ul li.active:first-child {
+    width: 33%;
+    text-align: center;
+    padding: 2px 8px;
+    font-size: 14px;
+  }
+  .learning-schedule
+    .header
+    .learning-tabs-container
+    ul
+    li.active:nth-child(2) {
+    width: 33%;
+    text-align: center;
+    padding: 2px 8px;
+    font-size: 14px;
+  }
+  .learning-schedule
+    .header
+    .learning-tabs-container
+    ul
+    li.active:nth-child(3) {
+    width: 33%;
+    text-align: center;
+    padding: 2px 8px;
+    font-size: 14px;
+  }
+  /* Contact  */
+  .contact1 {
+    flex-direction: column;
+  }
+  .contact1 .contact1-left {
+    padding: 10px;
+  }
+  .contact1 .contact1-right {
+    padding: 10px;
+  }
+  .contact1 .contact1-left .contact-heading {
+    font-size: var(--heading-four);
+    margin-bottom: 20px;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+  .form-row input {
+    flex-direction: column;
+  }
+  input[type="text"] {
+    width: 94%;
+  }
+  input[type="time"] {
+    width: 94%;
+  }
+  textarea {
+    width: 94%;
+    padding: 10px;
+  }
+}

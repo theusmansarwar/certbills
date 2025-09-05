@@ -25,7 +25,7 @@ const UpcomingEventsCard = ({ data }) => {
           <span>FREE Training</span>
         </div>
         <h3>
-          {data.EvnetTitle}
+          {data.EventTitle}
         </h3>
         <div className="date-container">
           <RxCalendar />

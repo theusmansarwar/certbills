@@ -1,0 +1,14 @@
+.about-description {
+  width: 90%;
+  margin-left: 5%;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 900px) {
+  .about-description {
+    padding: 20px 0;
+    gap: 10px;
+  }
+}

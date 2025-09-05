@@ -4,55 +4,8 @@ import "./CourseAdvisors.css";
 
 import AdvisorCard from "./AdvisorCard";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
-const CourseAdvisors = () => {
-  const advisorsList = [
-    {
-      AdvisorImage: '/krish.png',
-      AdvisorName: "Krish",
-      AdvisorExperience: "18",
-      AdvisorQualification:
-        "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
-    },
-    {
-      AdvisorImage: '/krish.png',
-      AdvisorName: "Krish",
-      AdvisorExperience: "18",
-      AdvisorQualification:
-        "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
-    },
-    {
-      AdvisorImage: '/krish.png',
-      AdvisorName: "Krish",
-      AdvisorExperience: "18",
-      AdvisorQualification:
-        "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
-    },
-    {
-      AdvisorImage: '/krish.png',
-      AdvisorName: "Prabh Nair",
-      AdvisorExperience: "10",
-      AdvisorQualification: "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
-    },
-    {
-      AdvisorImage: '/krish.png',
-      AdvisorName: "Sanyam Negi",
-      AdvisorExperience: "8",
-      AdvisorQualification: "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
-    },
-    {
-      AdvisorImage: '/krish.png',
-      AdvisorName: "Sanyam Negi",
-      AdvisorExperience: "8",
-      AdvisorQualification: "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
-    },
-    {
-      AdvisorImage: '/krish.png',
-      AdvisorName: "Sanyam Negi",
-      AdvisorExperience: "8",
-      AdvisorQualification: "CISSP-ISSAP | CCSP | CSSLP | CCISO | CISSP-ISSAP | CCSP | CSSLP | CCISO |",
-    },
-    
-  ];
+const CourseAdvisors = ({data}) => {
+ 
  const scrollRef = useRef(null);
     const [canScrollLeft, setCanScrollLeft] = useState(false);
     const [canScrollRight, setCanScrollRight] = useState(true);
@@ -105,7 +58,7 @@ const CourseAdvisors = () => {
       <h2 className="section-heading">Our Expert Course Advisors</h2>
 
       <div className="advisors-list" ref={scrollRef}>
-        {advisorsList.map((item, index) => (
+        {data.map((item, index) => (
           <AdvisorCard key={index} data={item} />
         ))}
       </div>

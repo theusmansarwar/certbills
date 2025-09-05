@@ -1,9 +1,5 @@
+/* Herosection.css */
 .Hero-section {
-  width: 100%;
-}
-
-.feature-section {
-  height: var(--hero-section-height);
   width: 100%;
 }
 
@@ -21,65 +17,15 @@
   width: 100%;
 }
 
-.feature-slide {
-  flex-shrink: 0;
+/* Added slide wrapper to ensure each slide takes full width */
+.slide-wrapper {
+  min-width: 100%;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
-.blackscreen {
-  height: var(--hero-section-height);
-  width: 100%;
- 
-  background-color: var(--primary-transparent-color);
-  display: flex;
-  flex-direction: column;
-}
-.blackscreen .text-section {
-  height: 100%;
-  width: 40%;
-  color: var(--background);
-margin-left: 10%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  border-radius: var(--border-radius);
-}
-.blackscreen .text-section h1 {
-  font-size: var(--heading-one);
-  margin: 0%;
-  padding: 0%;
-  line-height: 1;
-  margin-bottom: 30px;
-}
-.blackscreen .text-section h1 span {
- color: var(--primary-color);
-}
-
-.blackscreen .text-section h3 {
-  font-size: var(--heading-three);
-  margin: 0%;
-  margin-bottom: 30px;
-  padding: 0%;
-  line-height: 1;
-}
-.blackscreen .text-section button{
- padding: 10px 15px;
- width: fit-content;
- background: var(--gradient-one);
- font-size: var( --heading-four);
- font-weight: 600px;
- border: none;
- border-radius: var(--radius-three);
- color: var(--background);
-}
 .rounded-tab {
   width: 100%;
-  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,17 +33,9 @@ margin-left: 10%;
   height: 50px;
   margin-top: -50px;
   position: relative;
- z-index: 2;
+  z-index: 2;
 }
 
-
-.dot.Active {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  box-shadow: var(--all-side-box-shadow);
-}
 .dot {
   width: 10px;
   height: 10px;
@@ -107,11 +45,8 @@ margin-left: 10%;
   box-shadow: var(--all-side-box-shadow2);
   cursor: pointer;
 }
-@media (max-width:900px){
 
-  .blackscreen .text-section {
-width: 80%;
-margin-left: 9%;
-
-}
+.dot.Active {
+  background-color: var(--primary-color);
+  box-shadow: var(--all-side-box-shadow);
 }

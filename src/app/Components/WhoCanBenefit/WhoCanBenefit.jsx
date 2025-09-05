@@ -5,18 +5,18 @@ const data = [
   {
     image: "/fresher.png",
     title: "A Fresher",
-    description: "looking to explore cybersecurity as a career option",
+    description: "exploring cybersecurity as a long-term career path",
   },
   {
     image: "/instructor.png",
     title: "An Instructor",
-    description: "looking to add value & meaning to your work",
+    description: "aiming to bring impact and purpose to their sessions",
   },
   {
     image: "/Institution.png",
     title: "An Institution",
     description:
-      "looking to diversify and train or hire cybersecurity educators",
+      "planning to expand or train its cybersecurity team",
   },
 ];
 

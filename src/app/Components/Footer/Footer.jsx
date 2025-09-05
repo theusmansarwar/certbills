@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -12,6 +12,8 @@ import "./Footer.css";
 import { MdMailOutline, MdOutlinePhoneInTalk } from "react-icons/md";
 import { IoChevronDown } from "react-icons/io5";
 import { useEffect, useState } from "react";
+import ContactModal from "../modals/ContactModal";
+import { useRouter } from "next/navigation";
 
 const companyLinks = [
   "About us",
@@ -96,8 +98,10 @@ const freeResources = [
 ];
 
 const Footer = () => {
+   const router = useRouter();
   const [openIndex, setOpenIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 900);
@@ -214,11 +218,23 @@ const Footer = () => {
           <p>All rights reserved. © 2025, CertBills</p>
         </div>
       </div>
+      {showModal && (
+        <ContactModal
+          onClose={() => setShowModal(false)}
+          heading={"Request more information"}
+        />
+      )}
       <div className="footer-bottom">
         <div className="footer-bottom-links">
-          <span>Duplicate Query</span>
-          <span>Site Webinar</span>
-          <span>Training Calendar</span>
+          <span
+            onClick={() => {
+              setShowModal(true);
+            }}
+          >
+            Duplicate Query
+          </span>
+          <span onClick={() => router.push("/free-events")}>Site Webinar</span>
+          <span onClick={() => router.push("/training-calenders")}>Training Calendar</span>
         </div>
         <div className="contact-info">
           <a href="#">

@@ -3,6 +3,9 @@
   margin-left: 5%;
   height: fit-content;
 }
+.benefits-of-certification .desc {
+  text-align: center;
+}
 .benefits-of-certification .benefits-list {
   display: flex;
   flex-wrap: wrap;
@@ -13,7 +16,7 @@
   position: relative;
 }
 .benefits-of-certification .each-benefit {
-  width: calc(23.9% - 20px);
+  width: calc(32% - 20px);
   height: fit-content;
   border: 2px solid var(--primary-color);
   padding: 20px 10px;
@@ -30,6 +33,7 @@
 .benefits-of-certification .each-benefit p {
   font-size: var(--default-p-size);
 }
+
 @media (max-width: 900px) {
   .benefits-of-certification {
     width: 96%;

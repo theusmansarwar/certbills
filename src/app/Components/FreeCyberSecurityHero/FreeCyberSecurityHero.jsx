@@ -10,7 +10,7 @@ const FreeCyberSecurityHero = () => {
           <span>Cyber Defenders 101</span>
           <h1>Free Cyber Security</h1>
           <strong>Fundamentals Fastrack</strong>
-          <span>Online Training</span>
+          <span>Learn Online with Experts</span>
           <div className="hero-btn">
             <p>JOIN NOW</p>
           </div>
@@ -29,28 +29,29 @@ const FreeCyberSecurityHero = () => {
         <div className="bottom-boxes">
           <strong>What?</strong>
           <p>
-            A <span>campaign</span> to endorse and expand{" "}
-            <span>cybersecurity skills</span> through complimentary training
+            expert-led online sessions. A free training <span>campaign</span>{" "}
+            that supports and grows
+            <span>cybersecurity skills</span> through expert-led online
+            sessions.
           </p>
         </div>
         <div className="bottom-boxes">
           <strong>When?</strong>
-          <p>Next Batch</p>
+          <p>Next batch begins from</p>
           <span className="date">11-14 Aug 2025</span>
         </div>
         <div className="horizontal-line"></div>
         <div className="bottom-boxes">
           <strong>Why?</strong>
           <p>
-            The need to address a worldwide Cybersecurity skills gap of{" "}
+            The goal is to close the global cybersecurity skills gap fast.
             <span>3.4 Million Professionals</span>
           </p>
         </div>
         <div className="bottom-boxes">
           <strong>Our Mission</strong>
           <p>
-            Training <span>1 Million</span> Professionals in Cybersecurity
-            Skills by 2025
+            Train <span>1 Million</span> Professionals.
           </p>
         </div>
       </div>

@@ -1,12 +1,12 @@
 .events-agenda {
-  width: calc(100% - 160px);
-  padding: 80px;
+  width: calc(100% - 240px);
+  padding: 80px 120px;
   display: flex;
   gap: 20px;
 }
 /* Left */
 .events-agenda .left {
-  width: 70%;
+  width: 68%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -14,10 +14,13 @@
 .events-agenda .left .agenda-content h2,
 .events-agenda .left .why-attend h2 {
   font-size: var(--heading-three);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.events-agenda .left h2 {
+  font-size: var(--heading-three);
+  margin: 20px 0;
 }
 .events-agenda .left .agenda-content .agenda-day {
-  
   margin-bottom: 20px;
 }
 .events-agenda .left .agenda-content .day {
@@ -26,19 +29,20 @@
 }
 .events-agenda .left .agenda-content ul li {
   display: flex;
- gap: 10px;
-
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
 }
 .events-agenda .left .agenda-content ul li svg {
   color: var(--primary-color);
-  margin-bottom: 5px;
-
 }
 /* Why Attend */
+
 .events-agenda .left .why-attend .boxes-parent {
   display: flex;
   gap: 20px;
 }
+
 .events-agenda .left .why-attend .box {
   display: flex;
   flex-direction: column;
@@ -82,7 +86,7 @@
   top: 20px;
   font-size: 60px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.05);
+  color: #484848;
   z-index: 0;
 }
 
@@ -112,6 +116,7 @@
   padding: 5px 15px;
   border-radius: 20px;
   font-size: var(--small-p-size);
+  font-weight: var(--bold-font-weight);
   margin: 8px 0;
 }
 
@@ -119,14 +124,14 @@
   font-size: var(--small-p-size);
   color: var(--background);
 }
-.events-agenda .left  .upcoming-events-list{
+.events-agenda .left .upcoming-events-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 /* Right */
 .events-agenda .right {
-  width: 30%;
+  width: 32%;
   height: fit-content;
   border: 1px solid var(--primary-color);
   border-radius: var(--radius-one);
@@ -146,13 +151,13 @@
   gap: 10px;
   padding: 20px;
   background-color: var(--background);
-   border-bottom-left-radius: var(--radius-one);
+  border-bottom-left-radius: var(--radius-one);
   border-bottom-right-radius: var(--radius-one);
 }
 
-.events-agenda .right .form-container .section-heading {
-  font-size: var(--heading-three);
-  font-weight: var(--default-font-weight);
+.events-agenda .right .form-container .form-heading {
+  font-size: var(--heading-four);
+  font-weight: var(--bold-font-weight);
   text-align: left;
 }
 .events-agenda .right .form-container .input-container {
@@ -268,38 +273,50 @@
   gap: 10px;
 }
 .events-agenda .right .form-container .registered-container svg {
- color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 @media (max-width: 900px) {
   .events-agenda {
-  width: calc(100% - 40px);
-  padding: 20px;
-  flex-direction: column;
-}
-/* Left */
-.events-agenda .left {
-  width: 100%;
-}
-/* Why Attend */
-.events-agenda .left .why-attend .boxes-parent {
-  flex-direction: column;
-}
-.events-agenda .left .why-attend .box {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: calc(100% - 20px);
-  height: 50px;
-  padding: 10px;
-}
-.events-agenda .left  .upcoming-events-list{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-/* right */
+    width: calc(100% - 40px);
+    padding: 20px;
+    flex-direction: column;
+  }
+  /* Left */
+  .events-agenda .left {
+    width: 100%;
+  }
+  /* Why Attend */
+  .events-agenda .left .why-attend .boxes-parent {
+    flex-direction: column;
+  }
+  .events-agenda .left .why-attend .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: calc(100% - 20px);
+    height: 50px;
+    padding: 10px;
+  }
+  .events-agenda .left .speaker-card {
+    width: calc(100% - 20px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    overflow: hidden;
+  }
+  .events-agenda .left .speaker-background-text {
+    font-size: var(--heading-one);
+  }
+  .events-agenda .left .upcoming-events-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  /* right */
   .events-agenda .right {
     width: 100%;
   }

@@ -16,10 +16,8 @@ const InDemandCoursesDetailHero = ({ data }) => {
   return (
     <div className="in-demand-detail-hero">
       <div className="left">
-        <h1 className="heading1">CISSP Certification Training</h1>
-        <h2 className="heading2">
-          Certified Information Systems Security Professional (CISSP)
-        </h2>
+        <h1 className="heading1">{data.heading1}</h1>
+        <h2 className="heading2">{data.heading2}</h2>
 
         <ul>
           {data.domains.map((item, index) => (
@@ -34,7 +32,7 @@ const InDemandCoursesDetailHero = ({ data }) => {
           Next Batch Starts{" "}
           <strong className="batch-highlight">
             <span className="bracket blink">[ </span>
-            <span className="date-text">17 Aug</span>
+            <span className="date-text">{data.batchDate}</span>
             <span className="bracket blink"> ]</span>
           </strong>
         </p>

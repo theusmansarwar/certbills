@@ -1,0 +1,20 @@
+.interview-questions {
+  width: 80%;
+  margin-left: 10%;
+}
+.interview-questions h1 {
+  font-size: var(--heading-one);
+  margin: 40px 0;
+}
+
+@media (max-width: 900px) {
+  .interview-questions {
+    width: calc(100% - 20px);
+    margin-left: 0%;
+    padding: 10px;
+  }
+  .interview-questions h1 {
+  font-size: var(--heading-three);
+  margin: 20px 0;
+}
+}

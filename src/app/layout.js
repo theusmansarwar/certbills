@@ -1,8 +1,6 @@
 
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
-import MobileMenu from "./Components/maindropdown/MobileMenu";
-import ReactVirtualizedTable from "./Components/ReactVirtualizedTable/ReactVirtualizedTable";
 import "./globals.css";
 
 import { Roboto } from "next/font/google";
@@ -25,7 +23,7 @@ export default function RootLayout({ children }) {
      
       <body>
         <Header/>
-     <ReactVirtualizedTable />
+    
         {children}
         <Footer/>
       </body>

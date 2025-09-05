@@ -49,6 +49,7 @@ const VendorsCoursesDetail = () => {
       <ChooseByDomain />
       <GetCertification />
       <BenefitsOfCertification />
+      
     </div>
   );
 };

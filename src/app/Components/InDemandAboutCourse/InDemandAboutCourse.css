@@ -131,6 +131,8 @@
   .domain-sub-points
   svg {
   color: var(--primary-color);
+  font-size: 16px;
+  flex-shrink: 0;
 }
 .in-demand-about-course
   .about-course-content
@@ -171,6 +173,8 @@
   .audience
   svg {
   color: var(--primary-color);
+  font-size: 16px;
+  flex-shrink: 0;
 }
 /* Pre-Requisits */
 .in-demand-about-course .about-course-content .left .pre-requisits {
@@ -189,18 +193,19 @@
   .sub-heading {
   margin-bottom: 5px;
 }
+
 .in-demand-about-course .about-course-content .left .pre-requisits-line {
   display: flex;
+  align-items: center; /* Add this to align items properly */
   gap: 10px;
   margin-bottom: 5px;
 }
-.in-demand-about-course
-  .about-course-content
-  .left
-  .pre-requisits
-  .pre-requisits-line
-  svg {
-  color: var(--primary-color);
+
+/* Fix the SVG styling with a more direct selector */
+.in-demand-about-course .pre-requisits-line svg {
+  color: var(--primary-color) !important;
+  font-size: 16px;
+  flex-shrink: 0;
 }
 /* Exam Details */
 .in-demand-about-course .about-course-content .left .exam-details {
@@ -273,6 +278,8 @@
   .objective
   svg {
   color: var(--primary-color);
+  font-size: 16px;
+  flex-shrink: 0;
 }
 /* Right */
 .in-demand-about-course .about-course-content .right {
@@ -601,6 +608,5 @@
   .in-demand-about-course .about-course-content .right .contact-info {
     align-self: center;
     align-items: center;
-    
   }
 }

@@ -1,0 +1,198 @@
+.how-it-works2 {
+  width: 100%;
+  height: fit-content;
+  padding: 60px 0;
+  background-color: #1c2834;
+}
+.how-it-works2 h2 {
+  font-size: var(--heading-two);
+  color: var(--background);
+  text-align: center;
+}
+
+.steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 40px 100px;
+  color: var(--background);
+  overflow-x: hidden;
+}
+
+.step-card {
+  background: transparent;
+  text-align: center;
+  position: relative;
+  width: 30%;
+  margin: 40px 0;
+}
+
+.step-icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.step-number {
+  color: var(--primary-color);
+  font-weight: var(--bold-font-weight);
+  margin-bottom: 10px;
+}
+
+.step-title {
+  font-size: var(--heading-four);
+  font-weight: var(--bold-font-weight);
+  margin-bottom: 10px;
+}
+
+.step-desc {
+  font-size: 15px;
+  opacity: 0.8;
+  line-height: 1.5;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+/* Arrow images between steps */
+.step-arrow1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, 40%);
+  width: 70%;
+  max-width: 70%;
+}
+.step-arrow2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+  width: 70%;
+  max-width: 70%;
+}
+.step-arrow3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-10%, 10%);
+  width: 50%;
+  max-width: 50%;
+}
+.step-arrow4 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+  width: 70%;
+  max-width: 70%;
+}
+.step-arrow5 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, 70%);
+  width: 70%;
+  max-width: 70%;
+}
+.rotate-arrow {
+  display: none;
+}
+@media (max-width: 1480px) {
+  .step-arrow3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(10%, 10%);
+    width: 60%;
+    max-width: 60%;
+  }
+}
+@media (max-width: 1280px) {
+  .step-arrow3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(20%, 5%);
+    width: 70%;
+    max-width: 70%;
+  }
+}
+@media (max-width: 1024px) {
+  .step-arrow3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(40%, 10%);
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .how-it-works2 {
+    padding: 20px 0;
+  }
+  .how-it-works2 h2 {
+    font-size: var(--heading-three);
+  }
+  .steps-container {
+    padding: 40px;
+  }
+  .step-card {
+    width: 44%;
+    margin: 40px 0;
+  }
+  .step-card:first-child {
+    margin: 40px 0;
+    margin-top: 0;
+  }
+  .step-arrow1,
+  .step-arrow2,
+  .step-arrow3,
+  .step-arrow4,
+  .step-arrow5 {
+    display: none;
+  }
+  .rotate-arrow {
+    display: none; /* default hidden */
+    width: 40px;
+  }
+  .rotate-arrow:nth-of-type(1), /* after step 1 */
+  .rotate-arrow:nth-of-type(3), /* after step 3 */
+  .rotate-arrow:nth-of-type(4) /* after step 5 */ {
+    display: block;
+  }
+  /* .step-card:nth-of-type(1) { order: 1; } 
+  .step-card:nth-of-type(2) { order: 2; } 
+  .step-card:nth-of-type(3) { order: 3; } 
+  .step-card:nth-of-type(6) { order: 4; } 
+  .step-card:nth-of-type(5) { order: 5; } 
+  .step-card:nth-of-type(4) { order: 6; }  */
+}
+@media (max-width: 768px) {
+  .step-card {
+    width: 100%;
+    margin: 40px 0;
+  }
+  .step-arrow1,
+  .step-arrow2,
+  .step-arrow3,
+  .step-arrow4,
+  .step-arrow5 {
+    display: none;
+  }
+  .rotate-arrow {
+    display: block;
+    width: 40px;
+    transform: rotate(90deg);
+  }
+  .steps-container {
+    padding: 40px;
+  }
+  .step-card:first-child {
+    margin: 40px 0;
+    margin-top: 0;
+  }
+}

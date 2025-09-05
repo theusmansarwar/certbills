@@ -1,0 +1,83 @@
+.practice-test-card2 {
+  width: 23%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--default-box-shadow);
+  transition: transform 0.3s ease;
+  border: 1px solid transparent;
+  background-color: var(--background);
+  cursor: pointer;
+}
+
+.practice-test-card2 .card-detail {
+
+  height: fit-content;
+  min-height: 80px;
+  padding: 8px 15px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.practice-test-card2 .card-img-container {
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.practice-test-card2 .card-img-container img {
+  width: 80px;
+}
+.practice-test-card2 h3 {
+  font-size: var(--heading-four);
+  font-weight: var(--bold-font-weight);
+  text-align: center;
+  margin-top: 10px;
+}
+.practice-test-card2 .card-detail .bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(154, 149, 149);
+  font-weight: var(--bold-font-weight);
+}
+.practice-test-card2 .card-detail .bottom span:first-child {
+  border-right: 2px solid rgb(154, 149, 149);
+  padding-right: 10px;
+}
+.practice-test-card2:hover {
+  border: 1px solid transparent;
+  background: linear-gradient(to right, var(--background), var(--background)),
+    var(--gradient-one);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+  .practice-test-card2:hover {
+    transform: scale(1);
+  }
+  .practice-test-card2 {
+    width: 100%;
+  }
+  .practice-test-card2 .card-img {
+    height: 100px !important;
+  }
+  .practice-test-card2 .card-detail {
+    min-height: 20px;
+  }
+
+  .practice-test-card2 .card-detail h3 {
+    font-size: var(--default-p-size);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+ 
+}

@@ -52,7 +52,7 @@ const BenefitsOfCertification = () => {
         Benefits of Getting <strong>{certificationData.certName}</strong>{" "}
         Certified
       </h2>
-      <p>{certificationData.description}</p>
+      <p className="desc">{certificationData.description}</p>
 
       <div className="benefits-list">
         {benefitsData.map((benefit, index) => (
