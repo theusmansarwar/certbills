@@ -34,7 +34,7 @@ const Header = () => {
     { label: "About CertBills", url: "/about-us" },
     { label: "Our Clientele", url: "/our-clients" },
     { label: "Our Team", url: "/leadership-team" },
-    { label: "Our Instructors", url: "instructors" },
+    { label: "Our Instructors", url: "instructor" },
     { label: "Success Stories", url: "success-stories" },
     { label: "Testimonials", url: "/customer-review" },
   ];
@@ -60,7 +60,7 @@ const Header = () => {
         <Countdown targetDate="2025-09-31T23:59:59" />
       </div>
       <div className="header" onMouseEnter={hidedropdown}>
-        <img src="/certbills-logo.png" onClick={() => router.push("/")} />
+        <img src="/certbills-Logo.png" onClick={() => router.push("/")} />
         <div className="search-area">
           <div
             className="left"
