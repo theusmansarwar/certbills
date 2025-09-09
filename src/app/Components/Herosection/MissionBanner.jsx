@@ -4,36 +4,26 @@ import { FaBullseye } from "react-icons/fa";
 import { FaUser } from "react-icons/fa6";
 import { PiStudentBold } from "react-icons/pi";
 
-const avatars = [
-  "/krish.png",
-  "/krish.png",
-];
-
-
+const avatars = ["/krish.png", "/krish.png"];
 
 const MissionBanner = () => {
-    const [learnerCount,setLearnerCount] = useState(990);
-    
-    
-    const increaseCount = () => {
-      return (
-       setTimeout(() => {
-        setLearnerCount(learnerCount+500);
-    },2000)
-   
-      )
-    }
-   useEffect(() => {
-         increaseCount()
-   }, [learnerCount]);
-    
-  
+  const [learnerCount, setLearnerCount] = useState(990);
+
+  const increaseCount = () => {
+    return setTimeout(() => {
+      setLearnerCount(learnerCount + 500);
+    }, 2000);
+  };
+  useEffect(() => {
+    increaseCount();
+  }, [learnerCount]);
+
   return (
     <div className="mission-banner">
       <div className="left-section">
         <FaBullseye className="icon" />
         <span className="mission-text">
-          On a mission to empower and train 1 million Cyber Commandos by 2030
+          Preparing 1 Million Cyber Commandos for a Safer Digital World by 2030
         </span>
       </div>
       <div className="right-section">

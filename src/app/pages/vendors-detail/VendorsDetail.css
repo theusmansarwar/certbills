@@ -1,6 +1,14 @@
 .vendors-courses-detail .section-heading {
   margin-top: 40px;
 }
+.vendors-courses-detail .vendor-heading {
+  font-size: var(--heading-two);
+  text-align: center;
+  margin-top: 40px;
+}
+.vendors-courses-detail .vendor-heading span {
+  color: var(--primary-color);
+}
 .vendors-courses-detail .courses-list {
   display: flex;
   flex-wrap: wrap;
@@ -15,6 +23,9 @@
 @media (max-width: 900px) {
   .vendors-courses-detail .section-heading {
     margin-top: 20px;
+  }
+  .vendors-courses-detail .vendor-heading {
+    font-size: var(--heading-four);
   }
   .vendors-courses-detail .courses-list {
     gap: 10px;

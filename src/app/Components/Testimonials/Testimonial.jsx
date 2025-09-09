@@ -3,65 +3,8 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Testimonial.css";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import TestimonialCard from "./TestimonialCard";
-const Testimonial = () => {
-  const testimonialList = [
-    {
-      image: "/krish.png",
-      name: "Krish",
-      country: "Canada",
-      review:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
-    },
-    {
-      image: "/krish.png",
-      name: "John Doe",
-      country: "Canada",
-      review:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
-    },
-    {
-      image: "/krish.png",
-      name: "Krish",
-      country: "Canada",
-      review:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
-    },
-    {
-      image: "/krish.png",
-      name: "Krish",
-      country: "Canada",
-      review:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
-    },
-    {
-      image: "/krish.png",
-      name: "Krish",
-      country: "Canada",
-      review:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
-    },
-    {
-      image: "/krish.png",
-      name: "Krish",
-      country: "Canada",
-      review:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
-    },
-    {
-      image: "/krish.png",
-      name: "Krish",
-      country: "Canada",
-      review:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
-    },
-    {
-      image: "/krish.png",
-      name: "Krish",
-      country: "Canada",
-      review:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum impedit dolorum sequi sed odio consequunturvelplaceat illum  consectetur eaque dolores quae voluptatibus pariatur esse, mollitia cupiditate quod eveniet autem magni itaque fuga.",
-    },
-  ];
+const Testimonial = ({data}) => {
+  
   const scrollRef = useRef(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -113,7 +56,7 @@ const Testimonial = () => {
       <h2 className="section-heading">Words Have Power</h2>
 
       <div className="testimonial-list" ref={scrollRef}>
-        {testimonialList.map((item, index) => (
+        {data.map((item, index) => (
           <TestimonialCard key={index} data={item} />
         ))}
       </div>

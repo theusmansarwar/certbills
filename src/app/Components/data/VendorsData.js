@@ -1,0 +1,250 @@
+const vendorData = {
+ 
+  "ec-council": {
+    heroData: {
+      certName: "EC Council",
+      description: "70+ Tools | 100% Hands-on Lab | Interview Preparation",
+      Image: "/isaca.png",
+    },
+    coursesData: [
+      { slug: "chfi-training" },
+      { slug: "cnd-training" },
+      { slug: "cciso-training" },
+      { slug: "ecde-training" },
+      { slug: "cpent-training" },
+      { slug: "csa-training" },
+      { slug: "ecih-training" },
+      { slug: "eces-training" },
+      { slug: "ecss-training" },
+      { slug: "disaster-recovery-training" },
+      { slug: "case-java-training" },
+      { slug: "case-dot-net-training" },
+      { slug: "blockchain-fintech-training" },
+    ],
+    benefitsData: {
+      certName: "EC Council",
+      description: `EC Council is a global training provider offering knowledge, 
+hands-on labs, and certifications in ethical hacking, forensics, incident response, 
+and cybersecurity domains. Some of the top EC Council certifications are CHFI v11, CND v2, and CCISO.`,
+    },
+  },
+  isc2: {
+    heroData: {
+      certName: "(ISC)²",
+      description: "70+ Tools | 100% Hands-on Lab | Interview Preparation",
+      Image: "/isaca.png",
+    },
+    coursesData: [
+      { slug: "cc-training" },
+      { slug: "cissp-training" },
+      { slug: "issap-training" },
+      { slug: "sscp-training" },
+      { slug: "cgrc-training" },
+      { slug: "csslp-training" },
+    ],
+    benefitsData: {
+      certName: "(ISC)²",
+      description: `(ISC)² is a leading provider of information security education and certifications. 
+Some of the top (ISC)² certifications are CC, CISSP, and ISSAP.`,
+    },
+  },
+  isaca: {
+    heroData: {
+      certName: "ISACA",
+      description: "70+ Tools | 100% Hands-on Lab | Interview Preparation",
+      Image: "/isaca.png",
+    },
+    coursesData: [
+      { slug: "cisa-training" },
+      { slug: "cism-training" },
+      { slug: "crisc-training" },
+      { slug: "cgeit-training" },
+      { slug: "cdpse-training" },
+      { slug: "csx-p-training" },
+      { slug: "aaism-training" },
+      { slug: "aaia-training" },
+    ],
+    benefitsData: {
+      certName: "ISACA",
+      description: `ISACA is a global association that provides training, knowledge, and 
+certifications in governance, IT audit, security, and risk management. 
+Some of the top ISACA certifications are CISA, CISM, and CRISC.`,
+    },
+  },
+  iapp: {
+    heroData: {
+      certName: "IAPP",
+      description: "70+ Tools | 100% Hands-on Lab | Interview Preparation",
+      Image: "/isaca.png",
+    },
+    coursesData: [
+      { slug: "cipp-e-training" },
+      { slug: "cipm-training" },
+      { slug: "cipt-training" },
+      { slug: "aigp-training" },
+    ],
+    benefitsData: {
+      certName: "IAPP",
+      description: `IAPP specializes in privacy and data protection certifications. 
+Some of the top IAPP certifications are CIPP/E, CIPM, and CIPT.`,
+    },
+  },
+  iso: {
+    heroData: {
+      certName: "ISO",
+      description: "70+ Tools | 100% Hands-on Lab | Interview Preparation",
+      Image: "/isaca.png",
+    },
+    coursesData: [
+      { slug: "iso-27001-la" },
+      { slug: "iso-27001-li" },
+      { slug: "iso-42001-la" },
+      { slug: "iso-42001-li" },
+      { slug: "iso-22301-la" },
+      { slug: "iso-22301-li" },
+      { slug: "iso-20000-la" },
+      { slug: "iso-20000-li" },
+      { slug: "iso-37001-la" },
+      { slug: "iso-2000-li" },
+      { slug: "iso-31000-rm" },
+    ],
+    benefitsData: {
+      certName: "ISO",
+      description: `ISO certifications validate expertise in international standards, 
+quality management, security, and risk governance. 
+Some of the top ISO certifications are ISO 27001 LA, ISO 22301 LI, and ISO 31000.`,
+    },
+  },
+  comptia: {
+    heroData: {
+      certName: "CompTIA",
+      description: "70+ Tools | 100% Hands-on Lab | Interview Preparation",
+      Image: "/isaca.png",
+    },
+    coursesData: [
+      { slug: "comptia-security-training" },
+      { slug: "comptia-cysa-training" },
+      { slug: "comptia-pentest-training" },
+      { slug: "comptia-network-training" },
+      { slug: "comptia-casp-training" },
+      { slug: "comptia-cloud-training" },
+      { slug: "comptia-a-training" },
+      { slug: "comptia-it-fundamentals-training" },
+      { slug: "comptia-data-training" },
+      { slug: "comptia-datasys-training" },
+      { slug: "comptia-cloud-essentials-training" },
+      { slug: "comptia-linux-training" },
+      { slug: "comptia-a-and-network-training" },
+      { slug: "comptia-project-training" },
+      { slug: "comptia-server-training" },
+      { slug: "comptia-security-x-training" },
+      { slug: "comptia-tech-training" },
+    ],
+    benefitsData: {
+      certName: "CompTIA",
+      description: `CompTIA is a vendor-neutral IT certification provider covering 
+foundational and advanced IT skills. 
+Some of the top CompTIA certifications are Security+, CySA+, and Pentest+.`,
+    },
+  },
+  aws: {
+    heroData: {
+      certName: "AWS",
+      description: "70+ Tools | 100% Hands-on Lab | Interview Preparation",
+      Image: "/isaca.png",
+    },
+    coursesData: [
+      { slug: "aws-combo-training" },
+      { slug: "aws-cloud-security-training" },
+      { slug: "aws-cloud-architect-training" },
+      { slug: "aws-cloud-penetration-testing-training" },
+      { slug: "aws-cloud-practitioner-training" },
+      { slug: "aws-solution-architect-associate-training" },
+      { slug: "aws-solution-architect-training" },
+      { slug: "aws-sysops-associate-training" },
+      { slug: "aws-scs-c02-training" },
+      { slug: "aws-advance-architect-combo-training" },
+    ],
+    benefitsData: {
+      certName: "AWS",
+      description: `AWS certifications validate cloud expertise in architecture, security, 
+and DevOps. Some of the top AWS certifications are AWS Solutions Architect, 
+AWS Security Specialty, and AWS SysOps Administrator.`,
+    },
+  },
+  "cloud-security-alliance": {
+    heroData: {
+      certName: "Cloud Security Alliance",
+      description: "70+ Tools | 100% Hands-on Lab | Interview Preparation",
+      Image: "/isaca.png",
+    },
+    coursesData: [{ slug: "ccsk-plus-training" }, { slug: "cczt-training" }],
+    benefitsData: {
+      certName: "Cloud Security Alliance",
+      description: `The Cloud Security Alliance provides certifications in cloud governance 
+and security. Some of the top CSA certifications are CCSK Plus and CCZT.`,
+    },
+  },
+  microsoft: {
+    heroData: {
+      certName: "Microsoft",
+      description: "70+ Tools | 100% Hands-on Lab | Interview Preparation",
+      Image: "/isaca.png",
+    },
+    coursesData: [
+      { slug: "az-104-az-500-combo-training" },
+      { slug: "az-104-training" },
+      { slug: "az-500-training" },
+      { slug: "microsoft-sentinel-training" },
+      { slug: "az-020t00-a-training" },
+      { slug: "az-040-training" },
+      { slug: "az-204-training" },
+      { slug: "az-220-training" },
+      { slug: "az-304-az-301-training" },
+      { slug: "az-303-az-300-training" },
+      { slug: "az-305t00-training" },
+      { slug: "az-400-training" },
+      { slug: "az-400t00-a-training" },
+      { slug: "az-900-training" },
+      { slug: "az-2005-training" },
+      { slug: "sc-100-training" },
+      { slug: "sc-200-training" },
+      { slug: "sc-300-training" },
+      { slug: "sc-900-training" },
+      { slug: "sc-400-training" },
+      { slug: "sc-5001-training" },
+      { slug: "sc-5002-training" },
+      { slug: "sc-5003-training" },
+      { slug: "dp-090-training" },
+      { slug: "dp-100-training" },
+      { slug: "dp-203t00-training" },
+      { slug: "dp-3014-training" },
+      { slug: "dp-600t00-a-training" },
+      { slug: "ms-102-microsoft-365-administrator-training" },
+      { slug: "ms-500-microsoft-365-security-training" },
+      { slug: "ms-900-microsoft-365-fundamentals-training" },
+      { slug: "ms-4006-a-training" },
+      { slug: "mb-260t00-a-training" },
+      { slug: "azure-mlops-training" },
+      { slug: "power-bi-training" },
+      { slug: "pl-200t00-training" },
+      { slug: "pl-300t00-a-training" },
+      { slug: "ic-002t00-training" },
+      { slug: "ai-102-microsoft-azure-ai-solution-training" },
+      { slug: "ai-050-training" },
+      { slug: "ai-900-training" },
+      { slug: "ai-102t00-training" },
+      { slug: "ai-3016-training" },
+      { slug: "ai-3018-training" },
+      { slug: "ai-integrated-microsoft-excel-training" },
+    ],
+    benefitsData: {
+      certName: "Microsoft",
+      description: `Microsoft certifications validate expertise across Azure, 
+Microsoft 365, Power BI, and security domains. Some of the top Microsoft 
+certifications are AZ-104, SC-900, and DP-100.`,
+    },
+  },
+};
+
+export default vendorData;

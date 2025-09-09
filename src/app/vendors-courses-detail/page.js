@@ -1,14 +1,10 @@
 import React from "react";
-import VendorsCoursesDetail from "../pages/vendors-courses-detail/VendorsCoursesDetail";
-
-
+import VendorsDetail from "../pages/vendors-detail/VendorsDetail";
 
 const Page = () => {
-
-
   return (
-    <div >
-   <VendorsCoursesDetail/>
+    <div>
+      <VendorsDetail />
     </div>
   );
 };

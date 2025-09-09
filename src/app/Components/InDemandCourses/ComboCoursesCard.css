@@ -1,5 +1,5 @@
 .combo-course-card {
-  width: 250px;
+  width: 300px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
   align-items: center;
   gap: 10px;
   margin-top: 10px;
-
+  height: 120px;
 }
 .combo-course-card .card-detail .main-detail .left {
   width: 2px;
@@ -39,12 +39,14 @@
   gap: 5px;
 }
 .combo-course-card .card-detail .main-detail .right span {
-  font-size: 8px;
+  font-size: 10px;
   background-color: var(--forground);
   text-align: center;
+  width: fit-content;
+  padding: 2px 6px;
 }
 .combo-course-card .card-detail .main-detail .right h3 {
-  font-size: var(--heading-three);
+  font-size: var(--heading-four);
   font-weight: 500;
 }
 .combo-course-card .card-detail p {
@@ -83,9 +85,8 @@
   background-origin: padding-box, border-box;
   transform: scale(1.02);
 }
-@media(max-width:900px){
-    .combo-course-card:hover {
-
-  transform: scale(1);
-}
+@media (max-width: 900px) {
+  .combo-course-card:hover {
+    transform: scale(1);
+  }
 }

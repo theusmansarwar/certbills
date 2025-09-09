@@ -2,7 +2,6 @@ import React from "react";
 import "./CoursesCategory.css";
 import CoursesCategoryCard from "./CoursesCategoryCard";
 
-
 const coursesCategories = [
   {
     CategoryIcon: "/cyber-security.svg",
@@ -16,13 +15,13 @@ const coursesCategories = [
   },
   {
     CategoryIcon: "/cyber-security.svg",
-    CategoryTitle: "Security Testing",
-    slug: "security-testing",
+    CategoryTitle: "Governance, Risk & Compliance",
+    slug: "governance-risk-and-compliance",
   },
   {
     CategoryIcon: "/cyber-security.svg",
-    CategoryTitle: "Governance, Risk & Compliance",
-    slug: "governance-risk-and-compliance",
+    CategoryTitle: "Security Testing",
+    slug: "security-testing",
   },
   {
     CategoryIcon: "/cyber-security.svg",
@@ -41,14 +40,16 @@ const coursesCategories = [
   },
   {
     CategoryIcon: "/cyber-security.svg",
-    CategoryTitle: "Business Leadership Training Programs",
+    CategoryTitle: "Business Leadership",
     slug: "business-leadership-programs",
   },
+
   {
     CategoryIcon: "/cyber-security.svg",
     CategoryTitle: "Artificial Intelligence (AI)",
     slug: "artificial-intelligence",
   },
+
   {
     CategoryIcon: "/cyber-security.svg",
     CategoryTitle: "Offensive Security",
@@ -66,8 +67,6 @@ const coursesCategories = [
   },
 ];
 const CoursesCategory = () => {
- 
-
   return (
     <div className="courses-category-section">
       <h2 className="section-heading">Explore Courses by Category</h2>

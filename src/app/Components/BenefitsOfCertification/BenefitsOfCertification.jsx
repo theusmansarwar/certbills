@@ -1,16 +1,7 @@
 import React from "react";
 import "./BenefitsOfCertification.css";
 
-const certificationData = {
-  certName: "ISACA",
-  description: `ISACA or Information Systems Audit and Control Association is a global
-  association that provides knowledge, training, validation and
-  credentials in information systems audit, governance, security, control,
-  risk management and privacy. Some of the top ISACA certifications are
-  Certified Information Systems Auditor (CISA), Certified Information
-  Security Manager (CISM), and Certified in Risk and Information Systems
-  Control (CRISC).`,
-};
+
 
 const benefitsData = [
   {
@@ -45,14 +36,13 @@ const benefitsData = [
   },
 ];
 
-const BenefitsOfCertification = () => {
+const BenefitsOfCertification = ({ data }) => {
   return (
     <div className="benefits-of-certification">
       <h2 className="section-heading">
-        Benefits of Getting <strong>{certificationData.certName}</strong>{" "}
-        Certified
+        Benefits of Getting <strong>{data.certName}</strong> Certified
       </h2>
-      <p className="desc">{certificationData.description}</p>
+      <p className="desc">{data.description}</p>
 
       <div className="benefits-list">
         {benefitsData.map((benefit, index) => (

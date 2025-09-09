@@ -768,7 +768,7 @@ coursesData: [
     ],
   },
 
-  auditing: {
+  "auditing": {
     heroData: {
       bgImage: "/category-hero-img.png",
       tagline: "Build Trust Through",

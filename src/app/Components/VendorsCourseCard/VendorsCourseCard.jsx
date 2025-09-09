@@ -1,6 +1,11 @@
+"use client";
 import React from "react";
 import "./VendorsCourseCard.css";
+import { useParams, useRouter } from "next/navigation";
 const VendorsCourseCard = ({ data }) => {
+  const router = useRouter();
+  const params = useParams(); // Get current route params
+  const vendorSlug = params.vendorslug;
   return (
     <div className="vendors-course-card">
       <div
@@ -16,7 +21,12 @@ const VendorsCourseCard = ({ data }) => {
           borderTopRightRadius: "6px",
         }}
       ></div>
-      <div className="card-detail">
+      <div
+        className="card-detail"
+        onClick={() => {
+          router.push(`/vendor/${vendorSlug}/course/${data.slug}`);
+        }}
+      >
         <h3>{data.CourseTitle}</h3>
       </div>
     </div>

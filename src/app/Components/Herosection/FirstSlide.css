@@ -38,9 +38,10 @@
 }
 
 .blackscreen .text-section h3 {
-  font-size: var(--heading-three);
+  font-size: var(--heading-four);
   margin: 0 0 30px 0;
   line-height: 1;
+  font-weight: var(--default-font-weight);
 }
 
 .blackscreen .text-section button {

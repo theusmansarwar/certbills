@@ -24,7 +24,6 @@
   width: 73%;
   display: flex;
   flex-wrap: wrap;
-
   margin-left: 1%;
   background-color: var(--background);
 }
@@ -40,48 +39,151 @@
   overflow: hidden;
   border-radius: var(--radius-three);
   background-color: var(--forground);
+  cursor: pointer;
 }
 .second-menu .second-menu-vbox p {
   text-align: center;
 }
 .maindropdown .first-menu .center {
-  width: 50%;
+  width: 60%;
   height: 100%;
   background-color: var(--background);
 }
 .maindropdown .first-menu .right {
-  width: 49%;
+  width: 39%;
   height: calc(100% - 16px);
   margin-top: 8px;
   border-radius: var(--radius-three);
   background-color: var(--border-color);
   border-bottom-left-radius: 0px;
 }
+
+/* Updated scrollbar styles for macOS-style auto-hide behavior */
 .maindropdown .left ul {
   list-style: none;
   height: 500px;
-  overflow-y: scroll;
-  scrollbar-width: none;
+  padding: 0px 10px;
+  overflow-y: auto;
+  /* macOS-style scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.3s ease;
+
 }
+
+.maindropdown .left ul:hover,
+.maindropdown .left ul:focus-within {
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+.maindropdown .left ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+.maindropdown .left ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.maindropdown .left ul::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.maindropdown .left ul:hover::-webkit-scrollbar-thumb,
+.maindropdown .left ul:focus-within::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.maindropdown .left ul::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .maindropdown .Center-area ul {
   list-style: none;
   height: 458px;
-  overflow-y: scroll;
-  scrollbar-width: none;
+  padding: 0px 10px;
+  overflow-y: auto;
+  /* macOS-style scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.3s ease;
 }
+
+.maindropdown .Center-area ul:hover,
+.maindropdown .Center-area ul:focus-within {
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+.maindropdown .Center-area ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+.maindropdown .Center-area ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.maindropdown .Center-area ul::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.maindropdown .Center-area ul:hover::-webkit-scrollbar-thumb,
+.maindropdown .Center-area ul:focus-within::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.maindropdown .Center-area ul::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .maindropdown .right ul {
   list-style: none;
   height: 450px;
-
-  overflow-y: scroll;
-  scrollbar-width: none;
+  padding: 0px 10px;
+  overflow-y: auto;
+  /* macOS-style scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.3s ease;
 }
+
+.maindropdown .right ul:hover,
+.maindropdown .right ul:focus-within {
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+.maindropdown .right ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+.maindropdown .right ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.maindropdown .right ul::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.maindropdown .right ul:hover::-webkit-scrollbar-thumb,
+.maindropdown .right ul:focus-within::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.maindropdown .right ul::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .maindropdown ul li {
   padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  border-radius: var(--radius-three);
 }
 .maindropdown .left ul li .offer {
   background: var(--gradient-three);

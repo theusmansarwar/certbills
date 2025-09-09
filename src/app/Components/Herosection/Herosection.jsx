@@ -10,11 +10,11 @@ const slides = [
   {
     type: "first",
     bg: "/video-thumbnail.png",
-    subtitle: "Be the Frontline Defender",
-    title: "SOC Analyst Hands-on",
+    subtitle: "Lead the Cybersecurity Revolution",
+    title: "Get Hands-On SOC Analyst Training",
     highlight: "Training",
-    extra: "70+ Tools | 100% Hands-on Lab | Interview Preparation",
-    link:"/"
+    extra: "Live Environment Labs | 70+ Tools | Job Success Training",
+    link: "/",
   },
   {
     type: "first",
@@ -23,7 +23,7 @@ const slides = [
     title: "Real-World",
     highlight: "Success Stories",
     extra: "Inspiring learners who achieved big!",
-    link:"/success-stories"
+    link: "/success-stories",
   },
   {
     type: "second",
@@ -31,7 +31,7 @@ const slides = [
     title: "Free Events & Masterclasses",
     buttonText: "Explore Now",
     image: "/career-field.png",
-    link:"/free-events"
+    link: "/free-events",
   },
   {
     type: "second",
@@ -39,7 +39,7 @@ const slides = [
     title: "DevSecOps Practical Approach",
     buttonText: "Know More",
     image: "/career-field.png",
-    link:"/"
+    link: "/",
   },
 ];
 

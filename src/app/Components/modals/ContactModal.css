@@ -45,14 +45,20 @@
   gap: 20px;
 }
 
-.contact-modal .modal-mid .form-container input,
-.contact-modal .modal-mid .form-container textarea {
+.contact-modal .modal-mid .form-container .input-container input[type="text"],
+.contact-modal .modal-mid .form-container .input-container textarea {
   outline: none;
   padding: 15px;
   border: 1px solid gainsboro;
+  width: calc(100% - 30px);
+  border-radius: var(--radius-three);
 }
-.contact-modal .modal-mid .form-container input:focus-within,
-.contact-modal .modal-mid .form-container textarea:focus-within {
+.contact-modal .modal-mid .form-container .input-container input:focus-within,
+.contact-modal
+  .modal-mid
+  .form-container
+  .input-container
+  textarea:focus-within {
   border: 1px solid transparent;
   background: linear-gradient(to right, var(--background), var(--background)),
     var(--gradient-two);
@@ -96,13 +102,16 @@
 .contact-modal .modal-mid .form-container .checkbox-container {
   display: flex;
   align-items: flex-start;
+  justify-content: flex-start; 
   gap: 10px;
 }
 
 .contact-modal .modal-mid .form-container .checkbox-container p {
   font-size: var(--small-p-size);
   color: black;
+  text-align: left; 
 }
+
 .contact-modal .modal-mid .form-container .checkbox-container p span {
   text-decoration: none;
   color: var(--primary-color);

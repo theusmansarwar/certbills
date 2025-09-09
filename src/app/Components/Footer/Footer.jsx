@@ -18,87 +18,90 @@ import { useRouter } from "next/navigation";
 const companyLinks = [
   "About us",
   "Our Team",
+  "Contact Us",
   "Testimonials",
-  "Blog",
-  "Career",
-  "Why Certification",
-  "Contact us",
+  "Careers",
   "Gallery",
+  "Blog",
   "Success Stories",
+  "Case Studies",
+  "Verify Certificates",
   "Hire a Trainer",
-  "Case Study",
-  "Legal Info",
+  "Login to LMS",
 ];
 
-const quickLinks = [
-  "Reviews",
-  "Memberships",
+const explore = [
   "All Courses",
+  "Self Placed Learning",
   "Training Calendar",
+  "Membership",
   "Free Practice Tests",
+  "Career Mentorship",
   "Upcoming Events",
-  "Self-paced Learning",
-  "Course Materials Program",
+  "Reviews",
   "Refund Policy",
   "Private Policy",
   "Privacy Policy",
   "Post Policy",
 ];
+const policies = [
+  "Refund Policy",
+  "Retake Policy",
+  "Privacy Policy",
+  "POSH Policy",
+];
 
-const trendingCourses = [
+const popularCourses = [
   "CISSP Training",
-  "CISA Training",
   "CISM Training",
+  "CISA Training",
   "Ethical Hacker Training",
-  "CISSP Training",
+  "CRISC Training",
+  "CCSP Training",
   "CompTIA Security+ Training",
-  "AC-500 Training",
+  "Azure Security (AZ-500) Training",
   "Penetration Testing Training",
-  "CEH Training",
-  "GCIH Training",
-  "AWS DevOps Training",
-  "SalesForce Training",
-  "Microsoft Incident Online Training",
-  "Certificate of Cloud Security Knowledge CCSK Boot Training",
+  "CyberArk Training",
   "SOC Analyst Training",
-  "SOC Specialist",
-  "Risk Advisor Training",
-  "Azure Administrator & Security Fundamentals Training",
-  "Certified Ethical Hacker Training",
-  "ISO 27001 Lead Auditor Training",
-  "ISO 27001 Lead Implementer Training",
-  "DVSA+ Training",
-  "Data Protection Officer (DPO)",
-  "Advanced Cyber Security Governance",
-  "GRC Governance, Risk and Compliance Training",
-  "Splunk Training Course",
+  "CIPT & CIPM Training",
+  "GDPR & CIPP/E Training",
+  "ISO 27001 (Lead Auditor & Implementer)",
+  "AWS Combo Training",
+  "SailPoint IdentityIQ Training",
+  "Microsoft Sentinel Training",
+  "CCSK Plus Training",
+  "CYSA+ Training",
+  "RSA Archer Training",
+  "Advanced Cloud Security",
+  "DPO Training",
+  "Splunk Training",
+  "GRC Training",
 ];
 
 const trendingCategories = [
-  "Governance Risk & Compliance Training",
-  "Cloud Security Training Courses",
-  "Cybersecurity Training Courses",
-  "Information Security Training Courses",
-  "SOC Online Training",
-  "Security Testing Training Programs",
-  "Data Privacy Training Courses",
-  "IT & Security Audit Training Programs",
-  "Security Products Training",
-  "Network Security Training Courses",
-  "Offensive Security Training Courses",
-  "Defensive Security Training Courses",
+  "Governance Risk & Compliance",
+  "Cybersecurity",
+  "Information Security",
+  "Cloud Security",
+  "Offensive & Defensive Security",
+  "Security Testing",
+  "SOC Analyst Programs",
+  "Data Privacy",
+  "IT & Security Audit",
+  "Security Products",
+  "Network Security",
 ];
 
 const freeResources = [
   "Free Cybersecurity Training",
-  "Free Learning Roadmaps",
-  "Free Mock Tests",
+  "Free Bootcamps",
+  "Mock Tests",
   "Latest Blogs",
-  "Latest Cyber News",
+  "Cybersecurity News",
 ];
 
 const Footer = () => {
-   const router = useRouter();
+  const router = useRouter();
   const [openIndex, setOpenIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -122,8 +125,9 @@ const Footer = () => {
 
   const sections = [
     { title: "Company", data: companyLinks },
-    { title: "Quick Links", data: quickLinks },
-    { title: "Trending Courses", data: trendingCourses },
+    { title: "Explore", data: explore },
+    { title: "Policies", data: policies },
+    { title: "Popular Courses", data: popularCourses },
     { title: "Trending Categories", data: trendingCategories },
     { title: "Trending Free Resources", data: freeResources },
   ];
@@ -197,23 +201,20 @@ const Footer = () => {
 
         <div className="disclaimer">
           <p>
-            <strong>Disclaimer:</strong> Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Ipsa ratione mollitia eos laboriosam id
-            reprehenderit quisquam rem. Accusantium assumenda nulla quia eaque
-            ipsum! Dolores, enim quae natus earum velit, tempore ad mollitia
-            autem maiores provident laudantium nostrum minus repellendus
-            at.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            officia quidem maiores omnis ducimus, nemo iste aspernatur
-            veritatis. Consequatur aut ipsum voluptates neque nam architecto hic
-            cupiditate iusto, enim at.
+            <strong>Disclaimer:</strong> Some images or content used are
+            publicly available and may include copyright-protected elements.
+            Trademarks and certification names mentioned are the property of
+            their respective owners. Use of such names does not imply
+            endorsement. Contact us if you have concerns or queries.
           </p>
           <p>
             <strong>CISSP</strong> is a registered mark of The International
             Information Systems Security Certification Consortium (ISC)².
           </p>
           <p>
-            <strong>This website uses cookies:</strong> Our website utilizes
-            cookies to gather information...
+            <strong>This website uses cookies:</strong> to analyze traffic and
+            enhance user experience. It collects basic data like IP address and
+            user behavior to optimize website performance.
           </p>
           <p>All rights reserved. © 2025, CertBills</p>
         </div>
@@ -234,7 +235,10 @@ const Footer = () => {
             Duplicate Query
           </span>
           <span onClick={() => router.push("/free-events")}>Site Webinar</span>
-          <span onClick={() => router.push("/training-calenders")}>Training Calendar</span>
+
+          <span onClick={() => router.push("/training-calenders")}>
+            Training Calendar
+          </span>
         </div>
         <div className="contact-info">
           <a href="#">

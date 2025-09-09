@@ -1,5 +1,5 @@
 .course-card {
-  width: 250px;
+  width: 300px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -26,8 +26,9 @@
   gap: 10px;
 }
 .course-card .card-detail h3 {
-  font-size: var(--heading-three);
+  font-size: var(--heading-four);
   font-weight: 500;
+  height: 50px;
 }
 .course-card .card-detail .main-detail p {
   font-size: var(--default-p-size);
