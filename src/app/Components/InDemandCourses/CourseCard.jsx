@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import "./CourseCard.css";
 import { PiTimerBold } from "react-icons/pi";
